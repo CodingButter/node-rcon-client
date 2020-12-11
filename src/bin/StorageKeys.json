@@ -1,0 +1,10 @@
+{
+  "GLOBAL": {
+    "connectionStatus": "connection-status-storage-key",
+    "gameType": "connection-game-type-storage-key",
+    "host": "connection-host-storage-key",
+    "port": "connection-port-storage-key",
+    "password": "connection-password-storage-key",
+    "rememberConnection": "connection-remember-button-storage-key"
+  }
+}

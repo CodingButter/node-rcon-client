@@ -1,0 +1,17 @@
+[
+  {
+    "name": "MineCraft",
+    "port": 25575,
+    "imagePath": "/images/minecraft-server-icon.png"
+  },
+  {
+    "name": "Rust",
+    "port": 28016,
+    "imagePath": "/images/rust-server-icon.png"
+  },
+  {
+    "name": "Arc",
+    "port": 27020,
+    "imagePath": "/images/ark-server-icon.png"
+  }
+]
