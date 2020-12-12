@@ -1,22 +1,28 @@
 import React, { useEffect } from "react";
-import Connect from "./Pages/Connect";
+import ServerConnect from "./Pages/ServerConnect";
 import Dashboard from "./Pages/Dashboard";
 import ServerSelect from "./Pages/ServerSelect";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { AppStore, addToStore } from "./bin/AppStore.js";
 
 export default function App() {
   //Lets Put Global state here
 
   addToStore("connectionStatus", "updateConnectionStatus");
+  addToStore("connectReady", "updateConnectReady", false);
   addToStore("host", "updateHost", "");
   addToStore("port", "updatePort", 25575);
   addToStore("password", "updatePassword", "");
+  addToStore("connectionUID", "updateCpmmectopmIID", "");
 
-  //Lets do an Mount Hook
+  //update whenever port/host/password changes
   useEffect(() => {
-    console.log("this only ran on mount");
-  }, []);
+    AppStore.updateConnectReady(
+      AppStore.port != false &&
+        AppStore.host != false &&
+        AppStore.password != false
+    );
+  }, [AppStore.port, AppStore.host, AppStore.password]);
 
   //Handle Update Functions
   AppStore.handlePortUpdate = ({ target }) => {
@@ -33,19 +39,17 @@ export default function App() {
 
   return (
     <Router>
-      <div>
-        <Switch>
-          <Route path="/dashboard">
-            <Dashboard />
-          </Route>
-          <Route path="/connect">
-            <Connect />
-          </Route>
-          <Route path="/">
-            <ServerSelect />
-          </Route>
-        </Switch>
-      </div>
+      <Switch>
+        <Route path="/dashboard">
+          <Dashboard />
+        </Route>
+        <Route path="/connect">
+          <ServerConnect />
+        </Route>
+        <Route path="/">
+          <ServerSelect />
+        </Route>
+      </Switch>
     </Router>
   );
 }

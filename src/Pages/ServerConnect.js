@@ -1,20 +1,23 @@
 import React from "react";
 import { AppStore } from "../bin/AppStore";
-import { NavLink } from "react-router-dom";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import TextField from "@material-ui/core/TextField";
-import Box from "@material-ui/core/Box";
-import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
-import Typography from "@material-ui/core/Typography";
+import { useHistory } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
-import Container from "@material-ui/core/Container";
-import InputLabel from "@material-ui/core/InputLabel";
-import MenuItem from "@material-ui/core/MenuItem";
-import FormControl from "@material-ui/core/FormControl";
-import Select from "@material-ui/core/Select";
+import {
+  Button,
+  Box,
+  CssBaseline,
+  TextField,
+  Typography,
+  Container,
+  MenuItem,
+  Avatar,
+  Select,
+  FormControl,
+  InputLabel
+} from "@material-ui/core";
+import ServerIcon from "../globalComponents/ServerIcon";
 import Copyright from "../globalComponents/Copyright";
 
-import ServerIcon from "../globalComponents/ServerIcon";
 import GameServerDefaults from "../bin/GameServerDefaults.json";
 
 const useStyles = makeStyles((theme) => ({
@@ -53,27 +56,36 @@ const useStyles = makeStyles((theme) => ({
     padding: "8px",
     cursor: "pointer",
     textDecoration: "none"
-  },
-  servericon: {
-    width: "100%"
   }
 }));
 
-export default function SignIn({ history }) {
+export default function ServerConnect() {
   const classes = useStyles();
+  const history = useHistory();
 
+  function portExistsInList(queryPort) {
+    const serverResultCount = GameServerDefaults.filter(({ port }) => {
+      console.log({ port, queryPort });
+      return port == parseInt(queryPort);
+    });
+    return serverResultCount.length >= 1;
+  }
+  console.log(portExistsInList(AppStore.port));
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
-        <ServerIcon
-          render={(imagePath) => {
-            return <Avatar className={classes.avatar} src={imagePath} />;
-          }}
-        />
         <Typography component="h1" variant="h5">
           Connect To Server
         </Typography>
+        <ServerIcon
+          render={({ imagePath, name }) => {
+            return (
+              <Avatar alt={name} className={classes.avatar} src={imagePath} />
+            );
+          }}
+        />
+        {/*
         <FormControl
           fullWidth
           variant="outlined"
@@ -101,6 +113,7 @@ export default function SignIn({ history }) {
             })}
           </Select>
         </FormControl>
+          */}
         <TextField
           variant="outlined"
           margin="normal"
@@ -113,17 +126,19 @@ export default function SignIn({ history }) {
           value={AppStore.host}
           autoFocus
         />
-        <TextField
-          variant="outlined"
-          margin="normal"
-          required
-          fullWidth
-          id="port"
-          label="Port"
-          name="port"
-          onChange={AppStore.handlePortUpdate}
-          value={AppStore.port}
-        />
+        {
+          <TextField
+            variant="outlined"
+            margin="normal"
+            required
+            fullWidth
+            id="port"
+            label="Port"
+            name="port"
+            onChange={AppStore.handlePortUpdate}
+            value={AppStore.port}
+          />
+        }
         <TextField
           variant="outlined"
           margin="normal"
@@ -136,15 +151,17 @@ export default function SignIn({ history }) {
           onChange={AppStore.handlePasswordUpdate}
           id="password"
         />
-        <NavLink
-          fullWidth
+        <Button
+          disabled={!AppStore.connectReady}
           variant="contained"
           color="primary"
           className={classes.submit}
-          to="/dashboard"
+          onClick={() => {
+            history.push("/dashboard");
+          }}
         >
           Connect
-        </NavLink>
+        </Button>
       </div>
       <Box mt={8}>
         <Copyright />
