@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AppStore } from "../bin/AppStore";
 import { useHistory } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
@@ -17,6 +17,7 @@ import {
 } from "@material-ui/core";
 import ServerIcon from "../globalComponents/ServerIcon";
 import Copyright from "../globalComponents/Copyright";
+import Rcon from "../bin/RconApi";
 
 import GameServerDefaults from "../bin/GameServerDefaults.json";
 
@@ -62,15 +63,29 @@ const useStyles = makeStyles((theme) => ({
 export default function ServerConnect() {
   const classes = useStyles();
   const history = useHistory();
+  const rcon = Rcon();
+
+  function Connect() {
+    rcon
+      .connect({
+        host: AppStore.host,
+        port: AppStore.port,
+        password: AppStore.password
+      })
+      .then((results) => {
+        console.log(results);
+      });
+  }
 
   function portExistsInList(queryPort) {
     const serverResultCount = GameServerDefaults.filter(({ port }) => {
       console.log({ port, queryPort });
       return port == parseInt(queryPort);
     });
+    console.log(serverResultCount.length >= 1);
     return serverResultCount.length >= 1;
   }
-  console.log(portExistsInList(AppStore.port));
+
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
@@ -128,6 +143,7 @@ export default function ServerConnect() {
         />
         {
           <TextField
+            disabled={portExistsInList(AppStore.port)}
             variant="outlined"
             margin="normal"
             required
@@ -157,7 +173,8 @@ export default function ServerConnect() {
           color="primary"
           className={classes.submit}
           onClick={() => {
-            history.push("/dashboard");
+            //history.push("/dashboard");
+            Connect();
           }}
         >
           Connect

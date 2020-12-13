@@ -1,16 +1,14 @@
-import React from "react";
-import Button from "@material-ui/core/Button";
-import Menu from "@material-ui/core/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
+import React, { useState } from "react";
+import { Box, Button, MenuItem, Menu } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import RefreshIcon from "@material-ui/icons/Refresh";
-import NavLink from "react-router-dom";
-import { AppStore } from "../bin/AppStore";
+import { useHistory } from "react-router-dom";
 
 export default function HeaderMenu() {
   function connectToServer(e) {}
 
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl] = useState(null);
+  const history = useHistory();
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -21,7 +19,7 @@ export default function HeaderMenu() {
   };
 
   return (
-    <div>
+    <Box display="flex" flexDirection="row">
       <Button
         aria-controls="simple-menu"
         aria-haspopup="true"
@@ -41,9 +39,15 @@ export default function HeaderMenu() {
           Reconnect
         </MenuItem>
         <MenuItem>
-          <NavLink to="./">Change Server</NavLink>
+          <Button
+            onClick={() => {
+              history.push("/");
+            }}
+          >
+            Change Server
+          </Button>
         </MenuItem>
       </Menu>
-    </div>
+    </Box>
   );
 }

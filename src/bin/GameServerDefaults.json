@@ -1,5 +1,10 @@
 [
   {
+    "name": "Other",
+    "port": null,
+    "imagePath": "/images/game-server-icon.png"
+  },
+  {
     "name": "MineCraft",
     "port": 25575,
     "imagePath": "/images/minecraft-server-icon.png"

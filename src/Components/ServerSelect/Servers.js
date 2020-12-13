@@ -7,6 +7,7 @@ import {
   Typography
 } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
+import { AppStore } from "../../bin/AppStore";
 import GameServerDefaults from "../../bin/GameServerDefaults";
 
 const useStyles = makeStyles((theme) => ({
@@ -38,10 +39,19 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Servers() {
+  const history = useHistory();
+
+  function setServer(port) {
+    AppStore.updatePort(port);
+    history.push("./connect");
+  }
+
   const classes = useStyles();
   return GameServerDefaults.map((server, key) => {
+    console.log(server.imagePath);
     return (
       <Grid
+        key={key}
         container
         direction="row"
         justify="space-evenly"
@@ -52,8 +62,15 @@ export default function Servers() {
           color="primary"
           className={classes.select}
           to="/dashboard"
+          onClick={() => {
+            setServer(server.port);
+          }}
         >
-          <Avatar className={classes.avatar} src={server.imagePath} />;
+          <Avatar
+            alt={server.name}
+            className={classes.avatar}
+            src={server.imagePath}
+          />
           <Typography component="h1" variant="h5">
             {server.name}
           </Typography>
