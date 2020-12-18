@@ -4,8 +4,8 @@ const rcon = Rcon();
 const PING_RATE = 10000;
 
 function checkConnectionStatus() {
-  rcon.getStatus(AppStore.connectionUID).then(({ status }) => {
-    console.log({ status });
+  const uid = AppStore.connectionUID;
+  rcon.getStatus({ uid }).then(({ status }) => {
     AppStore.updateConnectionStatus(status);
   });
 }

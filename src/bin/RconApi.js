@@ -29,9 +29,11 @@ export default function RconClient() {
     return await fetchResults("/send", { uid, command });
   }
 
-  async function getResponse({ uid, lastResponceUid }) {}
+  async function getResponse({ uid }) {
+    return await fetchResults("/response", { uid });
+  }
 
-  async function getStatus(uid) {
+  async function getStatus({ uid }) {
     return await fetchResults("/status", { uid });
   }
 

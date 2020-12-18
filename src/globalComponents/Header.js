@@ -1,12 +1,6 @@
 import React from "react";
 import { AppStore } from "../bin/AppStore";
-import {
-  makeStyles,
-  Box,
-  AppBar,
-  Toolbar,
-  Typography
-} from "@material-ui/core/";
+import { makeStyles, Box, AppBar, Typography } from "@material-ui/core/";
 import DnsIcon from "@material-ui/icons/Dns";
 import RefreshIcon from "@material-ui/icons/Refresh";
 export default function Header() {
@@ -17,10 +11,11 @@ export default function Header() {
     },
     hostName: {
       fontSize: 13,
-      flexGrow: 1
+      flexGrow: 1,
+      textAlign: "center"
     },
     dnsIcon: {
-      fontSize: 35,
+      fontSize: 40,
       color: theme.palette.success.main,
       backgroundColor: "white",
       borderRadius: "50%",
@@ -28,11 +23,11 @@ export default function Header() {
     },
     refreshIcon: {
       cursor: "pointer",
-      fontSize: 35,
+      fontSize: 40,
       color: theme.palette.error.main,
       backgroundColor: "white",
       borderRadius: "50%",
-      padding: 3
+      padding: theme.spacing(1)
     },
     appBar: {
       padding: theme.spacing(1)
@@ -54,15 +49,15 @@ export default function Header() {
 
   const classes = useStyles();
   return (
-    <AppBar className={classes.appBar} position="static">
-      <Toolbar>
+    <>
+      <AppBar className={classes.appBar} position="static">
         <Box>
           {getStatusIcon(AppStore.connectionStatus)}
           <Typography className={classes.hostName}>
             {AppStore.host.toUpperCase()}
           </Typography>
         </Box>
-      </Toolbar>
-    </AppBar>
+      </AppBar>
+    </>
   );
 }

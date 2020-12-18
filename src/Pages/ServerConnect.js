@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { AppStore } from "../bin/AppStore";
 import { useHistory } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
@@ -58,6 +58,11 @@ const useStyles = makeStyles((theme) => ({
 export default function ServerConnect() {
   const classes = useStyles();
   const history = useHistory();
+  const myRef = useRef(null);
+
+  useEffect(() => {
+    if (AppStore.connectReady) myRef.current.scrollIntoView();
+  }, []);
 
   function handleConnectClick() {
     AppStore.rconConnect().then(({ uid, status }) => {
@@ -125,7 +130,7 @@ export default function ServerConnect() {
           name="host"
           onChange={AppStore.handleHostUpdate}
           value={AppStore.host}
-          autoFocus
+          autoFocus={!AppStore.connectReady}
         />
         {
           <TextField
@@ -154,11 +159,13 @@ export default function ServerConnect() {
           id="password"
         />
         <Button
+          ref={myRef}
           disabled={!AppStore.connectReady}
           variant="contained"
           color="primary"
           className={classes.submit}
           onClick={handleConnectClick}
+          autoFocus={AppStore.connectReady == true}
         >
           Connect
         </Button>

@@ -12,7 +12,10 @@ export default function App() {
 
   addToStore("connectionStatus", "updateConnectionStatus");
   addToStore("connectReady", "updateConnectReady", false);
-  addToStore("connectionUID", "updateConnectionUID", "");
+  addToStore("connectionUID", "updateConnectionUID", null);
+  addToStore("responseUID", "updateResponseUID", null);
+  addToStore("response", "updateResponse", null);
+  addToStore("commandSuccess", "updateCommandSuccess", false);
   addToStore("host", "updateHost", "");
   addToStore("port", "updatePort", 25575);
   addToStore("password", "updatePassword", "");
@@ -34,26 +37,33 @@ export default function App() {
     });
   };
 
-  //update whenever port/host/password changes
   useEffect(() => {
-    AppStore.updateConnectReady(
-      AppStore.port !== false &&
-        AppStore.host !== false &&
-        AppStore.password !== false
-    );
-  }, [AppStore.port, AppStore.host, AppStore.password]);
+    checkConnectionReady();
+  }, []);
+
+  //update whenever port/host/password changes
+  function checkConnectionReady() {
+    const ready =
+      AppStore.port != false &&
+      AppStore.host != false &&
+      AppStore.password != false;
+    AppStore.updateConnectReady(ready);
+  }
 
   //Handle Update Functions
   AppStore.handlePortUpdate = ({ target }) => {
     AppStore.updatePort(target.value);
+    checkConnectionReady();
   };
 
   AppStore.handleHostUpdate = ({ target }) => {
     AppStore.updateHost(target.value);
+    checkConnectionReady();
   };
 
   AppStore.handlePasswordUpdate = ({ target }) => {
     AppStore.updatePassword(target.value);
+    checkConnectionReady();
   };
 
   return (

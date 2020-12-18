@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { AppStore } from "../bin/AppStore";
 import {
   ButtonGroup,
   Button,
   Box,
   CssBaseline,
+  Container,
   Grid,
   Paper,
+  Snackbar,
   Typography
 } from "@material-ui/core";
+import MuiAlert from "@material-ui/lab/Alert";
 import { makeStyles } from "@material-ui/core/styles";
 import Header from "../globalComponents/Header";
 import Copyright from "../globalComponents/Copyright";
@@ -28,10 +31,44 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
+function Alert(props) {
+  return <MuiAlert elevation={6} variant="filled" {...props} />;
+}
+
 export default function Dashboard() {
-  function sendCommand({ target }) {
-    rcon.send(AppStore.connectionUID, target.dataset.command);
-  }
+  const [open, setOpen] = useState(false);
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpen(false);
+  };
+
+  AppStore.sendCommand = (command) => {
+    const uid = AppStore.connectionUID;
+    rcon.send({ uid, command }).then((commandResponse) => {
+      if (commandResponse.connection === "connected") {
+        rcon.getResponse({ uid }).then((result) => {
+          if (result.status === "success") {
+            if (result.response.uid !== uid) {
+              AppStore.updateResponseUID(result.response.uid);
+              AppStore.updateResponse(result.response.body);
+              AppStore.updateCommandSuccess(true);
+            } else {
+              AppStore.updateResponse(result.error);
+              AppStore.updateCommandSuccess(false);
+            }
+          }
+          setOpen(true);
+        });
+      } else {
+        AppStore.updateResponse("Connection Lost");
+        AppStore.updateCommandSuccess(false);
+        setOpen(true);
+      }
+    });
+  };
 
   function BuildButtonGroups(command, gridIndex) {
     return (
@@ -41,14 +78,15 @@ export default function Dashboard() {
           <ButtonGroup
             variant="contained"
             color="primary"
-            size="large"
+            size="small"
             aria-label="contained primary button group"
           >
             {command.menu.map((button, buttonIndex) => {
               return (
                 <Button
-                  onClick={sendCommand}
-                  data-command={button.command}
+                  onClick={() => {
+                    AppStore.sendCommand(button.command);
+                  }}
                   key={buttonIndex}
                 >
                   {button.label}
@@ -65,22 +103,32 @@ export default function Dashboard() {
 
   return (
     <>
-      <CssBaseline />
       <Header />
-      <div className={classes.root}>
-        <Grid
-          alignItems="center"
-          container
-          direction="row"
-          className={classes.paper}
-          spacing={2}
-        >
-          {WeatherTime.map(BuildButtonGroups)}
-        </Grid>
-      </div>
-      <Box mt={8}>
-        <Copyright />
-      </Box>
+      <Container fullWidth>
+        <CssBaseline />
+        <div className={classes.root}>
+          <Grid
+            alignItems="center"
+            container
+            direction="row"
+            className={classes.paper}
+            spacing={2}
+          >
+            {WeatherTime.map(BuildButtonGroups)}
+          </Grid>
+        </div>
+        <Box mt={8}>
+          <Copyright />
+        </Box>
+        <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+          <Alert
+            onClose={handleClose}
+            severity={AppStore.commandSuccess ? "success" : "error"}
+          >
+            {AppStore.response}
+          </Alert>
+        </Snackbar>
+      </Container>
     </>
   );
 }
