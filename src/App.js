@@ -12,10 +12,10 @@ export default function App() {
 
   addToStore("connectionStatus", "updateConnectionStatus");
   addToStore("connectReady", "updateConnectReady", false);
+  addToStore("connectionUID", "updateConnectionUID", "");
   addToStore("host", "updateHost", "");
   addToStore("port", "updatePort", 25575);
   addToStore("password", "updatePassword", "");
-  addToStore("connectionUID", "updateConnectionUID", "");
 
   AppStore.rconConnect = async () => {
     return new Promise((resolve, reject) => {
@@ -26,7 +26,8 @@ export default function App() {
           password: AppStore.password
         })
         .then((results) => {
-          AppStore.updateConnectionUID(results);
+          AppStore.updateConnectionUID(results.uid);
+          AppStore.updateConnectionStatus(results.status);
           if (results.status !== "connected") alert(`Couldnt reconnect!`);
           resolve(results);
         });

@@ -1,0 +1,54 @@
+[
+  {
+    "label": "Set Weather",
+    "menu": [
+      {
+        "label": "Rain",
+        "command": "weather rain",
+        "type": "button",
+        "image": null
+      },
+      {
+        "label": "Clear",
+        "command": "weather clear",
+        "type": "button",
+        "image": null
+      },
+      {
+        "label": "Thunder",
+        "command": "weather thunder",
+        "type": "button",
+        "image": null
+      }
+    ]
+  },
+  {
+    "label": "Set Time",
+    "menu": [
+      {
+        "label": "Noon",
+        "command": "time set noon",
+        "image": null,
+        "type": "button"
+      },
+      {
+        "label": "Day",
+        "command": "time set day",
+        "image": null,
+        "type": "button"
+      },
+      {
+        "label": "Night",
+        "command": "time set night",
+        "image": null,
+        "type": "button"
+      },
+      {
+        "label": "Midnight",
+        "command": "time set midnight",
+        "image": null,
+        "type": "button"
+      }
+    ]
+  }
+]

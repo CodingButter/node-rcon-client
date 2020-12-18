@@ -48,7 +48,6 @@ export default function Servers() {
 
   const classes = useStyles();
   return GameServerDefaults.map((server, key) => {
-    console.log(server.imagePath);
     return (
       <Grid
         key={key}
