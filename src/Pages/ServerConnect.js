@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { AppStore } from "../bin/AppStore";
 import { useHistory } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
@@ -9,15 +9,10 @@ import {
   TextField,
   Typography,
   Container,
-  MenuItem,
-  Avatar,
-  Select,
-  FormControl,
-  InputLabel
+  Avatar
 } from "@material-ui/core";
 import ServerIcon from "../globalComponents/ServerIcon";
 import Copyright from "../globalComponents/Copyright";
-import Rcon from "../bin/RconApi";
 
 import GameServerDefaults from "../bin/GameServerDefaults.json";
 
@@ -63,26 +58,17 @@ const useStyles = makeStyles((theme) => ({
 export default function ServerConnect() {
   const classes = useStyles();
   const history = useHistory();
-  const rcon = Rcon();
 
-  function Connect() {
-    rcon
-      .connect({
-        host: AppStore.host,
-        port: AppStore.port,
-        password: AppStore.password
-      })
-      .then((results) => {
-        console.log(results);
-      });
+  function handleConnectClick() {
+    AppStore.rconConnect().then(({ uid, status }) => {
+      if (status === "connected") history.push("/dashboard");
+    });
   }
 
   function portExistsInList(queryPort) {
     const serverResultCount = GameServerDefaults.filter(({ port }) => {
-      console.log({ port, queryPort });
-      return port == parseInt(queryPort);
+      return port === parseInt(queryPort);
     });
-    console.log(serverResultCount.length >= 1);
     return serverResultCount.length >= 1;
   }
 
@@ -172,10 +158,7 @@ export default function ServerConnect() {
           variant="contained"
           color="primary"
           className={classes.submit}
-          onClick={() => {
-            //history.push("/dashboard");
-            Connect();
-          }}
+          onClick={handleConnectClick}
         >
           Connect
         </Button>

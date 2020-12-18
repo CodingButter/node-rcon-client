@@ -1,11 +1,10 @@
 import qs from "querystringify";
 
-const API_ENDPOINT = "http://api.codingbutter.com:2080/rcon";
+const API_ENDPOINT = "https://codingbutter.com:2080/rcon";
 
 const fetchResults = async (endpoint, data) => {
   const queryString = qs.stringify(data);
   const apiUrl = `${API_ENDPOINT}${endpoint}?${queryString}`;
-  console.log({ apiUrl });
   return await fetch(apiUrl)
     .then((res) => {
       return res.json();
@@ -22,7 +21,7 @@ const fetchResults = async (endpoint, data) => {
 };
 
 export default function RconClient() {
-  async function connect({ host, ip, port, password }) {
+  async function connect({ host, port, password }) {
     return await fetchResults("/connect", { host, port, password });
   }
 
