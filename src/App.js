@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { AppStore, addToStore } from "./bin/AppStore";
 import ServerConnect from "./Pages/ServerConnect";
 import Dashboard from "./Pages/Dashboard";
-import ServerSelect from "./Pages/ServerSelect";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SnackBars from "./GlobalComponents/SnackBars";
 import rcon from "./bin/RconApi";

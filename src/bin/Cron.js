@@ -1,15 +1,15 @@
 import { AppStore } from "./AppStore";
-import Rcon from "./RconApi";
-const rcon = Rcon();
+import rcon from "./RconApi";
 const PING_RATE = 10000;
 
 function checkConnectionStatus() {
   const uid = AppStore.connectionUID;
-  rcon.getStatus({ uid }).then(({ status }) => {
-    AppStore.updateConnectionStatus(status);
+  rcon.getStatus({ uid }).then((response) => {
+    AppStore.updateConnectionStatus(response?.status);
   });
 }
-
-setInterval(() => {
-  checkConnectionStatus();
-}, PING_RATE);
+export default function startCron() {
+  setInterval(() => {
+    checkConnectionStatus();
+  }, PING_RATE);
+}

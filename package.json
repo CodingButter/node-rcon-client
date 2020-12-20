@@ -1,10 +1,17 @@
 {
-  "name": "react",
+  "name": "minecraft-rcon-client",
   "version": "1.0.0",
-  "description": "React example starter project",
+  "description": "This is an Rcon Client featuring React and Material-UI. \nI am brand new to react so please don't judge. Also come check out my discord discord.codingbutter.com and catch me streaming on twitch.tv/codingbutter",
   "keywords": [
+    "client",
+    "custom client",
+    "rcon",
     "react",
-    "starter"
+    "material",
+    "minecraft",
+    "remote control",
+    "rcon client",
+    "server"
   ],
   "main": "src/index.js",
   "dependencies": {

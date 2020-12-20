@@ -20,7 +20,7 @@ const fetchResults = async (endpoint, data) => {
     });
 };
 
-export default function RconClient() {
+function RconClient() {
   async function connect({ host, port, password }) {
     return await fetchResults("/connect", { host, port, password });
   }
@@ -44,3 +44,4 @@ export default function RconClient() {
     getStatus
   };
 }
+export default RconClient();

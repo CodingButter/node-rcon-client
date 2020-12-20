@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { AppStore } from "../bin/AppStore";
 import { useHistory } from "react-router-dom";
-import { makeStyles } from "@material-ui/core/styles";
+import useStyles from "../MaterialUIStyles";
 import {
   Button,
   Box,
@@ -11,49 +11,10 @@ import {
   Container,
   Avatar
 } from "@material-ui/core";
-import ServerIcon from "../globalComponents/ServerIcon";
-import Copyright from "../globalComponents/Copyright";
+import ServerIcon from "../GlobalComponents/ServerIcon";
+import Copyright from "../GlobalComponents/Copyright";
 
 import GameServerDefaults from "../bin/GameServerDefaults.json";
-
-const useStyles = makeStyles((theme) => ({
-  formControl: {
-    margin: theme.spacing(1),
-    minWidth: 120
-  },
-  selectEmpty: {
-    marginTop: theme.spacing(2)
-  },
-  paper: {
-    marginTop: theme.spacing(8),
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    backgroundColor: theme.palette.background.default
-  },
-  avatar: {
-    margin: theme.spacing(1),
-    width: 80,
-    height: 80,
-    backgroundColor: theme.palette.secondary.main
-  },
-  form: {
-    width: "100%", // Fix IE 11 issue.
-    marginTop: theme.spacing(1)
-  },
-  submit: {
-    margin: theme.spacing(3, 0, 2),
-    width: "100%",
-    display: "inherit",
-    alignItems: "middle",
-    justifyContent: "center",
-    color: "#fff",
-    backgroundColor: theme.palette.primary.light,
-    padding: "8px",
-    cursor: "pointer",
-    textDecoration: "none"
-  }
-}));
 
 export default function ServerConnect() {
   const classes = useStyles();
@@ -134,7 +95,7 @@ export default function ServerConnect() {
         />
         {
           <TextField
-            disabled={portExistsInList(AppStore.port)}
+            //disabled={portExistsInList(AppStore.port)}
             variant="outlined"
             margin="normal"
             required

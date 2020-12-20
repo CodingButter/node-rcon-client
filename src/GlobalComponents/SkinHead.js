@@ -3,9 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const API_URL = "https://codingbutter.com:2080/mcapi";
 
 export default function SkinHead({ username }) {
-  const [skinUrl, setSkinUrl] = useState(
-    "https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f2/Alex_skin.png/revision/latest/scale-to-width-down/120?cb=20191231170222"
-  );
+  const [skinUrl, setSkinUrl] = useState("");
 
   const randomDelay = Math.random() * 8;
   const panSpeed = 3 + Math.random() * 5;
@@ -88,9 +86,9 @@ export default function SkinHead({ username }) {
   }
 
   useEffect(() => {
-    //const skinImage = useRef(document.createElement("img"));
-    //const si = skinImage.current;
-    const cs = canvas.current;
+    setSkinUrl(
+      "https://www.minecraftskins.com/uploads/skins/2020/12/18/my-hero-from-my-hero-academia-16092829.png?v302"
+    );
     fetch(`${API_URL}/gethead?username=${username}`)
       .then((res) => res.json())
       .then((json) => {
