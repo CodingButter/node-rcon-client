@@ -23,7 +23,9 @@ export default function SnackBars() {
           onClose={handleClose}
           severity={AppStore.commandSuccess ? "success" : "error"}
         >
-          {AppStore.response}
+          {`${AppStore.response.substring(0, 180)}${
+            AppStore.response.length > 180 ? "..." : ""
+          }`}
         </Alert>
       </Snackbar>
     </div>

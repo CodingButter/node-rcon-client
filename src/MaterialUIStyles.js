@@ -27,6 +27,12 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "space-evenly"
   },
+  skinHeadContainer: {
+    display: "flex",
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "center"
+  },
   avatar: {
     margin: theme.spacing(1),
     width: 80,

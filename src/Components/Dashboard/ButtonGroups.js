@@ -22,6 +22,7 @@ export default function BuildButtonGroups(command, gridIndex) {
           {command.menu.map((button, buttonIndex) => {
             return (
               <Button
+                size="small"
                 onClick={() => {
                   AppStore.sendCommand(button.command);
                 }}
