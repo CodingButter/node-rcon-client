@@ -36,7 +36,4 @@ const addToStore = (
   };
 };
 
-module.exports = {
-  AppStore,
-  addToStore
-};
+export { AppStore, addToStore };
