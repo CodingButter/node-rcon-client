@@ -67,7 +67,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function SkinHead({ username }) {
+export default function SkinHead({ username,animationDuration,animationDelay }) {
   const [skinUrl, setSkinUrl] = useState("");
 
   const frame = useRef(document.createElement("div"));
@@ -101,12 +101,15 @@ export default function SkinHead({ username }) {
     <Container
       ref={frame}
       style={{
-        animationDuration: `${2 * Math.random() + 2}`,
-        animationDelay: `${3 * Math.random() + 2}s`
+        animationDuration: `${animationDuration}`,
+        animationDelay: `${animationDelay}s`
       }}
       className={classes.container}
     >
-      <canvas ref={canvas} className={classes.canvas} />
+      <canvas style={{
+        animationDuration: `${animationDuration}`,
+        animationDelay: `${animationDelay}s`
+      }} ref={canvas} className={classes.canvas} />
       <img
         alt=""
         src={skinUrl}

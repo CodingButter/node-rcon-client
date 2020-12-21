@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   },
   flexContainer: {
     display: "flex",
-    flexDirection: "column",
+    flexDirection: "row",
     justifyContent:"space-evenly"
   },
   skinHeadContainer: {
