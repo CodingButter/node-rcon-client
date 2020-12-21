@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { Box, CssBaseline, Container, Grid } from "@material-ui/core";
-import Header from "../GlobalComponents/Header";
-import Copyright from "../GlobalComponents/Copyright";
-import startCron from "../bin/Cron";
-import WeatherTime from "../bin/WeatherTime.json";
-import ButtonGroups from "../Components/Dashboard/ButtonGroups";
-import useStyles from "../MaterialUIStyles";
-import SelectUser from "../Components/Dashboard/SelectUser";
-import CustomCommand from "../Components/Dashboard/CustomCommand";
+import Header from "GlobalComponents/Header";
+import Copyright from "GlobalComponents/Copyright";
+import startCron from "bin/Cron";
+import WeatherTime from "bin/WeatherTime.json";
+import ButtonGroups from "Components/Dashboard/ButtonGroups";
+import useStyles from "MaterialUIStyles";
+import SelectUser from "Components/Dashboard/SelectUser";
+import CustomCommand from "Components/Dashboard/CustomCommand";
 export default function Dashboard() {
   useEffect(() => {
     startCron();

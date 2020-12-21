@@ -3,7 +3,7 @@ import { Box, Button, MenuItem, Menu } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import RefreshIcon from "@material-ui/icons/Refresh";
 import { useHistory } from "react-router-dom";
-import { AppStore } from "../bin/AppStore";
+import { AppStore } from "bin/AppStore";
 
 export default function HeaderMenu() {
   const [anchorEl, setAnchorEl] = useState(null);

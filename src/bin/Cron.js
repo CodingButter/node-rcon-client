@@ -1,4 +1,4 @@
-import { AppStore } from "./AppStore";
+import { AppStore } from "bin/AppStore";
 import rcon from "./RconApi";
 const PING_RATE = 10000;
 

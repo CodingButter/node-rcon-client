@@ -1,5 +1,5 @@
-import { AppStore } from "../bin/AppStore";
-import GameServerDefaults from "../bin/GameServerDefaults";
+import { AppStore } from "bin/AppStore";
+import GameServerDefaults from "bin/GameServerDefaults";
 
 export default function ServerIcon({ render }) {
   function getServerImageByPort(queryPort) {

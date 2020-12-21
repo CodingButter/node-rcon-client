@@ -1,5 +1,5 @@
 import React from "react";
-import { AppStore } from "../bin/AppStore";
+import { AppStore } from "bin/AppStore";
 import { makeStyles, Box, AppBar, Typography } from "@material-ui/core/";
 import DnsIcon from "@material-ui/icons/Dns";
 import RefreshIcon from "@material-ui/icons/Refresh";

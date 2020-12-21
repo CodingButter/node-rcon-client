@@ -1,5 +1,5 @@
-import { Paper } from "@material-ui/core";
-import SkinHead from "../globalComponents/SkinHead";
+import { Paper, Typography } from "@material-ui/core";
+import SkinHead from "globalComponents/SkinHead";
 
 export default function UserList({ users }) {
   return users.map((username, index) => {

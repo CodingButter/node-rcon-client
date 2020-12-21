@@ -7,8 +7,8 @@ import {
   Typography
 } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
-import { AppStore } from "../../bin/AppStore";
-import GameServerDefaults from "../../bin/GameServerDefaults";
+import { AppStore } from "bin/AppStore";
+import GameServerDefaults from "bin/GameServerDefaults";
 
 const useStyles = makeStyles((theme) => ({
   paper: {

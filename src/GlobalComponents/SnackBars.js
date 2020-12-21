@@ -1,5 +1,5 @@
 import React from "react";
-import { AppStore } from "../bin/AppStore";
+import { AppStore } from "bin/AppStore";
 import MuiAlert from "@material-ui/lab/Alert";
 import { Snackbar } from "@material-ui/core";
 

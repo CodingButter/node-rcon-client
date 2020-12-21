@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import { AppStore, useAddToStore } from "./bin/AppStore";
-import ServerConnect from "./Pages/ServerConnect";
-import Dashboard from "./Pages/Dashboard";
+import { AppStore, useAddToStore } from "bin/AppStore";
+import ServerConnect from "Pages/ServerConnect";
+import Dashboard from "Pages/Dashboard";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import SnackBars from "./GlobalComponents/SnackBars";
-import rcon from "./bin/RconApi";
+import SnackBars from "GlobalComponents/SnackBars";
+import rcon from "bin/RconApi";
 
 export default function App() {
   //Create AppStore useHooks
@@ -21,25 +21,38 @@ export default function App() {
   useAddToStore("onlineUsers", "setOnlineUsers", [], false);
 
   //Create Global Appstore Functions
-  AppStore.sendCommand = (command, openSnackBar = true) => {
+
+  /*
+    Send a command to the my custom rcon REST API
+    If openSnackBar is not manually set to false we will open
+    The SnackBar (pop up) and display the response from the server
+    Or manually change the response if we recieve no response
+    From the rest api
+  */
+  AppStore.sendCommand = async (command, openSnackBar = true) => {
     return new Promise((resolve, reject) => {
+      //Set uid to the connectionUID state
       const uid = AppStore.connectionUID;
-      rcon.send({ uid, command }).then((commandResponse) => {
-        if (commandResponse.connection === "connected") {
-          rcon.getResponse({ uid }).then((result) => {
-            if (result.status === "success") {
-              if (result.response.uid !== uid) {
-                AppStore.updateResponseUID(result.response.uid);
-                AppStore.updateResponse(result.response.body);
-                AppStore.updateCommandSuccess(true);
-              } else {
-                AppStore.updateResponse(result.error);
-                AppStore.updateCommandSuccess(false);
-              }
+
+      //Send a command through our rcon front end objects send method
+      rcon.send({ uid, command }).then((result) => {
+        if (result.connection === "connected") {
+          //If the response connection is good then lets
+          //retrieve the response from the Rest api
+          if (result.status === "success") {
+            //If our response is different then the last
+            //Set
+            if (result.response.uid !== uid) {
+              AppStore.updateResponseUID(result.response.uid);
+              AppStore.updateResponse(result.response.body);
+              AppStore.updateCommandSuccess(true);
+            } else {
+              AppStore.updateResponse(result.error);
+              AppStore.updateCommandSuccess(false);
             }
-            AppStore.setOpenSnacks(openSnackBar);
-            resolve(result);
-          });
+          }
+          AppStore.setOpenSnacks(openSnackBar);
+          resolve(result);
         } else {
           AppStore.updateResponse("Connection Lost");
           AppStore.updateCommandSuccess(false);

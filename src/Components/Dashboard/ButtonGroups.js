@@ -6,8 +6,8 @@ import {
   Grid,
   Typography
 } from "@material-ui/core";
-import useStyle from "../../MaterialUIStyles";
-import { AppStore } from "../../bin/AppStore";
+import useStyle from "MaterialUIStyles";
+import { AppStore } from "bin/AppStore";
 export default function BuildButtonGroups(command, gridIndex) {
   const classes = useStyle();
   return (

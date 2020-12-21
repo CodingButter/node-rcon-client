@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Container } from "@material-ui/core";
+
 const API_URL = "https://codingbutter.com:2080/mcapi";
 
 const useStyles = makeStyles((theme) => ({
@@ -67,7 +68,11 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function SkinHead({ username,animationDuration,animationDelay }) {
+export default function SkinHead({
+  username,
+  animationDuration,
+  animationDelay
+}) {
   const [skinUrl, setSkinUrl] = useState("");
 
   const frame = useRef(document.createElement("div"));
@@ -78,10 +83,8 @@ export default function SkinHead({ username,animationDuration,animationDelay }) 
     cs.width = 10;
     cs.height = 8;
     const gt = cs.getContext("2d");
-    si.onload = () => {
-      gt.imageSmoothingEnabled = false;
-      gt.drawImage(si, 6, 8, 10, 8, 0, 0, 10, 8);
-    };
+    gt.imageSmoothingEnabled = false;
+    gt.drawImage(si, 6, 8, 10, 8, 0, 0, 10, 8);
   }
 
   useEffect(() => {
@@ -106,10 +109,14 @@ export default function SkinHead({ username,animationDuration,animationDelay }) 
       }}
       className={classes.container}
     >
-      <canvas style={{
-        animationDuration: `${animationDuration}`,
-        animationDelay: `${animationDelay}s`
-      }} ref={canvas} className={classes.canvas} />
+      <canvas
+        style={{
+          animationDuration: `${animationDuration}`,
+          animationDelay: `${animationDelay}s`
+        }}
+        ref={canvas}
+        className={classes.canvas}
+      />
       <img
         alt=""
         src={skinUrl}

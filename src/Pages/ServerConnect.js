@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
-import { AppStore } from "../bin/AppStore";
+import { AppStore } from "bin/AppStore";
 import { useHistory } from "react-router-dom";
-import useStyles from "../MaterialUIStyles";
+import useStyles from "MaterialUIStyles";
 import {
   Button,
   Box,
