@@ -27,12 +27,7 @@ export default function SelectUser() {
   const classes = useStyle();
   return (
     <Grid item xs={12} sm={12} md={12} lg={12}>
-      <Paper
-        rounded
-        variant="outlined"
-        elevation={3}
-        className={classes.paperPlate}
-      >
+      <Paper variant="outlined" elevation={3} className={classes.paperPlate}>
         <Typography variant="h4">User Commands</Typography>
         <Box fullWidth className={classes.skinHeadContainer}>
           {/*AppStore.onlineUsers.map((username, skinIndex) => {

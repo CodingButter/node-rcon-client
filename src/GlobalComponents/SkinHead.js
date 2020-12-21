@@ -73,7 +73,9 @@ export default function SkinHead({
   animationDuration,
   animationDelay
 }) {
-  const [skinUrl, setSkinUrl] = useState("");
+  const [skinUrl, setSkinUrl] = useState(
+    "https://www.minecraftskins.com/uploads/skins/2020/12/18/my-hero-from-my-hero-academia-16092829.png?v302"
+  );
 
   const frame = useRef(document.createElement("div"));
   const canvas = useRef(document.createElement("canvas"));
@@ -88,13 +90,11 @@ export default function SkinHead({
   }
 
   useEffect(() => {
-    setSkinUrl(
-      "https://www.minecraftskins.com/uploads/skins/2020/12/18/my-hero-from-my-hero-academia-16092829.png?v302"
-    );
     fetch(`${API_URL}/gethead?username=${username}`)
       .then((res) => res.json())
       .then((json) => {
         const imageUrl = json.textures.SKIN.url;
+
         setSkinUrl(imageUrl);
       });
   }, []);
