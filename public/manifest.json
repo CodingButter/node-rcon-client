@@ -1,0 +1,25 @@
+{
+  "short_name": "MC Remote",
+  "name": "Minecraft Remote Control:I Control You",
+  "description": "Take Back Control Of Your Minecraft Server",
+  "icons": [
+    {
+      "src": "/images/icons/minecraft-icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icons/minecraft-icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#fafafa",
+  "display": "fullscreen",
+  "scope": "/",
+  "theme_color": "#3f51b5",
+  "prefer_related_applications":false,
+  "shortcuts": [
+  ]
+}

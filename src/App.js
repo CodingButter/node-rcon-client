@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { AppStore, addToStore } from "./bin/AppStore";
+import { AppStore, useAddToStore } from "./bin/AppStore";
 import ServerConnect from "./Pages/ServerConnect";
 import Dashboard from "./Pages/Dashboard";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -8,17 +8,17 @@ import rcon from "./bin/RconApi";
 
 export default function App() {
   //Create AppStore useHooks
-  addToStore("connectionStatus", "updateConnectionStatus");
-  addToStore("connectReady", "updateConnectReady", false);
-  addToStore("connectionUID", "updateConnectionUID", null);
-  addToStore("responseUID", "updateResponseUID", null);
-  addToStore("response", "updateResponse", null);
-  addToStore("commandSuccess", "updateCommandSuccess", false);
-  addToStore("host", "updateHost", "");
-  addToStore("port", "updatePort", 25575);
-  addToStore("password", "updatePassword", "");
-  addToStore("openSnacks", "setOpenSnacks", false, false);
-  addToStore("onlineUsers", "setOnlineUsers", [], false);
+  useAddToStore("connectionStatus", "updateConnectionStatus");
+  useAddToStore("connectReady", "updateConnectReady", false);
+  useAddToStore("connectionUID", "updateConnectionUID", null);
+  useAddToStore("responseUID", "updateResponseUID", null);
+  useAddToStore("response", "updateResponse", null);
+  useAddToStore("commandSuccess", "updateCommandSuccess", false);
+  useAddToStore("host", "updateHost", "");
+  useAddToStore("port", "updatePort", 25575);
+  useAddToStore("password", "updatePassword", "");
+  useAddToStore("openSnacks", "setOpenSnacks", false, false);
+  useAddToStore("onlineUsers", "setOnlineUsers", [], false);
 
   //Create Global Appstore Functions
   AppStore.sendCommand = (command, openSnackBar = true) => {

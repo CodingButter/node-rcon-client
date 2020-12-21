@@ -22,7 +22,7 @@ export default function SelectUser() {
       .catch((error) => {
         console.log(error);
       });
-  }, []);
+  }, [AppStore.connectionStatus]);
 
   const classes = useStyle();
   return (
