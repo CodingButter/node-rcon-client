@@ -35,16 +35,16 @@ export default function App() {
       const uid = AppStore.connectionUID;
 
       //Send a command through our rcon front end objects send method
-      rcon.send({ uid, command }).then((result) => {
+      rcon.send({ uid, command }).then(async (result) => {
         if (result.connection === "connected") {
           //If the response connection is good then lets
           //retrieve the response from the Rest api
           if (result.status === "success") {
             //If our response is different then the last
             //Set
-            if (result.response.uid !== uid) {
-              AppStore.updateResponseUID(result.response.uid);
-              AppStore.updateResponse(result.response.body);
+            if (result.uid !== uid) {
+              AppStore.updateResponseUID(result.uid);
+              AppStore.updateResponse(result.body);
               AppStore.updateCommandSuccess(true);
             } else {
               AppStore.updateResponse(result.error);
@@ -69,9 +69,10 @@ export default function App() {
         .connect({
           host: AppStore.host,
           port: AppStore.port,
-          password: AppStore.password
+          password: AppStore.password,
         })
         .then((results) => {
+          console.log({ results });
           AppStore.updateConnectionUID(results.uid);
           AppStore.updateConnectionStatus(results.status);
           if (results.status !== "connected") {

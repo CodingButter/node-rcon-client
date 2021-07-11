@@ -8,7 +8,7 @@ export default function SelectUser() {
   useEffect(() => {
     AppStore.sendCommand("list", false)
       .then((res) => {
-        var users = res.response.body
+        var users = res.body
           .split(":")[1]
           .split(",")
           .map((user) => {
@@ -22,53 +22,24 @@ export default function SelectUser() {
       .catch((error) => {
         console.log(error);
       });
-  }, [AppStore.connectionStatus]);
+  }, []);
 
   const classes = useStyle();
   return (
     <Grid item xs={12} sm={12} md={12} lg={12}>
       <Paper variant="outlined" elevation={3} className={classes.paperPlate}>
         <Typography variant="h4">User Commands</Typography>
-        <Box fullWidth className={classes.skinHeadContainer}>
-          {/*AppStore.onlineUsers.map((username, skinIndex) => {
-            return <SkinHead key={skinIndex} username={username} />;
-          })*/}
-          <SkinHead
-            key={0}
-            animationDuration={1.5 * Math.random() + 4}
-            animationDelay={3 * Math.random() + 2}
-            username={AppStore.onlineUsers[0]}
-          />
-          <SkinHead
-            key={1}
-            animationDuration={1.5 * Math.random() + 4}
-            animationDelay={3 * Math.random() + 2}
-            username={AppStore.onlineUsers[0]}
-          />
-          <SkinHead
-            key={2}
-            animationDuration={1.5 * Math.random() + 4}
-            animationDelay={3 * Math.random() + 2}
-            username={AppStore.onlineUsers[0]}
-          />
-          <SkinHead
-            key={3}
-            animationDuration={1.5 * Math.random() + 4}
-            animationDelay={3 * Math.random() + 2}
-            username={AppStore.onlineUsers[0]}
-          />
-          <SkinHead
-            key={4}
-            animationDuration={1.5 * Math.random() + 4}
-            animationDelay={3 * Math.random() + 2}
-            username={AppStore.onlineUsers[0]}
-          />
-          <SkinHead
-            key={5}
-            animationDuration={1.5 * Math.random() + 4}
-            animationDelay={3 * Math.random() + 2}
-            username={AppStore.onlineUsers[0]}
-          />
+        <Box fullwidth className={classes.skinHeadContainer}>
+          {AppStore.onlineUsers.map((username, skinIndex) => {
+            return (
+              <SkinHead
+                key={skinIndex}
+                username={username}
+                animationDuration={1.5 * Math.random() + 4}
+                animationDelay={3 * Math.random() + 2}
+              />
+            );
+          })}
         </Box>
       </Paper>
     </Grid>

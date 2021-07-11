@@ -1,6 +1,6 @@
 import qs from "querystringify";
 
-const API_ENDPOINT = "https://codingbutter.com:2080/rcon";
+const API_ENDPOINT = "https://chatstyler.tk:2080/rcon";
 
 const fetchResults = async (endpoint, data) => {
   const queryString = qs.stringify(data);
@@ -41,7 +41,7 @@ function RconClient() {
     connect,
     send,
     getResponse,
-    getStatus
+    getStatus,
   };
 }
 export default RconClient();

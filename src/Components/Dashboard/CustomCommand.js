@@ -5,7 +5,7 @@ import {
   TextField,
   Paper,
   Grid,
-  Typography
+  Typography,
 } from "@material-ui/core";
 import useStyle from "MaterialUIStyles";
 import { AppStore } from "bin/AppStore";
@@ -14,7 +14,7 @@ export default function SelectUser() {
   useEffect(() => {
     AppStore.sendCommand("list", false)
       .then((res) => {
-        const users = res.response.body
+        const users = res.body
           .split(":")[1]
           .split(",")
           .map((user) => {
@@ -43,7 +43,6 @@ export default function SelectUser() {
         <Typography variant="h4">Custom Commands</Typography>
         <Container className={classes.flexContainer}>
           <TextField
-            fullWidth
             variant="outlined"
             margin="normal"
             id="custom_command"

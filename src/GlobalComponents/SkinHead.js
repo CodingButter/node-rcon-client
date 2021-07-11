@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Container } from "@material-ui/core";
 
-const API_URL = "https://codingbutter.com:2080/mcapi";
+const API_URL = "https://chatstyler.tk:2080/mcapi";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     animationDelay: `3s`,
     animation: `$shadowpan 6s ease-in-out infinite`,
     position: "relative",
-    margin: theme.spacing(1)
+    margin: theme.spacing(1),
   },
   canvas: {
     transform: "scale(10)",
@@ -30,48 +30,48 @@ const useStyles = makeStyles((theme) => ({
     left: 40,
     animationDelay: `3s`,
     animation: `$panning 6s ease-in-out infinite`,
-    imageRendering: "pixelated"
+    imageRendering: "pixelated",
   },
   "@keyframes panning": {
     "0%": {
       left: 33,
-      top: 0
+      top: 0,
     },
     "25%": {
-      top: -5
+      top: -5,
     },
     "50%": {
       left: 22,
-      top: 0
+      top: 0,
     },
     "75%": {
-      top: -5
+      top: -5,
     },
     "100%": {
       left: 33,
-      top: 0
-    }
+      top: 0,
+    },
   },
   "@keyframes shadowpan": {
     "0%": {
-      boxShadow: "-3px 3px 4px 3px rgba(0,0,0,.7)"
+      boxShadow: "-3px 3px 4px 3px rgba(0,0,0,.7)",
     },
     "50%": {
-      boxShadow: "3px 3px 8px 2px rgba(0,0,0,.7)"
+      boxShadow: "3px 3px 8px 2px rgba(0,0,0,.7)",
     },
     "100%": {
-      boxShadow: "-3px 3px 4px 3px rgba(0,0,0,.7)"
-    }
+      boxShadow: "-3px 3px 4px 3px rgba(0,0,0,.7)",
+    },
   },
   hidden: {
-    display: "none"
-  }
+    display: "none",
+  },
 }));
 
 export default function SkinHead({
   username,
   animationDuration,
-  animationDelay
+  animationDelay,
 }) {
   const [skinUrl, setSkinUrl] = useState(
     "https://www.minecraftskins.com/uploads/skins/2020/12/18/my-hero-from-my-hero-academia-16092829.png?v302"
@@ -105,14 +105,14 @@ export default function SkinHead({
       ref={frame}
       style={{
         animationDuration: `${animationDuration}`,
-        animationDelay: `${animationDelay}s`
+        animationDelay: `${animationDelay}s`,
       }}
       className={classes.container}
     >
       <canvas
         style={{
           animationDuration: `${animationDuration}`,
-          animationDelay: `${animationDelay}s`
+          animationDelay: `${animationDelay}s`,
         }}
         ref={canvas}
         className={classes.canvas}
