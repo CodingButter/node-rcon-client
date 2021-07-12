@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Container } from "@material-ui/core";
 
-const API_URL = "https://chatstyler.tk:2080/mcapi";
+const API_URL = `${process.env.REACT_APP_API_ENDPOINT}/mcapi`;
 
 const useStyles = makeStyles((theme) => ({
   container: {
