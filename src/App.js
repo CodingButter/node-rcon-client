@@ -27,10 +27,7 @@ export default function App() {
   useAddToStore("consoleData", "setConsoleData", [], false);
   useAddToStore("pluginTunnel", "setPluginTunnel", "");
   useAddToStore("showConsole", "updateShowConsole", false);
-
-  addShortcut("`", () => {
-    AppStore.updateShowConsole(!AppStore.showConsole);
-  });
+  useAddToStore("scrollConsole", "updateScrollConsole", true);
   //Create Global Appstore Functions
 
   /*
@@ -74,6 +71,7 @@ export default function App() {
     });
   };
   AppStore.setTunnel = async () => {
+    console.log("settingTunnel");
     const subdomain = "rcon" + ipToLetters(await getIp(AppStore.host));
     const tunnel = `https://${subdomain}.loca.lt`;
     AppStore.setPluginTunnel(tunnel);
@@ -118,18 +116,22 @@ export default function App() {
         });
     });
   };
-
-  const createShortcuts = useEffect(() => {
-    createShortcuts();
+  const buildShortcuts = () => {
+    addShortcut(["`"], () => {
+      AppStore.updateShowConsole(!AppStore.showConsole);
+    });
+  };
+  useEffect(() => {
+    buildShortcuts();
     checkConnectionReady();
   }, []);
 
   //update whenever port/host/password changes
   function checkConnectionReady() {
     const ready =
-      AppStore.port != false &&
-      AppStore.host != false &&
-      AppStore.password != false;
+      AppStore.port !== false &&
+      AppStore.host !== false &&
+      AppStore.password !== false;
     AppStore.updateConnectReady(ready);
   }
 
@@ -153,10 +155,10 @@ export default function App() {
     <div>
       <Router>
         <Switch>
-          <Route path='/dashboard'>
+          <Route path="/dashboard">
             <Dashboard />
           </Route>
-          <Route path='/'>
+          <Route path="/">
             <ServerConnect />
           </Route>
         </Switch>

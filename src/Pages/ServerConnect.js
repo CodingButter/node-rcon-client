@@ -14,9 +14,7 @@ import {
 import ServerIcon from "../GlobalComponents/ServerIcon";
 import Copyright from "../GlobalComponents/Copyright";
 
-import GameServerDefaults from "../bin/GameServerDefaults.json";
-
-export default function ServerConnect() {
+const ServerConnect = () => {
   const classes = useStyles();
   const history = useHistory();
   const myRef = useRef(null);
@@ -27,7 +25,7 @@ export default function ServerConnect() {
 
   async function handleConnectClick() {
     const status = await AppStore.getGameServerStatus();
-    if (status != "ready") {
+    if (status !== "ready") {
       AppStore.updateResponse(`Server is ${status}`);
       AppStore.updateCommandSuccess(true);
       AppStore.updateServerRunning(status);
@@ -44,13 +42,6 @@ export default function ServerConnect() {
     return resp.status;
   }
 
-  function portExistsInList(queryPort) {
-    const serverResultCount = GameServerDefaults.filter(({ port }) => {
-      return port === parseInt(queryPort);
-    });
-    return serverResultCount.length >= 1;
-  }
-
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
@@ -65,35 +56,7 @@ export default function ServerConnect() {
             );
           }}
         />
-        {/*
-        <FormControl
-          fullWidth
-          variant="outlined"
-          className={classes.formControl}
-        >
-          <InputLabel id="demo-simple-select-outlined-label">
-            Game Type
-          </InputLabel>
-          <Select
-            defaultValue={AppStore.port}
-            onChange={AppStore.handlePortUpdate}
-            labelId="demo-simple-select-outlined-label"
-            id="demo-simple-select-outlined"
-            label="Game Type"
-          >
-            <MenuItem value="">
-              <em>Select Game</em>
-            </MenuItem>
-            {GameServerDefaults.map((GameServerDefault, key) => {
-              return (
-                <MenuItem key={key} value={GameServerDefault.port}>
-                  {GameServerDefault.name}
-                </MenuItem>
-              );
-            })}
-          </Select>
-        </FormControl>
-          */}
+
         <TextField
           variant="outlined"
           margin="normal"
@@ -133,8 +96,7 @@ export default function ServerConnect() {
           id="password"
         />
         {(() => {
-          console.log(AppStore.serverRunning);
-          if (AppStore.serverRunning == "not running") {
+          if (AppStore.serverRunning === "not running") {
             return (
               <Button
                 ref={myRef}
@@ -143,7 +105,7 @@ export default function ServerConnect() {
                 color="secondary"
                 className={classes.submit}
                 onClick={handleStartServer}
-                autoFocus={AppStore.connectReady == true}
+                autoFocus={AppStore.connectReady === true}
               >
                 Start Server
               </Button>
@@ -157,7 +119,7 @@ export default function ServerConnect() {
                 color="primary"
                 className={classes.submit}
                 onClick={handleConnectClick}
-                autoFocus={AppStore.connectReady == true}
+                autoFocus={AppStore.connectReady === true}
               >
                 Connect
               </Button>
@@ -170,4 +132,5 @@ export default function ServerConnect() {
       </Box>
     </Container>
   );
-}
+};
+export default ServerConnect;

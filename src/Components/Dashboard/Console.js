@@ -13,7 +13,7 @@ const Console = () => {
       border: "1px solid rgba(255,255,255,.7)",
       borderRadius: 5,
       padding: 0,
-      display: AppStore.showConsole == true ? "block" : "none",
+      display: AppStore.showConsole === true ? "block" : "none",
       width: "80%",
       height: "400px",
       zIndex: 3,
@@ -21,6 +21,7 @@ const Console = () => {
       overflow: "hidden",
       boxShadow: "-3px 3px 8px 2px rgba(0,0,0,.7)",
       margin: theme.spacing(1),
+      overflowY: "auto",
     },
     list: {
       listStyle: "none",
@@ -39,13 +40,32 @@ const Console = () => {
       AppStore.setConsoleData(resp.data);
     }
   };
+  const handleScroll = (e) => {
+    if (e.target.scrollTop >= e.target.scrollHeight - e.target.offsetHeight) {
+      AppStore.updateScrollConsole(true);
+    } else {
+      AppStore.updateScrollConsole(false);
+    }
+  };
   useEffect(() => {
     setInterval(handleGetConsoleData, 5000);
   }, []);
+  useEffect(() => {
+    const consoleContainer = document.querySelector("#ConsoleContainer");
+
+    setInterval(() => {
+      if (AppStore.scrollConsole) {
+        consoleContainer.scrollTop = consoleContainer.scrollHeight;
+      }
+    }, 1000);
+  }, []);
   const classes = useStyles();
-  console.log(AppStore.showConsole);
   return (
-    <Container className={classes.container}>
+    <Container
+      onScroll={handleScroll}
+      className={classes.container}
+      id="ConsoleContainer"
+    >
       <ul className={classes.list}>
         {AppStore.consoleData.map((line, lineIndex) => (
           <li key={lineIndex} className={classes.line}>

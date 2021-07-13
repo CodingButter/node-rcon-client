@@ -97,32 +97,35 @@ export default function SkinHead({
 
         setSkinUrl(imageUrl);
       });
-  }, []);
+  }, [username]);
 
   const classes = useStyles();
   return (
-    <Container
-      ref={frame}
-      style={{
-        animationDuration: `${animationDuration}`,
-        animationDelay: `${animationDelay}s`,
-      }}
-      className={classes.container}
-    >
-      <canvas
+    <>
+      <Container
+        ref={frame}
         style={{
           animationDuration: `${animationDuration}`,
           animationDelay: `${animationDelay}s`,
         }}
-        ref={canvas}
-        className={classes.canvas}
-      />
-      <img
-        alt=""
-        src={skinUrl}
-        onLoad={addToCanvas}
-        className={classes.hidden}
-      />
-    </Container>
+        title={username}
+        className={classes.container}
+      >
+        <canvas
+          style={{
+            animationDuration: `${animationDuration}`,
+            animationDelay: `${animationDelay}s`,
+          }}
+          ref={canvas}
+          className={classes.canvas}
+        />
+        <img
+          alt=""
+          src={skinUrl}
+          onLoad={addToCanvas}
+          className={classes.hidden}
+        />
+      </Container>
+    </>
   );
 }

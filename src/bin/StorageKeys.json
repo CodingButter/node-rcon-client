@@ -15,6 +15,7 @@
     "pluginTunnel": "connection-remember-pugin-tunnel-key",
     "pluginConnected": "connection-remember-plugin-connection-key",
     "serverRunning": "connection-server-running-key",
-    "showConsole": "conneciton-show-console-key"
+    "showConsole": "conneciton-show-console-key",
+    "scrollConsole": "console-scroll-key"
   }
 }

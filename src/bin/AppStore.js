@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { GLOBAL as GlobalKeys } from "./StorageKeys.json";
 const AppStore = {};
 function add(key, defaultValue, pullFromStorage = true) {
@@ -13,9 +13,6 @@ function add(key, defaultValue, pullFromStorage = true) {
       return defaultValue;
     }
   }
-}
-function AStore() {
-  return AppStore;
 }
 const useAddToStore = (
   stateVar,
