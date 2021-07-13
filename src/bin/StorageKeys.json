@@ -13,6 +13,7 @@
     "rememberConnection": "connection-remember-button-storage-key",
     "consoleData": "connection-remember-console-data-key",
     "pluginTunnel": "connection-remember-pugin-tunnel-key",
-    "pluginConnected": "connection-remember-plugin-connection-key"
+    "pluginConnected": "connection-remember-plugin-connection-key",
+    "serverRunning": "connection-server-running-key"
   }
 }

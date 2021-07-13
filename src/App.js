@@ -5,6 +5,8 @@ import Dashboard from "Pages/Dashboard";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SnackBars from "GlobalComponents/SnackBars";
 import rcon from "bin/RconApi";
+import { ipToLetters } from "bin/ipletters";
+const { getIp } = rcon;
 
 export default function App() {
   //Create AppStore useHooks
@@ -19,8 +21,9 @@ export default function App() {
   useAddToStore("password", "updatePassword", "");
   useAddToStore("openSnacks", "setOpenSnacks", false, false);
   useAddToStore("onlineUsers", "setOnlineUsers", [], false);
+  useAddToStore("serverRunning", "updateServerRunning", false);
   useAddToStore("pluginConnected", "updatePluginConnected", false);
-  useAddToStore("consoleData", "setConsoleData", []);
+  useAddToStore("consoleData", "setConsoleData", [], false);
   useAddToStore("pluginTunnel", "setPluginTunnel", "");
 
   //Create Global Appstore Functions
@@ -65,7 +68,27 @@ export default function App() {
       });
     });
   };
-
+  AppStore.setTunnel = async () => {
+    const subdomain = "rcon" + ipToLetters(await getIp(AppStore.host));
+    const tunnel = `https://${subdomain}.loca.lt`;
+    AppStore.setPluginTunnel(tunnel);
+    return true;
+  };
+  AppStore.getGameServerStatus = async () => {
+    await AppStore.setTunnel();
+    return await rcon.getGameServerStatus(
+      AppStore.pluginTunnel,
+      AppStore.password
+    );
+  };
+  AppStore.startServer = async () => {
+    console.log(AppStore.pluginTunnel, AppStore.password);
+    const resp = await rcon.startServer(
+      AppStore.pluginTunnel,
+      AppStore.password
+    );
+    return resp;
+  };
   AppStore.rconConnect = async () => {
     return new Promise((resolve, reject) => {
       rcon
@@ -78,9 +101,12 @@ export default function App() {
           console.log({ results });
           AppStore.updateConnectionUID(results.uid);
           AppStore.updateConnectionStatus(results.status);
+
+          AppStore.updateServerRunning(true);
           if (results.status !== "connected") {
             AppStore.updateResponse("Couldn't Connect To Server");
             AppStore.updateCommandSuccess(false);
+            AppStore.updateServerRunning("not running");
             AppStore.setOpenSnacks(true);
           }
           resolve(results);

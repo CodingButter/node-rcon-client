@@ -6,22 +6,24 @@ import SkinHead from "GlobalComponents/SkinHead";
 
 export default function SelectUser() {
   useEffect(() => {
-    AppStore.sendCommand("list", false)
-      .then((res) => {
-        var users = res.body
-          .split(":")[1]
-          .split(",")
-          .map((user) => {
-            return user.trim();
-          })
-          .filter((user) => {
-            return user.length > 0;
-          });
-        AppStore.setOnlineUsers(users);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    setInterval(() => {
+      AppStore.sendCommand("list", false)
+        .then((res) => {
+          var users = res.body
+            .split(":")[1]
+            .split(",")
+            .map((user) => {
+              return user.trim();
+            })
+            .filter((user) => {
+              return user.length > 0;
+            });
+          AppStore.setOnlineUsers(users);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }, 30000);
   }, []);
 
   const classes = useStyle();

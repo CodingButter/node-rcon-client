@@ -9,7 +9,7 @@ import {
   TextField,
   Typography,
   Container,
-  Avatar
+  Avatar,
 } from "@material-ui/core";
 import ServerIcon from "../GlobalComponents/ServerIcon";
 import Copyright from "../GlobalComponents/Copyright";
@@ -25,10 +25,23 @@ export default function ServerConnect() {
     if (AppStore.connectReady) myRef.current.scrollIntoView();
   }, []);
 
-  function handleConnectClick() {
-    AppStore.rconConnect().then(({ uid, status }) => {
-      if (status === "connected") history.push("/dashboard");
-    });
+  async function handleConnectClick() {
+    const status = await AppStore.getGameServerStatus();
+    if (status != "ready") {
+      AppStore.updateResponse(`Server is ${status}`);
+      AppStore.updateCommandSuccess(true);
+      AppStore.updateServerRunning(status);
+      AppStore.setOpenSnacks(true);
+    } else {
+      AppStore.rconConnect().then(({ uid, status }) => {
+        if (status === "connected") history.push("/dashboard");
+      });
+    }
+  }
+  async function handleStartServer() {
+    const resp = await AppStore.startServer();
+    AppStore.updateServerRunning(resp.status);
+    return resp.status;
   }
 
   function portExistsInList(queryPort) {
@@ -119,17 +132,38 @@ export default function ServerConnect() {
           onChange={AppStore.handlePasswordUpdate}
           id="password"
         />
-        <Button
-          ref={myRef}
-          disabled={!AppStore.connectReady}
-          variant="contained"
-          color="primary"
-          className={classes.submit}
-          onClick={handleConnectClick}
-          autoFocus={AppStore.connectReady == true}
-        >
-          Connect
-        </Button>
+        {(() => {
+          console.log(AppStore.serverRunning);
+          if (AppStore.serverRunning == "not running") {
+            return (
+              <Button
+                ref={myRef}
+                disabled={!AppStore.connectReady}
+                variant="contained"
+                color="secondary"
+                className={classes.submit}
+                onClick={handleStartServer}
+                autoFocus={AppStore.connectReady == true}
+              >
+                Start Server
+              </Button>
+            );
+          } else {
+            return (
+              <Button
+                ref={myRef}
+                disabled={!AppStore.connectReady}
+                variant="contained"
+                color="primary"
+                className={classes.submit}
+                onClick={handleConnectClick}
+                autoFocus={AppStore.connectReady == true}
+              >
+                Connect
+              </Button>
+            );
+          }
+        })()}
       </div>
       <Box mt={8}>
         <Copyright />
