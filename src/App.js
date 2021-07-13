@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SnackBars from "GlobalComponents/SnackBars";
 import rcon from "bin/RconApi";
 import { ipToLetters } from "bin/ipletters";
+import { addShortcut } from "bin/Shortcuts";
 const { getIp } = rcon;
 
 export default function App() {
@@ -25,7 +26,11 @@ export default function App() {
   useAddToStore("pluginConnected", "updatePluginConnected", false);
   useAddToStore("consoleData", "setConsoleData", [], false);
   useAddToStore("pluginTunnel", "setPluginTunnel", "");
+  useAddToStore("showConsole", "updateShowConsole", false);
 
+  addShortcut("`", () => {
+    AppStore.updateShowConsole(!AppStore.showConsole);
+  });
   //Create Global Appstore Functions
 
   /*
@@ -114,7 +119,8 @@ export default function App() {
     });
   };
 
-  useEffect(() => {
+  const createShortcuts = useEffect(() => {
+    createShortcuts();
     checkConnectionReady();
   }, []);
 
@@ -147,10 +153,10 @@ export default function App() {
     <div>
       <Router>
         <Switch>
-          <Route path="/dashboard">
+          <Route path='/dashboard'>
             <Dashboard />
           </Route>
-          <Route path="/">
+          <Route path='/'>
             <ServerConnect />
           </Route>
         </Switch>

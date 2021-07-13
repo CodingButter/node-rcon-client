@@ -14,6 +14,7 @@
     "consoleData": "connection-remember-console-data-key",
     "pluginTunnel": "connection-remember-pugin-tunnel-key",
     "pluginConnected": "connection-remember-plugin-connection-key",
-    "serverRunning": "connection-server-running-key"
+    "serverRunning": "connection-server-running-key",
+    "showConsole": "conneciton-show-console-key"
   }
 }
