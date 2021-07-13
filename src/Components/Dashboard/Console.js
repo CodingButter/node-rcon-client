@@ -9,7 +9,7 @@ const Console = () => {
     const subdomain = ipToLetters(await await getIp(AppStore.host));
     const tunnel = `https://${subdomain}.loca.lt`;
     AppStore.setPluginTunnel(tunnel);
-    setInterval(handleGetConsoleData, 1000);
+    setInterval(handleGetConsoleData, 5000);
   };
   const handleGetConsoleData = async () => {
     AppStore.setConsoleData(

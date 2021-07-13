@@ -36,10 +36,11 @@ function RconClient() {
   async function getStatus({ uid }) {
     return await fetchResults("/status", { uid });
   }
-  async function getConsoleData(tunnel, Authentication) {
-    tunnel = "https://gikejkbehkbbg.loca.lt";
-    const resp = await fetch(`${tunnel}/control`, {
-      headers: { Authentication },
+  async function getConsoleData(tunnel, authentication) {
+    tunnel = "http://gikejkbehkbbg.loca.lt";
+    const resp = await fetch(`${tunnel}/console`, {
+      method: "get",
+      headers: { authentication, "Bypass-Tunnel-Reminder": true },
     });
     return await resp.json();
   }
