@@ -8,6 +8,8 @@ import ButtonGroups from "Components/Dashboard/ButtonGroups";
 import useStyles from "MaterialUIStyles";
 import SelectUser from "Components/Dashboard/SelectUser";
 import CustomCommand from "Components/Dashboard/CustomCommand";
+import Console from "Components/Dashboard/Console";
+
 export default function Dashboard() {
   useEffect(() => {
     startCron();
@@ -31,6 +33,7 @@ export default function Dashboard() {
             {WeatherTime.map(ButtonGroups)}
             <SelectUser />
             <CustomCommand />
+            <Console />
           </Grid>
         </div>
         <Box mt={8}>

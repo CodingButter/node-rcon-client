@@ -10,6 +10,9 @@
     "host": "connection-host-storage-key",
     "port": "connection-port-storage-key",
     "password": "connection-password-storage-key",
-    "rememberConnection": "connection-remember-button-storage-key"
+    "rememberConnection": "connection-remember-button-storage-key",
+    "consoleData": "connection-remember-console-data-key",
+    "pluginTunnel": "connection-remember-pugin-tunnel-key",
+    "pluginConnected": "connection-remember-plugin-connection-key"
   }
 }

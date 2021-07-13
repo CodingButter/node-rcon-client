@@ -19,6 +19,9 @@ export default function App() {
   useAddToStore("password", "updatePassword", "");
   useAddToStore("openSnacks", "setOpenSnacks", false, false);
   useAddToStore("onlineUsers", "setOnlineUsers", [], false);
+  useAddToStore("pluginConnected", "updatePluginConnected", false);
+  useAddToStore("consoleData", "setConsoleData", []);
+  useAddToStore("pluginTunnel", "setPluginTunnel", "");
 
   //Create Global Appstore Functions
 
