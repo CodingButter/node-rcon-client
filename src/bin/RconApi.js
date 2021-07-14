@@ -36,6 +36,7 @@ function RconClient() {
   async function getStatus({ uid }) {
     return await fetchResults("/status", { uid });
   }
+
   async function startServer(tunnel, authentication) {
     //tunnel = "https://gikejkbehkbbg.loca.lt";
     const resp = await fetch(`${tunnel}/start`, {
