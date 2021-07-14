@@ -62,6 +62,35 @@ const teleport = {
     return <div>{getButton()}</div>;
   },
 };
-const items = [teleport, teleport, teleport, teleport, teleport];
+
+const kickPlayer = {
+  label: "kick",
+  Component: ({ username }) => {
+    const handleSendCommand = () => {
+      AppStore.sendCommand(`kick ${username}`);
+    };
+    return (
+      <div>
+        <Button onClick={handleSendCommand}>Kick</Button>
+      </div>
+    );
+  },
+};
+
+const banPlayer = {
+  label: "ban",
+  Component: ({ username }) => {
+    const handleSendCommand = () => {
+      AppStore.sendCommand(`ban ${username}`);
+    };
+    return (
+      <div>
+        <Button onClick={handleSendCommand}>Ban</Button>
+      </div>
+    );
+  },
+};
+
+const items = [teleport, kickPlayer, banPlayer];
 
 export default items;
