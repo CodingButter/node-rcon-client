@@ -1,12 +1,20 @@
 import React, { useEffect } from "react";
 import { AppStore, useAddToStore } from "bin/AppStore";
+import { ThemeProvider } from "@material-ui/styles";
+import { dark } from "./Theme";
 import ServerConnect from "Pages/ServerConnect";
 import Dashboard from "Pages/Dashboard";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import SnackBars from "GlobalComponents/SnackBars";
 import rcon from "bin/RconApi";
 import { ipToLetters } from "bin/ipletters";
 import { addShortcut } from "bin/Shortcuts";
+import Profile from "Pages/Profile";
 const { getIp } = rcon;
 
 export default function App() {
@@ -38,7 +46,11 @@ export default function App() {
     Or manually change the response if we recieve no response
     From the rest api
   */
-  AppStore.sendCommand = async (command, openSnackBar = true) => {
+  AppStore.sendCommand = async (
+    command,
+    openSnackBar = true,
+    customResponse
+  ) => {
     return new Promise((resolve, reject) => {
       //Set uid to the connectionUID state
       const uid = AppStore.connectionUID;
@@ -53,17 +65,17 @@ export default function App() {
             //Set
             if (result.uid !== uid) {
               AppStore.updateResponseUID(result.uid);
-              AppStore.updateResponse(result.body);
+              AppStore.updateResponse(customResponse || result.body);
               AppStore.updateCommandSuccess(true);
             } else {
-              AppStore.updateResponse(result.error);
+              AppStore.updateResponse(customResponse || result.error);
               AppStore.updateCommandSuccess(false);
             }
           }
           AppStore.setOpenSnacks(openSnackBar);
           resolve(result);
         } else {
-          AppStore.updateResponse("Connection Lost");
+          AppStore.updateResponse(customResponse || "Connection Lost");
           AppStore.updateCommandSuccess(false);
           AppStore.setOpenSnacks(openSnackBar);
           reject("couldn't connect");
@@ -73,7 +85,7 @@ export default function App() {
   };
   AppStore.setTunnel = async () => {
     console.log("settingTunnel");
-    const subdomain = "rcon" + ipToLetters(await getIp(AppStore.host));
+    const subdomain = ipToLetters(await getIp(AppStore.host));
     const tunnel = `https://${subdomain}.loca.lt`;
     AppStore.setPluginTunnel(tunnel);
     return true;
@@ -153,9 +165,12 @@ export default function App() {
   };
 
   return (
-    <div>
+    <ThemeProvider theme={dark}>
       <Router>
         <Switch>
+          <Route path="/profile">
+            <Profile />
+          </Route>
           <Route path="/dashboard">
             <Dashboard />
           </Route>
@@ -165,6 +180,6 @@ export default function App() {
         </Switch>
       </Router>
       <SnackBars />
-    </div>
+    </ThemeProvider>
   );
 }

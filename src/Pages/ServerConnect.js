@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { AppStore } from "bin/AppStore";
 import { useHistory } from "react-router-dom";
 import useStyles from "MaterialUIStyles";
+import rcon from "bin/RconApi";
 import {
   Button,
   Box,
@@ -10,6 +11,8 @@ import {
   Typography,
   Container,
   Avatar,
+  Paper,
+  makeStyles,
 } from "@material-ui/core";
 import ServerIcon from "../GlobalComponents/ServerIcon";
 import Copyright from "../GlobalComponents/Copyright";
@@ -18,6 +21,24 @@ const ServerConnect = () => {
   const classes = useStyles();
   const history = useHistory();
   const myRef = useRef(null);
+  const customStyle = makeStyles((theme) => {
+    return {
+      console: {
+        width: "80%",
+        height: "250px",
+        "&::before": {
+          content: "",
+          display: "block",
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          zIndex: 10,
+          top: 0,
+          background: `linear-gradient(rgba(0, 0, 0, 0.0) 0%,${theme.palette.background.default}  100%)`,
+        },
+      },
+    };
+  });
 
   useEffect(() => {
     if (AppStore.connectReady) myRef.current.scrollIntoView();
@@ -30,6 +51,7 @@ const ServerConnect = () => {
       AppStore.updateCommandSuccess(true);
       AppStore.updateServerRunning(status);
       AppStore.setOpenSnacks(true);
+      setInterval(handleGetConsoleData, 5000);
     } else {
       AppStore.rconConnect().then(({ uid, status }) => {
         if (status === "connected") history.push("/dashboard");
@@ -41,6 +63,16 @@ const ServerConnect = () => {
     AppStore.updateServerRunning(resp.status);
     return resp.status;
   }
+
+  const handleGetConsoleData = async () => {
+    const resp = await rcon.getConsoleData(
+      AppStore.pluginTunnel,
+      AppStore.password
+    );
+    if (resp.data) {
+      AppStore.setConsoleData(resp.data);
+    }
+  };
 
   return (
     <Container component="main" maxWidth="xs">
@@ -124,6 +156,11 @@ const ServerConnect = () => {
                 Connect
               </Button>
             );
+          }
+        })()}
+        {(() => {
+          if (AppStore.consoleData) {
+            return <Paper id="console">{AppStore.consoleData}</Paper>;
           }
         })()}
       </div>

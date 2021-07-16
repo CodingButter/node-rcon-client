@@ -1,7 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Container } from "@material-ui/core";
-import UserMenu from "GlobalComponents/UserMenu";
 const API_URL = `${process.env.REACT_APP_API_ENDPOINT}/mcapi`;
 
 const useStyles = makeStyles((theme) => ({
@@ -97,16 +96,12 @@ export default function SkinHead({
         setSkinUrl(imageUrl);
       });
   }, [username]);
-  const [visible, setVisible] = useState(false);
 
   const classes = useStyles();
-  const toggleMenu = () => {
-    setVisible(!visible);
-  };
+
   return (
     <>
       <Container
-        onClick={toggleMenu}
         ref={frame}
         style={{
           animationDuration: `${animationDuration}`,
@@ -130,7 +125,6 @@ export default function SkinHead({
           className={classes.hidden}
         />
       </Container>
-      <UserMenu visible={visible} username={username} />
     </>
   );
 }

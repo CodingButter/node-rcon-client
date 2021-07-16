@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { Box, Paper, Grid, Typography } from "@material-ui/core";
 import useStyle from "MaterialUIStyles";
 import { AppStore } from "bin/AppStore";
+import UserMenu from "GlobalComponents/UserMenu";
 import SkinHead from "GlobalComponents/SkinHead";
-
 export default function SelectUser() {
   useEffect(() => {
     setInterval(() => {
@@ -32,14 +32,15 @@ export default function SelectUser() {
       <Paper variant="outlined" elevation={3} className={classes.paperPlate}>
         <Typography variant="h4">User Commands</Typography>
         <Box fullwidth className={classes.skinHeadContainer}>
-          {AppStore.onlineUsers.map((username, skinIndex) => {
+          {AppStore.onlineUsers.map((username, index) => {
             return (
-              <SkinHead
-                key={skinIndex}
-                username={username}
-                animationDuration={1.5 * Math.random() + 4}
-                animationDelay={3 * Math.random() + 2}
-              />
+              <UserMenu key={index} username={username}>
+                <SkinHead
+                  username={username}
+                  animationDuration={1.5 * Math.random() + 4}
+                  animationDelay={3 * Math.random() + 2}
+                />
+              </UserMenu>
             );
           })}
         </Box>
