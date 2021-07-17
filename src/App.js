@@ -97,6 +97,14 @@ export default function App() {
       AppStore.password
     );
   };
+  AppStore.getPlayerInfo = async (username) => {
+    const resp = await rcon.getPlayerInfo(
+      AppStore.pluginTunnel,
+      AppStore.password,
+      username
+    );
+    return resp;
+  };
   AppStore.startServer = async () => {
     console.log(AppStore.pluginTunnel, AppStore.password);
     const resp = await rcon.startServer(

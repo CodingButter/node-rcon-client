@@ -45,6 +45,14 @@ function RconClient() {
     });
     return await resp.json();
   }
+  async function getPlayerInfo(tunnel, authentication, uid) {
+    //tunnel = "https://gikejkbehkbbg.loca.lt";
+    const resp = await fetch(`${tunnel}/playerdata/${uid}`, {
+      method: "post",
+      headers: { authentication, "Bypass-Tunnel-Reminder": true },
+    });
+    return await resp.json();
+  }
   async function getGameServerStatus(tunnel, authentication) {
     //tunnel = "https://gikejkbehkbbg.loca.lt";
     const resp = await fetch(`${tunnel}/status`, {
@@ -83,6 +91,7 @@ function RconClient() {
     getConsoleData,
     getIp,
     startServer,
+    getPlayerInfo,
     getGameServerStatus,
   };
 }
