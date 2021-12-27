@@ -73,37 +73,37 @@
   },
   {
     "name": "Oak Wood Plank",
-    "id": "minecraft:oak_wood plank",
+    "id": "minecraft:oak_wood_plank",
     "x": -800,
     "y": -192
   },
   {
     "name": "Spruce Wood Plank",
-    "id": "minecraft:spruce_wood plank",
+    "id": "minecraft:spruce_wood_plank",
     "x": -800,
     "y": -224
   },
   {
     "name": "Birch Wood Plank",
-    "id": "minecraft:birch_wood plank",
+    "id": "minecraft:birch_wood_plank",
     "x": -800,
     "y": -256
   },
   {
     "name": "Jungle Wood Plank",
-    "id": "minecraft:jungle_wood plank",
+    "id": "minecraft:jungle_wood_plank",
     "x": -800,
     "y": -288
   },
   {
     "name": "Acacia Wood Plank",
-    "id": "minecraft:acacia_wood plank",
+    "id": "minecraft:acacia_wood_plank",
     "x": -800,
     "y": -320
   },
   {
     "name": "Dark Oak Wood Plank",
-    "id": "minecraft:dark_oak wood plank",
+    "id": "minecraft:dark_oak_wood_plank",
     "x": -800,
     "y": -352
   },
@@ -139,7 +139,7 @@
   },
   {
     "name": "Dark Oak Sapling",
-    "id": "minecraft:dark_oak sapling",
+    "id": "minecraft:dark_oak_sapling",
     "x": -64,
     "y": -800
   },
@@ -277,13 +277,13 @@
   },
   {
     "name": "Lapis Lazuli Ore",
-    "id": "minecraft:lapis_lazuli ore",
+    "id": "minecraft:lapis_lazuli_ore",
     "x": -448,
     "y": -352
   },
   {
     "name": "Lapis Lazuli Block",
-    "id": "minecraft:lapis_lazuli block",
+    "id": "minecraft:lapis_lazuli_block",
     "x": -256,
     "y": -448
   },
@@ -403,7 +403,7 @@
   },
   {
     "name": "Light Blue Wool",
-    "id": "minecraft:light_blue wool",
+    "id": "minecraft:light_blue_wool",
     "x": -64,
     "y": -640
   },
@@ -433,7 +433,7 @@
   },
   {
     "name": "Light Gray Wool",
-    "id": "minecraft:light_gray wool",
+    "id": "minecraft:light_gray_wool",
     "x": -224,
     "y": -640
   },
@@ -565,49 +565,49 @@
   },
   {
     "name": "Double Stone Slab",
-    "id": "minecraft:double_stone slab",
+    "id": "minecraft:double_stone_slab",
     "x": -768,
     "y": -352
   },
   {
     "name": "Double Sandstone Slab",
-    "id": "minecraft:double_sandstone slab",
+    "id": "minecraft:double_sandstone_slab",
     "x": -768,
     "y": -384
   },
   {
     "name": "Double Wooden Slab",
-    "id": "minecraft:double_wooden slab",
+    "id": "minecraft:double_wooden_slab",
     "x": -768,
     "y": -416
   },
   {
     "name": "Double Cobblestone Slab",
-    "id": "minecraft:double_cobblestone slab",
+    "id": "minecraft:double_cobblestone_slab",
     "x": -768,
     "y": -448
   },
   {
     "name": "Double Brick Slab",
-    "id": "minecraft:double_brick slab",
+    "id": "minecraft:double_brick_slab",
     "x": -768,
     "y": -480
   },
   {
     "name": "Double Stone Brick Slab",
-    "id": "minecraft:double_stone brick slab",
+    "id": "minecraft:double_stone_brick_slab",
     "x": -768,
     "y": -512
   },
   {
     "name": "Double Nether Brick Slab",
-    "id": "minecraft:double_nether brick slab",
+    "id": "minecraft:double_nether_brick_slab",
     "x": -768,
     "y": -544
   },
   {
     "name": "Double Quartz Slab",
-    "id": "minecraft:double_quartz slab",
+    "id": "minecraft:double_quartz_slab",
     "x": -768,
     "y": -576
   },
@@ -643,13 +643,13 @@
   },
   {
     "name": "Stone Brick Slab",
-    "id": "minecraft:stone_brick slab",
+    "id": "minecraft:stone_brick_slab",
     "x": -320,
     "y": -768
   },
   {
     "name": "Nether Brick Slab",
-    "id": "minecraft:nether_brick slab",
+    "id": "minecraft:nether_brick_slab",
     "x": -352,
     "y": -768
   },
@@ -709,7 +709,7 @@
   },
   {
     "name": "Oak Wood Stairs",
-    "id": "minecraft:oak_wood stairs",
+    "id": "minecraft:oak_wood_stairs",
     "x": -800,
     "y": -480
   },
@@ -769,13 +769,13 @@
   },
   {
     "name": "Standing Sign Block",
-    "id": "minecraft:standing_sign block",
+    "id": "minecraft:standing_sign_block",
     "x": -192,
     "y": -800
   },
   {
     "name": "Oak Door Block",
-    "id": "minecraft:oak_door block",
+    "id": "minecraft:oak_door_block",
     "x": -224,
     "y": -800
   },
@@ -799,7 +799,7 @@
   },
   {
     "name": "Wall-mounted Sign Block",
-    "id": "minecraft:wall-mounted_sign block",
+    "id": "minecraft:wall-mounted_sign_block",
     "x": -352,
     "y": -800
   },
@@ -811,19 +811,19 @@
   },
   {
     "name": "Stone Pressure Plate",
-    "id": "minecraft:stone_pressure plate",
+    "id": "minecraft:stone_pressure_plate",
     "x": -448,
     "y": -800
   },
   {
     "name": "Iron Door Block",
-    "id": "minecraft:iron_door block",
+    "id": "minecraft:iron_door_block",
     "x": -480,
     "y": -800
   },
   {
     "name": "Wooden Pressure Plate",
-    "id": "minecraft:wooden_pressure plate",
+    "id": "minecraft:wooden_pressure_plate",
     "x": -512,
     "y": -800
   },
@@ -835,19 +835,19 @@
   },
   {
     "name": "Glowing Redstone Ore",
-    "id": "minecraft:glowing_redstone ore",
+    "id": "minecraft:glowing_redstone_ore",
     "x": -576,
     "y": -800
   },
   {
     "name": "Redstone Torch (off)",
-    "id": "minecraft:redstone_torch (off)",
+    "id": "minecraft:redstone_torch_(off)",
     "x": -608,
     "y": -800
   },
   {
     "name": "Redstone Torch (on)",
-    "id": "minecraft:redstone_torch (on)",
+    "id": "minecraft:redstone_torch_(on)",
     "x": -640,
     "y": -800
   },
@@ -949,109 +949,109 @@
   },
   {
     "name": "Redstone Repeater Block (off)",
-    "id": "minecraft:redstone_repeater block (off)",
+    "id": "minecraft:redstone_repeater_block_(off)",
     "x": -832,
     "y": -416
   },
   {
     "name": "Redstone Repeater Block (on)",
-    "id": "minecraft:redstone_repeater block (on)",
+    "id": "minecraft:redstone_repeater_block_(on)",
     "x": -832,
     "y": -448
   },
   {
     "name": "White Stained Glass",
-    "id": "minecraft:white_stained glass",
+    "id": "minecraft:white_stained_glass",
     "x": -832,
     "y": -480
   },
   {
     "name": "Orange Stained Glass",
-    "id": "minecraft:orange_stained glass",
+    "id": "minecraft:orange_stained_glass",
     "x": -832,
     "y": -512
   },
   {
     "name": "Magenta Stained Glass",
-    "id": "minecraft:magenta_stained glass",
+    "id": "minecraft:magenta_stained_glass",
     "x": -832,
     "y": -736
   },
   {
     "name": "Light Blue Stained Glass",
-    "id": "minecraft:light_blue stained glass",
+    "id": "minecraft:light_blue_stained_glass",
     "x": -832,
     "y": -768
   },
   {
     "name": "Yellow Stained Glass",
-    "id": "minecraft:yellow_stained glass",
+    "id": "minecraft:yellow_stained_glass",
     "x": -832,
     "y": -800
   },
   {
     "name": "Lime Stained Glass",
-    "id": "minecraft:lime_stained glass",
+    "id": "minecraft:lime_stained_glass",
     "x": 0,
     "y": -832
   },
   {
     "name": "Pink Stained Glass",
-    "id": "minecraft:pink_stained glass",
+    "id": "minecraft:pink_stained_glass",
     "x": -32,
     "y": -832
   },
   {
     "name": "Gray Stained Glass",
-    "id": "minecraft:gray_stained glass",
+    "id": "minecraft:gray_stained_glass",
     "x": -64,
     "y": -832
   },
   {
     "name": "Light Gray Stained Glass",
-    "id": "minecraft:light_gray stained glass",
+    "id": "minecraft:light_gray_stained_glass",
     "x": -96,
     "y": -832
   },
   {
     "name": "Cyan Stained Glass",
-    "id": "minecraft:cyan_stained glass",
+    "id": "minecraft:cyan_stained_glass",
     "x": -128,
     "y": -832
   },
   {
     "name": "Purple Stained Glass",
-    "id": "minecraft:purple_stained glass",
+    "id": "minecraft:purple_stained_glass",
     "x": -832,
     "y": -544
   },
   {
     "name": "Blue Stained Glass",
-    "id": "minecraft:blue_stained glass",
+    "id": "minecraft:blue_stained_glass",
     "x": -832,
     "y": -576
   },
   {
     "name": "Brown Stained Glass",
-    "id": "minecraft:brown_stained glass",
+    "id": "minecraft:brown_stained_glass",
     "x": -832,
     "y": -608
   },
   {
     "name": "Green Stained Glass",
-    "id": "minecraft:green_stained glass",
+    "id": "minecraft:green_stained_glass",
     "x": -832,
     "y": -640
   },
   {
     "name": "Red Stained Glass",
-    "id": "minecraft:red_stained glass",
+    "id": "minecraft:red_stained_glass",
     "x": -832,
     "y": -672
   },
   {
     "name": "Black Stained Glass",
-    "id": "minecraft:black_stained glass",
+    "id": "minecraft:black_stained_glass",
     "x": -832,
     "y": -704
   },
@@ -1063,37 +1063,37 @@
   },
   {
     "name": "Stone Monster Egg",
-    "id": "minecraft:stone_monster egg",
+    "id": "minecraft:stone_monster_egg",
     "x": -192,
     "y": -832
   },
   {
     "name": "Cobblestone Monster Egg",
-    "id": "minecraft:cobblestone_monster egg",
+    "id": "minecraft:cobblestone_monster_egg",
     "x": -224,
     "y": -832
   },
   {
     "name": "Stone Brick Monster Egg",
-    "id": "minecraft:stone_brick monster egg",
+    "id": "minecraft:stone_brick_monster_egg",
     "x": -256,
     "y": -832
   },
   {
     "name": "Mossy Stone Brick Monster Egg",
-    "id": "minecraft:mossy_stone brick monster egg",
+    "id": "minecraft:mossy_stone_brick_monster_egg",
     "x": -288,
     "y": -832
   },
   {
     "name": "Cracked Stone Brick Monster Egg",
-    "id": "minecraft:cracked_stone brick monster egg",
+    "id": "minecraft:cracked_stone_brick_monster_egg",
     "x": -320,
     "y": -832
   },
   {
     "name": "Chiseled Stone Brick Monster Egg",
-    "id": "minecraft:chiseled_stone brick monster egg",
+    "id": "minecraft:chiseled_stone_brick_monster_egg",
     "x": -352,
     "y": -832
   },
@@ -1105,31 +1105,31 @@
   },
   {
     "name": "Mossy Stone Bricks",
-    "id": "minecraft:mossy_stone bricks",
+    "id": "minecraft:mossy_stone_bricks",
     "x": -416,
     "y": -832
   },
   {
     "name": "Cracked Stone Bricks",
-    "id": "minecraft:cracked_stone bricks",
+    "id": "minecraft:cracked_stone_bricks",
     "x": -448,
     "y": -832
   },
   {
     "name": "Chiseled Stone Bricks",
-    "id": "minecraft:chiseled_stone bricks",
+    "id": "minecraft:chiseled_stone_bricks",
     "x": -480,
     "y": -832
   },
   {
     "name": "Brown Mushroom Block",
-    "id": "minecraft:brown_mushroom block",
+    "id": "minecraft:brown_mushroom_block",
     "x": -512,
     "y": -832
   },
   {
     "name": "Red Mushroom Block",
-    "id": "minecraft:red_mushroom block",
+    "id": "minecraft:red_mushroom_block",
     "x": -96,
     "y": 0
   },
@@ -1171,7 +1171,7 @@
   },
   {
     "name": "Oak Fence Gate",
-    "id": "minecraft:oak_fence gate",
+    "id": "minecraft:oak_fence_gate",
     "x": -128,
     "y": 0
   },
@@ -1183,7 +1183,7 @@
   },
   {
     "name": "Stone Brick Stairs",
-    "id": "minecraft:stone_brick stairs",
+    "id": "minecraft:stone_brick_stairs",
     "x": -128,
     "y": -64
   },
@@ -1207,13 +1207,13 @@
   },
   {
     "name": "Nether Brick Fence",
-    "id": "minecraft:nether_brick fence",
+    "id": "minecraft:nether_brick_fence",
     "x": -96,
     "y": -128
   },
   {
     "name": "Nether Brick Stairs",
-    "id": "minecraft:nether_brick stairs",
+    "id": "minecraft:nether_brick_stairs",
     "x": -128,
     "y": -128
   },
@@ -1249,7 +1249,7 @@
   },
   {
     "name": "End Portal Frame",
-    "id": "minecraft:end_portal frame",
+    "id": "minecraft:end_portal_frame",
     "x": -64,
     "y": -160
   },
@@ -1267,85 +1267,85 @@
   },
   {
     "name": "Redstone Lamp (inactive)",
-    "id": "minecraft:redstone_lamp (inactive)",
+    "id": "minecraft:redstone_lamp_(inactive)",
     "x": -160,
     "y": -160
   },
   {
     "name": "Redstone Lamp (active)",
-    "id": "minecraft:redstone_lamp (active)",
+    "id": "minecraft:redstone_lamp_(active)",
     "x": -192,
     "y": 0
   },
   {
     "name": "Double Oak Wood Slab",
-    "id": "minecraft:double_oak wood slab",
+    "id": "minecraft:double_oak_wood_slab",
     "x": -192,
     "y": -32
   },
   {
     "name": "Double Spruce Wood Slab",
-    "id": "minecraft:double_spruce wood slab",
+    "id": "minecraft:double_spruce_wood_slab",
     "x": -192,
     "y": -64
   },
   {
     "name": "Double Birch Wood Slab",
-    "id": "minecraft:double_birch wood slab",
+    "id": "minecraft:double_birch_wood_slab",
     "x": -192,
     "y": -96
   },
   {
     "name": "Double Jungle Wood Slab",
-    "id": "minecraft:double_jungle wood slab",
+    "id": "minecraft:double_jungle_wood_slab",
     "x": -192,
     "y": -128
   },
   {
     "name": "Double Acacia Wood Slab",
-    "id": "minecraft:double_acacia wood slab",
+    "id": "minecraft:double_acacia_wood_slab",
     "x": -192,
     "y": -160
   },
   {
     "name": "Double Dark Oak Wood Slab",
-    "id": "minecraft:double_dark oak wood slab",
+    "id": "minecraft:double_dark_oak_wood_slab",
     "x": 0,
     "y": -192
   },
   {
     "name": "Oak Wood Slab",
-    "id": "minecraft:oak_wood slab",
+    "id": "minecraft:oak_wood_slab",
     "x": -32,
     "y": -192
   },
   {
     "name": "Spruce Wood Slab",
-    "id": "minecraft:spruce_wood slab",
+    "id": "minecraft:spruce_wood_slab",
     "x": -64,
     "y": -192
   },
   {
     "name": "Birch Wood Slab",
-    "id": "minecraft:birch_wood slab",
+    "id": "minecraft:birch_wood_slab",
     "x": -96,
     "y": -192
   },
   {
     "name": "Jungle Wood Slab",
-    "id": "minecraft:jungle_wood slab",
+    "id": "minecraft:jungle_wood_slab",
     "x": -128,
     "y": -192
   },
   {
     "name": "Acacia Wood Slab",
-    "id": "minecraft:acacia_wood slab",
+    "id": "minecraft:acacia_wood_slab",
     "x": -160,
     "y": -192
   },
   {
     "name": "Dark Oak Wood Slab",
-    "id": "minecraft:dark_oak wood slab",
+    "id": "minecraft:dark_oak_wood_slab",
     "x": -192,
     "y": -192
   },
@@ -1393,19 +1393,19 @@
   },
   {
     "name": "Spruce Wood Stairs",
-    "id": "minecraft:spruce_wood stairs",
+    "id": "minecraft:spruce_wood_stairs",
     "x": -32,
     "y": -224
   },
   {
     "name": "Birch Wood Stairs",
-    "id": "minecraft:birch_wood stairs",
+    "id": "minecraft:birch_wood_stairs",
     "x": -64,
     "y": -224
   },
   {
     "name": "Jungle Wood Stairs",
-    "id": "minecraft:jungle_wood stairs",
+    "id": "minecraft:jungle_wood_stairs",
     "x": -96,
     "y": -224
   },
@@ -1429,7 +1429,7 @@
   },
   {
     "name": "Mossy Cobblestone Wall",
-    "id": "minecraft:mossy_cobblestone wall",
+    "id": "minecraft:mossy_cobblestone_wall",
     "x": -224,
     "y": -224
   },
@@ -1477,25 +1477,25 @@
   },
   {
     "name": "Weighted Pressure Plate (light)",
-    "id": "minecraft:weighted_pressure plate (light)",
+    "id": "minecraft:weighted_pressure_plate_(light)",
     "x": 0,
     "y": -256
   },
   {
     "name": "Weighted Pressure Plate (heavy)",
-    "id": "minecraft:weighted_pressure plate (heavy)",
+    "id": "minecraft:weighted_pressure_plate_(heavy)",
     "x": -32,
     "y": -256
   },
   {
     "name": "Redstone Comparator (inactive)",
-    "id": "minecraft:redstone_comparator (inactive)",
+    "id": "minecraft:redstone_comparator_(inactive)",
     "x": -64,
     "y": -256
   },
   {
     "name": "Redstone Comparator (active)",
-    "id": "minecraft:redstone_comparator (active)",
+    "id": "minecraft:redstone_comparator_(active)",
     "x": -128,
     "y": -256
   },
@@ -1513,7 +1513,7 @@
   },
   {
     "name": "Nether Quartz Ore",
-    "id": "minecraft:nether_quartz ore",
+    "id": "minecraft:nether_quartz_ore",
     "x": -224,
     "y": -256
   },
@@ -1531,13 +1531,13 @@
   },
   {
     "name": "Chiseled Quartz Block",
-    "id": "minecraft:chiseled_quartz block",
+    "id": "minecraft:chiseled_quartz_block",
     "x": -288,
     "y": -32
   },
   {
     "name": "Pillar Quartz Block",
-    "id": "minecraft:pillar_quartz block",
+    "id": "minecraft:pillar_quartz_block",
     "x": -288,
     "y": -64
   },
@@ -1561,193 +1561,193 @@
   },
   {
     "name": "White Hardened Clay",
-    "id": "minecraft:white_hardened clay",
+    "id": "minecraft:white_hardened_clay",
     "x": -288,
     "y": -192
   },
   {
     "name": "Orange Hardened Clay",
-    "id": "minecraft:orange_hardened clay",
+    "id": "minecraft:orange_hardened_clay",
     "x": -288,
     "y": -224
   },
   {
     "name": "Magenta Hardened Clay",
-    "id": "minecraft:magenta_hardened clay",
+    "id": "minecraft:magenta_hardened_clay",
     "x": -160,
     "y": -288
   },
   {
     "name": "Light Blue Hardened Clay",
-    "id": "minecraft:light_blue hardened clay",
+    "id": "minecraft:light_blue_hardened_clay",
     "x": -192,
     "y": -288
   },
   {
     "name": "Yellow Hardened Clay",
-    "id": "minecraft:yellow_hardened clay",
+    "id": "minecraft:yellow_hardened_clay",
     "x": -224,
     "y": -288
   },
   {
     "name": "Lime Hardened Clay",
-    "id": "minecraft:lime_hardened clay",
+    "id": "minecraft:lime_hardened_clay",
     "x": -256,
     "y": -288
   },
   {
     "name": "Pink Hardened Clay",
-    "id": "minecraft:pink_hardened clay",
+    "id": "minecraft:pink_hardened_clay",
     "x": -288,
     "y": -288
   },
   {
     "name": "Gray Hardened Clay",
-    "id": "minecraft:gray_hardened clay",
+    "id": "minecraft:gray_hardened_clay",
     "x": -320,
     "y": 0
   },
   {
     "name": "Light Gray Hardened Clay",
-    "id": "minecraft:light_gray hardened clay",
+    "id": "minecraft:light_gray_hardened_clay",
     "x": -320,
     "y": -32
   },
   {
     "name": "Cyan Hardened Clay",
-    "id": "minecraft:cyan_hardened clay",
+    "id": "minecraft:cyan_hardened_clay",
     "x": -320,
     "y": -64
   },
   {
     "name": "Purple Hardened Clay",
-    "id": "minecraft:purple_hardened clay",
+    "id": "minecraft:purple_hardened_clay",
     "x": -288,
     "y": -256
   },
   {
     "name": "Blue Hardened Clay",
-    "id": "minecraft:blue_hardened clay",
+    "id": "minecraft:blue_hardened_clay",
     "x": 0,
     "y": -288
   },
   {
     "name": "Brown Hardened Clay",
-    "id": "minecraft:brown_hardened clay",
+    "id": "minecraft:brown_hardened_clay",
     "x": -32,
     "y": -288
   },
   {
     "name": "Green Hardened Clay",
-    "id": "minecraft:green_hardened clay",
+    "id": "minecraft:green_hardened_clay",
     "x": -64,
     "y": -288
   },
   {
     "name": "Red Hardened Clay",
-    "id": "minecraft:red_hardened clay",
+    "id": "minecraft:red_hardened_clay",
     "x": -96,
     "y": -288
   },
   {
     "name": "Black Hardened Clay",
-    "id": "minecraft:black_hardened clay",
+    "id": "minecraft:black_hardened_clay",
     "x": -128,
     "y": -288
   },
   {
     "name": "White Stained Glass Pane",
-    "id": "minecraft:white_stained glass pane",
+    "id": "minecraft:white_stained_glass_pane",
     "x": -320,
     "y": -128
   },
   {
     "name": "Orange Stained Glass Pane",
-    "id": "minecraft:orange_stained glass pane",
+    "id": "minecraft:orange_stained_glass_pane",
     "x": -320,
     "y": -160
   },
   {
     "name": "Magenta Stained Glass Pane",
-    "id": "minecraft:magenta_stained glass pane",
+    "id": "minecraft:magenta_stained_glass_pane",
     "x": -64,
     "y": -320
   },
   {
     "name": "Light Blue Stained Glass Pane",
-    "id": "minecraft:light_blue stained glass pane",
+    "id": "minecraft:light_blue_stained_glass_pane",
     "x": -96,
     "y": -320
   },
   {
     "name": "Yellow Stained Glass Pane",
-    "id": "minecraft:yellow_stained glass pane",
+    "id": "minecraft:yellow_stained_glass_pane",
     "x": -128,
     "y": -320
   },
   {
     "name": "Lime Stained Glass Pane",
-    "id": "minecraft:lime_stained glass pane",
+    "id": "minecraft:lime_stained_glass_pane",
     "x": -160,
     "y": -320
   },
   {
     "name": "Pink Stained Glass Pane",
-    "id": "minecraft:pink_stained glass pane",
+    "id": "minecraft:pink_stained_glass_pane",
     "x": -192,
     "y": -320
   },
   {
     "name": "Gray Stained Glass Pane",
-    "id": "minecraft:gray_stained glass pane",
+    "id": "minecraft:gray_stained_glass_pane",
     "x": -224,
     "y": -320
   },
   {
     "name": "Light Gray Stained Glass Pane",
-    "id": "minecraft:light_gray stained glass pane",
+    "id": "minecraft:light_gray_stained_glass_pane",
     "x": -256,
     "y": -320
   },
   {
     "name": "Cyan Stained Glass Pane",
-    "id": "minecraft:cyan_stained glass pane",
+    "id": "minecraft:cyan_stained_glass_pane",
     "x": -288,
     "y": -320
   },
   {
     "name": "Purple Stained Glass Pane",
-    "id": "minecraft:purple_stained glass pane",
+    "id": "minecraft:purple_stained_glass_pane",
     "x": -320,
     "y": -192
   },
   {
     "name": "Blue Stained Glass Pane",
-    "id": "minecraft:blue_stained glass pane",
+    "id": "minecraft:blue_stained_glass_pane",
     "x": -320,
     "y": -224
   },
   {
     "name": "Brown Stained Glass Pane",
-    "id": "minecraft:brown_stained glass pane",
+    "id": "minecraft:brown_stained_glass_pane",
     "x": -320,
     "y": -256
   },
   {
     "name": "Green Stained Glass Pane",
-    "id": "minecraft:green_stained glass pane",
+    "id": "minecraft:green_stained_glass_pane",
     "x": -320,
     "y": -288
   },
   {
     "name": "Red Stained Glass Pane",
-    "id": "minecraft:red_stained glass pane",
+    "id": "minecraft:red_stained_glass_pane",
     "x": 0,
     "y": -320
   },
   {
     "name": "Black Stained Glass Pane",
-    "id": "minecraft:black_stained glass pane",
+    "id": "minecraft:black_stained_glass_pane",
     "x": -32,
     "y": -320
   },
@@ -1759,7 +1759,7 @@
   },
   {
     "name": "Dark Oak Leaves",
-    "id": "minecraft:dark_oak leaves",
+    "id": "minecraft:dark_oak_leaves",
     "x": -352,
     "y": 0
   },
@@ -1771,19 +1771,19 @@
   },
   {
     "name": "Dark Oak Wood",
-    "id": "minecraft:dark_oak wood",
+    "id": "minecraft:dark_oak_wood",
     "x": -352,
     "y": -64
   },
   {
     "name": "Acacia Wood Stairs",
-    "id": "minecraft:acacia_wood stairs",
+    "id": "minecraft:acacia_wood_stairs",
     "x": -352,
     "y": -96
   },
   {
     "name": "Dark Oak Wood Stairs",
-    "id": "minecraft:dark_oak wood stairs",
+    "id": "minecraft:dark_oak_wood_stairs",
     "x": -352,
     "y": -128
   },
@@ -1855,7 +1855,7 @@
   },
   {
     "name": "Light Blue Carpet",
-    "id": "minecraft:light_blue carpet",
+    "id": "minecraft:light_blue_carpet",
     "x": -384,
     "y": -96
   },
@@ -1885,7 +1885,7 @@
   },
   {
     "name": "Light Gray Carpet",
-    "id": "minecraft:light_gray carpet",
+    "id": "minecraft:light_gray_carpet",
     "x": -384,
     "y": -256
   },
@@ -1939,7 +1939,7 @@
   },
   {
     "name": "Block of Coal",
-    "id": "minecraft:block_of coal",
+    "id": "minecraft:block_of_coal",
     "x": -384,
     "y": -352
   },
@@ -1999,7 +1999,7 @@
   },
   {
     "name": "Inverted Daylight Sensor",
-    "id": "minecraft:inverted_daylight sensor",
+    "id": "minecraft:inverted_daylight_sensor",
     "x": -288,
     "y": -384
   },
@@ -2011,61 +2011,61 @@
   },
   {
     "name": "Chiseled Red Sandstone",
-    "id": "minecraft:chiseled_red sandstone",
+    "id": "minecraft:chiseled_red_sandstone",
     "x": -352,
     "y": -384
   },
   {
     "name": "Smooth Red Sandstone",
-    "id": "minecraft:smooth_red sandstone",
+    "id": "minecraft:smooth_red_sandstone",
     "x": -384,
     "y": -384
   },
   {
     "name": "Red Sandstone Stairs",
-    "id": "minecraft:red_sandstone stairs",
+    "id": "minecraft:red_sandstone_stairs",
     "x": -416,
     "y": -128
   },
   {
     "name": "Double Red Sandstone Slab",
-    "id": "minecraft:double_red sandstone slab",
+    "id": "minecraft:double_red_sandstone_slab",
     "x": -416,
     "y": -160
   },
   {
     "name": "Red Sandstone Slab",
-    "id": "minecraft:red_sandstone slab",
+    "id": "minecraft:red_sandstone_slab",
     "x": -416,
     "y": -192
   },
   {
     "name": "Spruce Fence Gate",
-    "id": "minecraft:spruce_fence gate",
+    "id": "minecraft:spruce_fence_gate",
     "x": -416,
     "y": -224
   },
   {
     "name": "Birch Fence Gate",
-    "id": "minecraft:birch_fence gate",
+    "id": "minecraft:birch_fence_gate",
     "x": -416,
     "y": -256
   },
   {
     "name": "Jungle Fence Gate",
-    "id": "minecraft:jungle_fence gate",
+    "id": "minecraft:jungle_fence_gate",
     "x": -416,
     "y": -288
   },
   {
     "name": "Dark Oak Fence Gate",
-    "id": "minecraft:dark_oak fence gate",
+    "id": "minecraft:dark_oak_fence_gate",
     "x": -416,
     "y": -320
   },
   {
     "name": "Acacia Fence Gate",
-    "id": "minecraft:acacia_fence gate",
+    "id": "minecraft:acacia_fence_gate",
     "x": -416,
     "y": -352
   },
@@ -2089,7 +2089,7 @@
   },
   {
     "name": "Dark Oak Fence",
-    "id": "minecraft:dark_oak fence",
+    "id": "minecraft:dark_oak_fence",
     "x": -128,
     "y": -416
   },
@@ -2101,31 +2101,31 @@
   },
   {
     "name": "Spruce Door Block",
-    "id": "minecraft:spruce_door block",
+    "id": "minecraft:spruce_door_block",
     "x": -192,
     "y": -416
   },
   {
     "name": "Birch Door Block",
-    "id": "minecraft:birch_door block",
+    "id": "minecraft:birch_door_block",
     "x": -224,
     "y": -416
   },
   {
     "name": "Jungle Door Block",
-    "id": "minecraft:jungle_door block",
+    "id": "minecraft:jungle_door_block",
     "x": -256,
     "y": -416
   },
   {
     "name": "Acacia Door Block",
-    "id": "minecraft:acacia_door block",
+    "id": "minecraft:acacia_door_block",
     "x": -288,
     "y": -416
   },
   {
     "name": "Dark Oak Door Block",
-    "id": "minecraft:dark_oak door block",
+    "id": "minecraft:dark_oak_door_block",
     "x": -320,
     "y": -416
   },
@@ -2167,7 +2167,7 @@
   },
   {
     "name": "Purpur Double Slab",
-    "id": "minecraft:purpur_double slab",
+    "id": "minecraft:purpur_double_slab",
     "x": -448,
     "y": -160
   },
@@ -2179,7 +2179,7 @@
   },
   {
     "name": "End Stone Bricks",
-    "id": "minecraft:end_stone bricks",
+    "id": "minecraft:end_stone_bricks",
     "x": -448,
     "y": -224
   },
@@ -2203,13 +2203,13 @@
   },
   {
     "name": "Repeating Command Block",
-    "id": "minecraft:repeating_command block",
+    "id": "minecraft:repeating_command_block",
     "x": -448,
     "y": -384
   },
   {
     "name": "Chain Command Block",
-    "id": "minecraft:chain_command block",
+    "id": "minecraft:chain_command_block",
     "x": -448,
     "y": -416
   },
@@ -2227,13 +2227,13 @@
   },
   {
     "name": "Nether Wart Block",
-    "id": "minecraft:nether_wart block",
+    "id": "minecraft:nether_wart_block",
     "x": -64,
     "y": -448
   },
   {
     "name": "Red Nether Brick",
-    "id": "minecraft:red_nether brick",
+    "id": "minecraft:red_nether_brick",
     "x": -96,
     "y": -448
   },
@@ -2257,193 +2257,193 @@
   },
   {
     "name": "White Shulker Box",
-    "id": "minecraft:white_shulker box",
+    "id": "minecraft:white_shulker_box",
     "x": -224,
     "y": -448
   },
   {
     "name": "Orange Shulker Box",
-    "id": "minecraft:orange_shulker box",
+    "id": "minecraft:orange_shulker_box",
     "x": -288,
     "y": -448
   },
   {
     "name": "Magenta Shulker Box",
-    "id": "minecraft:magenta_shulker box",
+    "id": "minecraft:magenta_shulker_box",
     "x": -320,
     "y": -448
   },
   {
     "name": "Light Blue Shulker Box",
-    "id": "minecraft:light_blue shulker box",
+    "id": "minecraft:light_blue_shulker_box",
     "x": -352,
     "y": -448
   },
   {
     "name": "Yellow Shulker Box",
-    "id": "minecraft:yellow_shulker box",
+    "id": "minecraft:yellow_shulker_box",
     "x": -384,
     "y": -448
   },
   {
     "name": "Lime Shulker Box",
-    "id": "minecraft:lime_shulker box",
+    "id": "minecraft:lime_shulker_box",
     "x": -416,
     "y": -448
   },
   {
     "name": "Pink Shulker Box",
-    "id": "minecraft:pink_shulker box",
+    "id": "minecraft:pink_shulker_box",
     "x": -448,
     "y": -448
   },
   {
     "name": "Gray Shulker Box",
-    "id": "minecraft:gray_shulker box",
+    "id": "minecraft:gray_shulker_box",
     "x": -480,
     "y": -128
   },
   {
     "name": "Light Gray Shulker Box",
-    "id": "minecraft:light_gray shulker box",
+    "id": "minecraft:light_gray_shulker_box",
     "x": -480,
     "y": -416
   },
   {
     "name": "Cyan Shulker Box",
-    "id": "minecraft:cyan_shulker box",
+    "id": "minecraft:cyan_shulker_box",
     "x": -480,
     "y": -448
   },
   {
     "name": "Purple Shulker Box",
-    "id": "minecraft:purple_shulker box",
+    "id": "minecraft:purple_shulker_box",
     "x": 0,
     "y": -480
   },
   {
     "name": "Blue Shulker Box",
-    "id": "minecraft:blue_shulker box",
+    "id": "minecraft:blue_shulker_box",
     "x": -64,
     "y": -480
   },
   {
     "name": "Brown Shulker Box",
-    "id": "minecraft:brown_shulker box",
+    "id": "minecraft:brown_shulker_box",
     "x": -96,
     "y": -480
   },
   {
     "name": "Green Shulker Box",
-    "id": "minecraft:green_shulker box",
+    "id": "minecraft:green_shulker_box",
     "x": -128,
     "y": -480
   },
   {
     "name": "Red Shulker Box",
-    "id": "minecraft:red_shulker box",
+    "id": "minecraft:red_shulker_box",
     "x": -160,
     "y": -480
   },
   {
     "name": "Black Shulker Box",
-    "id": "minecraft:black_shulker box",
+    "id": "minecraft:black_shulker_box",
     "x": -192,
     "y": -480
   },
   {
     "name": "White Glazed Terracotta",
-    "id": "minecraft:white_glazed terracotta",
+    "id": "minecraft:white_glazed_terracotta",
     "x": -224,
     "y": -480
   },
   {
     "name": "Orange Glazed Terracotta",
-    "id": "minecraft:orange_glazed terracotta",
+    "id": "minecraft:orange_glazed_terracotta",
     "x": -256,
     "y": -480
   },
   {
     "name": "Magenta Glazed Terracotta",
-    "id": "minecraft:magenta_glazed terracotta",
+    "id": "minecraft:magenta_glazed_terracotta",
     "x": -288,
     "y": -480
   },
   {
     "name": "Light Blue Glazed Terracotta",
-    "id": "minecraft:light_blue glazed terracotta",
+    "id": "minecraft:light_blue_glazed_terracotta",
     "x": -320,
     "y": -480
   },
   {
     "name": "Yellow Glazed Terracotta",
-    "id": "minecraft:yellow_glazed terracotta",
+    "id": "minecraft:yellow_glazed_terracotta",
     "x": -352,
     "y": -480
   },
   {
     "name": "Lime Glazed Terracotta",
-    "id": "minecraft:lime_glazed terracotta",
+    "id": "minecraft:lime_glazed_terracotta",
     "x": -480,
     "y": -480
   },
   {
     "name": "Pink Glazed Terracotta",
-    "id": "minecraft:pink_glazed terracotta",
+    "id": "minecraft:pink_glazed_terracotta",
     "x": -512,
     "y": 0
   },
   {
     "name": "Gray Glazed Terracotta",
-    "id": "minecraft:gray_glazed terracotta",
+    "id": "minecraft:gray_glazed_terracotta",
     "x": -512,
     "y": -32
   },
   {
     "name": "Light Gray Glazed Terracotta",
-    "id": "minecraft:light_gray glazed terracotta",
+    "id": "minecraft:light_gray_glazed_terracotta",
     "x": -512,
     "y": -64
   },
   {
     "name": "Cyan Glazed Terracotta",
-    "id": "minecraft:cyan_glazed terracotta",
+    "id": "minecraft:cyan_glazed_terracotta",
     "x": -512,
     "y": -96
   },
   {
     "name": "Purple Glazed Terracotta",
-    "id": "minecraft:purple_glazed terracotta",
+    "id": "minecraft:purple_glazed_terracotta",
     "x": -512,
     "y": -128
   },
   {
     "name": "Blue Glazed Terracotta",
-    "id": "minecraft:blue_glazed terracotta",
+    "id": "minecraft:blue_glazed_terracotta",
     "x": -512,
     "y": -160
   },
   {
     "name": "Brown Glazed Terracotta",
-    "id": "minecraft:brown_glazed terracotta",
+    "id": "minecraft:brown_glazed_terracotta",
     "x": -512,
     "y": -192
   },
   {
     "name": "Green Glazed Terracotta",
-    "id": "minecraft:green_glazed terracotta",
+    "id": "minecraft:green_glazed_terracotta",
     "x": -512,
     "y": -224
   },
   {
     "name": "Red Glazed Terracotta",
-    "id": "minecraft:red_glazed terracotta",
+    "id": "minecraft:red_glazed_terracotta",
     "x": -512,
     "y": -256
   },
   {
     "name": "Black Glazed Terracotta",
-    "id": "minecraft:black_glazed terracotta",
+    "id": "minecraft:black_glazed_terracotta",
     "x": -512,
     "y": -320
   },
@@ -2467,7 +2467,7 @@
   },
   {
     "name": "Light Blue Concrete",
-    "id": "minecraft:light_blue concrete",
+    "id": "minecraft:light_blue_concrete",
     "x": -128,
     "y": -512
   },
@@ -2497,7 +2497,7 @@
   },
   {
     "name": "Light Gray Concrete",
-    "id": "minecraft:light_gray concrete",
+    "id": "minecraft:light_gray_concrete",
     "x": -288,
     "y": -512
   },
@@ -2545,97 +2545,97 @@
   },
   {
     "name": "White Concrete Powder",
-    "id": "minecraft:white_concrete powder",
+    "id": "minecraft:white_concrete_powder",
     "x": -352,
     "y": -512
   },
   {
     "name": "Orange Concrete Powder",
-    "id": "minecraft:orange_concrete powder",
+    "id": "minecraft:orange_concrete_powder",
     "x": -384,
     "y": -512
   },
   {
     "name": "Magenta Concrete Powder",
-    "id": "minecraft:magenta_concrete powder",
+    "id": "minecraft:magenta_concrete_powder",
     "x": -544,
     "y": -64
   },
   {
     "name": "Light Blue Concrete Powder",
-    "id": "minecraft:light_blue concrete powder",
+    "id": "minecraft:light_blue_concrete_powder",
     "x": -544,
     "y": -96
   },
   {
     "name": "Yellow Concrete Powder",
-    "id": "minecraft:yellow_concrete powder",
+    "id": "minecraft:yellow_concrete_powder",
     "x": -544,
     "y": -128
   },
   {
     "name": "Lime Concrete Powder",
-    "id": "minecraft:lime_concrete powder",
+    "id": "minecraft:lime_concrete_powder",
     "x": -544,
     "y": -160
   },
   {
     "name": "Pink Concrete Powder",
-    "id": "minecraft:pink_concrete powder",
+    "id": "minecraft:pink_concrete_powder",
     "x": -544,
     "y": -192
   },
   {
     "name": "Gray Concrete Powder",
-    "id": "minecraft:gray_concrete powder",
+    "id": "minecraft:gray_concrete_powder",
     "x": -544,
     "y": -224
   },
   {
     "name": "Light Gray Concrete Powder",
-    "id": "minecraft:light_gray concrete powder",
+    "id": "minecraft:light_gray_concrete_powder",
     "x": -544,
     "y": -256
   },
   {
     "name": "Cyan Concrete Powder",
-    "id": "minecraft:cyan_concrete powder",
+    "id": "minecraft:cyan_concrete_powder",
     "x": -544,
     "y": -288
   },
   {
     "name": "Purple Concrete Powder",
-    "id": "minecraft:purple_concrete powder",
+    "id": "minecraft:purple_concrete_powder",
     "x": -416,
     "y": -512
   },
   {
     "name": "Blue Concrete Powder",
-    "id": "minecraft:blue_concrete powder",
+    "id": "minecraft:blue_concrete_powder",
     "x": -448,
     "y": -512
   },
   {
     "name": "Brown Concrete Powder",
-    "id": "minecraft:brown_concrete powder",
+    "id": "minecraft:brown_concrete_powder",
     "x": -480,
     "y": -512
   },
   {
     "name": "Green Concrete Powder",
-    "id": "minecraft:green_concrete powder",
+    "id": "minecraft:green_concrete_powder",
     "x": -512,
     "y": -512
   },
   {
     "name": "Red Concrete Powder",
-    "id": "minecraft:red_concrete powder",
+    "id": "minecraft:red_concrete_powder",
     "x": -544,
     "y": 0
   },
   {
     "name": "Black Concrete Powder",
-    "id": "minecraft:black_concrete powder",
+    "id": "minecraft:black_concrete_powder",
     "x": -544,
     "y": -32
   },
@@ -2665,7 +2665,7 @@
   },
   {
     "name": "Flint and Steel",
-    "id": "minecraft:flint_and steel",
+    "id": "minecraft:flint_and_steel",
     "x": -544,
     "y": -448
   },
@@ -3055,7 +3055,7 @@
   },
   {
     "name": "Enchanted Golden Apple",
-    "id": "minecraft:enchanted_golden apple",
+    "id": "minecraft:enchanted_golden_apple",
     "x": 0,
     "y": -608
   },
@@ -3175,13 +3175,13 @@
   },
   {
     "name": "Minecart with Chest",
-    "id": "minecraft:minecart_with chest",
+    "id": "minecraft:minecart_with_chest",
     "x": -640,
     "y": -64
   },
   {
     "name": "Minecart with Furnace",
-    "id": "minecraft:minecart_with furnace",
+    "id": "minecraft:minecart_with_furnace",
     "x": -640,
     "y": -96
   },
@@ -3295,7 +3295,7 @@
   },
   {
     "name": "Light Gray Dye",
-    "id": "minecraft:light_gray dye",
+    "id": "minecraft:light_gray_dye",
     "x": -672,
     "y": -96
   },
@@ -3325,7 +3325,7 @@
   },
   {
     "name": "Light Blue Dye",
-    "id": "minecraft:light_blue dye",
+    "id": "minecraft:light_blue_dye",
     "x": -480,
     "y": -640
   },
@@ -3493,7 +3493,7 @@
   },
   {
     "name": "Fermented Spider Eye",
-    "id": "minecraft:fermented_spider eye",
+    "id": "minecraft:fermented_spider_eye",
     "x": -320,
     "y": -672
   },
@@ -3523,7 +3523,7 @@
   },
   {
     "name": "Eye of Ender",
-    "id": "minecraft:eye_of ender",
+    "id": "minecraft:eye_of_ender",
     "x": -704,
     "y": -64
   },
@@ -3535,13 +3535,13 @@
   },
   {
     "name": "Spawn Elder Guardian",
-    "id": "minecraft:spawn_elder guardian",
+    "id": "minecraft:spawn_elder_guardian",
     "x": -704,
     "y": -608
   },
   {
     "name": "Spawn Wither Skeleton",
-    "id": "minecraft:spawn_wither skeleton",
+    "id": "minecraft:spawn_wither_skeleton",
     "x": -704,
     "y": -640
   },
@@ -3559,19 +3559,19 @@
   },
   {
     "name": "Spawn Zombie Villager",
-    "id": "minecraft:spawn_zombie villager",
+    "id": "minecraft:spawn_zombie_villager",
     "x": -704,
     "y": -352
   },
   {
     "name": "Spawn Skeleton Horse",
-    "id": "minecraft:spawn_skeleton horse",
+    "id": "minecraft:spawn_skeleton_horse",
     "x": -704,
     "y": -384
   },
   {
     "name": "Spawn Zombie Horse",
-    "id": "minecraft:spawn_zombie horse",
+    "id": "minecraft:spawn_zombie_horse",
     "x": -704,
     "y": -416
   },
@@ -3643,7 +3643,7 @@
   },
   {
     "name": "Spawn Zombie Pigman",
-    "id": "minecraft:spawn_zombie pigman",
+    "id": "minecraft:spawn_zombie_pigman",
     "x": -160,
     "y": -704
   },
@@ -3655,7 +3655,7 @@
   },
   {
     "name": "Spawn Cave Spider",
-    "id": "minecraft:spawn_cave spider",
+    "id": "minecraft:spawn_cave_spider",
     "x": -224,
     "y": -704
   },
@@ -3673,7 +3673,7 @@
   },
   {
     "name": "Spawn Magma Cube",
-    "id": "minecraft:spawn_magma cube",
+    "id": "minecraft:spawn_magma_cube",
     "x": -352,
     "y": -704
   },
@@ -3769,7 +3769,7 @@
   },
   {
     "name": "Spawn Polar Bear",
-    "id": "minecraft:spawn_polar bear",
+    "id": "minecraft:spawn_polar_bear",
     "x": -704,
     "y": -192
   },
@@ -3793,7 +3793,7 @@
   },
   {
     "name": "Bottle o' Enchanting",
-    "id": "minecraft:bottle_o' enchanting",
+    "id": "minecraft:bottle_o'_enchanting",
     "x": -736,
     "y": -64
   },
@@ -3805,7 +3805,7 @@
   },
   {
     "name": "Book and Quill",
-    "id": "minecraft:book_and quill",
+    "id": "minecraft:book_and_quill",
     "x": -736,
     "y": -128
   },
@@ -3871,43 +3871,43 @@
   },
   {
     "name": "Mob Head (Skeleton)",
-    "id": "minecraft:mob_head (skeleton)",
+    "id": "minecraft:mob_head_(skeleton)",
     "x": -736,
     "y": -512
   },
   {
     "name": "Mob Head (Wither Skeleton)",
-    "id": "minecraft:mob_head (wither skeleton)",
+    "id": "minecraft:mob_head_(wither_skeleton)",
     "x": -736,
     "y": -544
   },
   {
     "name": "Mob Head (Zombie)",
-    "id": "minecraft:mob_head (zombie)",
+    "id": "minecraft:mob_head_(zombie)",
     "x": -736,
     "y": -576
   },
   {
     "name": "Mob Head (Human)",
-    "id": "minecraft:mob_head (human)",
+    "id": "minecraft:mob_head_(human)",
     "x": -736,
     "y": -608
   },
   {
     "name": "Mob Head (Creeper)",
-    "id": "minecraft:mob_head (creeper)",
+    "id": "minecraft:mob_head_(creeper)",
     "x": -736,
     "y": -640
   },
   {
     "name": "Mob Head (Dragon)",
-    "id": "minecraft:mob_head (dragon)",
+    "id": "minecraft:mob_head_(dragon)",
     "x": -736,
     "y": -672
   },
   {
     "name": "Carrot on a Stick",
-    "id": "minecraft:carrot_on a stick",
+    "id": "minecraft:carrot_on_a_stick",
     "x": -736,
     "y": -704
   },
@@ -3961,13 +3961,13 @@
   },
   {
     "name": "Minecart with TNT",
-    "id": "minecraft:minecart_with tnt",
+    "id": "minecraft:minecart_with_tnt",
     "x": -320,
     "y": -736
   },
   {
     "name": "Minecart with Hopper",
-    "id": "minecraft:minecart_with hopper",
+    "id": "minecraft:minecart_with_hopper",
     "x": -352,
     "y": -736
   },
@@ -4021,19 +4021,19 @@
   },
   {
     "name": "Iron Horse Armor",
-    "id": "minecraft:iron_horse armor",
+    "id": "minecraft:iron_horse_armor",
     "x": -672,
     "y": -736
   },
   {
     "name": "Golden Horse Armor",
-    "id": "minecraft:golden_horse armor",
+    "id": "minecraft:golden_horse_armor",
     "x": -704,
     "y": -736
   },
   {
     "name": "Diamond Horse Armor",
-    "id": "minecraft:diamond_horse armor",
+    "id": "minecraft:diamond_horse_armor",
     "x": -736,
     "y": -736
   },
@@ -4051,7 +4051,7 @@
   },
   {
     "name": "Minecart with Command Block",
-    "id": "minecraft:minecart_with command block",
+    "id": "minecraft:minecart_with_command_block",
     "x": -768,
     "y": -96
   },
@@ -4105,7 +4105,7 @@
   },
   {
     "name": "Dark Oak Door",
-    "id": "minecraft:dark_oak door",
+    "id": "minecraft:dark_oak_door",
     "x": -768,
     "y": -640
   },
@@ -4117,7 +4117,7 @@
   },
   {
     "name": "Popped Chorus Fruit",
-    "id": "minecraft:popped_chorus fruit",
+    "id": "minecraft:popped_chorus_fruit",
     "x": -768,
     "y": -704
   },
@@ -4207,13 +4207,13 @@
   },
   {
     "name": "Dark Oak Boat",
-    "id": "minecraft:dark_oak boat",
+    "id": "minecraft:dark_oak_boat",
     "x": -672,
     "y": -768
   },
   {
     "name": "Totem of Undying",
-    "id": "minecraft:totem_of undying",
+    "id": "minecraft:totem_of_undying",
     "x": -704,
     "y": -768
   },
