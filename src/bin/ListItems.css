@@ -1,0 +1,29 @@
+
+.item-list-paper{
+    margin:0;
+    padding:0;
+}
+.item-list{
+    margin:0;
+    padding:0;
+    padding-top:0 !important;
+}
+.icon-list-item{
+    background:rgba(0,0,0,.3);
+}
+.icon-list-item:hover{
+    cursor:pointer;
+    filter:invert();
+}
+.item-icon{
+    display:block;
+    width:32px;
+    height:32px;
+    right:10px;
+    position:absolute;
+    float:right;
+    background-image:url("../bin/images/item-icons.png");
+}
+.item-search{
+    
+}

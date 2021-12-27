@@ -1,2571 +1,4310 @@
 [
-  { "type": 0, "meta": 0, "name": "Air", "text_type": "air" },
-  { "type": 1, "meta": 0, "name": "Stone", "text_type": "stone" },
-  { "type": 1, "meta": 1, "name": "Granite", "text_type": "stone" },
-  { "type": 1, "meta": 2, "name": "Polished Granite", "text_type": "stone" },
-  { "type": 1, "meta": 3, "name": "Diorite", "text_type": "stone" },
-  { "type": 1, "meta": 4, "name": "Polished Diorite", "text_type": "stone" },
-  { "type": 1, "meta": 5, "name": "Andesite", "text_type": "stone" },
-  { "type": 1, "meta": 6, "name": "Polished Andesite", "text_type": "stone" },
-  { "type": 2, "meta": 0, "name": "Grass", "text_type": "grass" },
-  { "type": 3, "meta": 0, "name": "Dirt", "text_type": "dirt" },
-  { "type": 3, "meta": 1, "name": "Coarse Dirt", "text_type": "dirt" },
-  { "type": 3, "meta": 2, "name": "Podzol", "text_type": "dirt" },
-  { "type": 4, "meta": 0, "name": "Cobblestone", "text_type": "cobblestone" },
-  { "type": 5, "meta": 0, "name": "Oak Wood Plank", "text_type": "planks" },
-  { "type": 5, "meta": 1, "name": "Spruce Wood Plank", "text_type": "planks" },
-  { "type": 5, "meta": 2, "name": "Birch Wood Plank", "text_type": "planks" },
-  { "type": 5, "meta": 3, "name": "Jungle Wood Plank", "text_type": "planks" },
-  { "type": 5, "meta": 4, "name": "Acacia Wood Plank", "text_type": "planks" },
   {
-    "type": 5,
-    "meta": 5,
+    "name": "Stone",
+    "id": "minecraft:stone",
+    "x": -32,
+    "y": 0
+  },
+  {
+    "name": "Granite",
+    "id": "minecraft:granite",
+    "x": 0,
+    "y": -32
+  },
+  {
+    "name": "Polished Granite",
+    "id": "minecraft:polished_granite",
+    "x": -32,
+    "y": -32
+  },
+  {
+    "name": "Diorite",
+    "id": "minecraft:diorite",
+    "x": -64,
+    "y": 0
+  },
+  {
+    "name": "Polished Diorite",
+    "id": "minecraft:polished_diorite",
+    "x": -64,
+    "y": -32
+  },
+  {
+    "name": "Andesite",
+    "id": "minecraft:andesite",
+    "x": 0,
+    "y": -64
+  },
+  {
+    "name": "Polished Andesite",
+    "id": "minecraft:polished_andesite",
+    "x": -32,
+    "y": -64
+  },
+  {
+    "name": "Grass",
+    "id": "minecraft:grass",
+    "x": -416,
+    "y": -416
+  },
+  {
+    "name": "Dirt",
+    "id": "minecraft:dirt",
+    "x": -224,
+    "y": -576
+  },
+  {
+    "name": "Coarse Dirt",
+    "id": "minecraft:coarse_dirt",
+    "x": -256,
+    "y": -576
+  },
+  {
+    "name": "Podzol",
+    "id": "minecraft:podzol",
+    "x": -288,
+    "y": -576
+  },
+  {
+    "name": "Cobblestone",
+    "id": "minecraft:cobblestone",
+    "x": -32,
+    "y": -736
+  },
+  {
+    "name": "Oak Wood Plank",
+    "id": "minecraft:oak_wood plank",
+    "x": -800,
+    "y": -192
+  },
+  {
+    "name": "Spruce Wood Plank",
+    "id": "minecraft:spruce_wood plank",
+    "x": -800,
+    "y": -224
+  },
+  {
+    "name": "Birch Wood Plank",
+    "id": "minecraft:birch_wood plank",
+    "x": -800,
+    "y": -256
+  },
+  {
+    "name": "Jungle Wood Plank",
+    "id": "minecraft:jungle_wood plank",
+    "x": -800,
+    "y": -288
+  },
+  {
+    "name": "Acacia Wood Plank",
+    "id": "minecraft:acacia_wood plank",
+    "x": -800,
+    "y": -320
+  },
+  {
     "name": "Dark Oak Wood Plank",
-    "text_type": "planks"
+    "id": "minecraft:dark_oak wood plank",
+    "x": -800,
+    "y": -352
   },
-  { "type": 6, "meta": 0, "name": "Oak Sapling", "text_type": "sapling" },
-  { "type": 6, "meta": 1, "name": "Spruce Sapling", "text_type": "sapling" },
-  { "type": 6, "meta": 2, "name": "Birch Sapling", "text_type": "sapling" },
-  { "type": 6, "meta": 3, "name": "Jungle Sapling", "text_type": "sapling" },
-  { "type": 6, "meta": 4, "name": "Acacia Sapling", "text_type": "sapling" },
-  { "type": 6, "meta": 5, "name": "Dark Oak Sapling", "text_type": "sapling" },
-  { "type": 7, "meta": 0, "name": "Bedrock", "text_type": "bedrock" },
   {
-    "type": 8,
-    "meta": 0,
+    "name": "Oak Sapling",
+    "id": "minecraft:oak_sapling",
+    "x": -800,
+    "y": -704
+  },
+  {
+    "name": "Spruce Sapling",
+    "id": "minecraft:spruce_sapling",
+    "x": -800,
+    "y": -736
+  },
+  {
+    "name": "Birch Sapling",
+    "id": "minecraft:birch_sapling",
+    "x": -800,
+    "y": -768
+  },
+  {
+    "name": "Jungle Sapling",
+    "id": "minecraft:jungle_sapling",
+    "x": 0,
+    "y": -800
+  },
+  {
+    "name": "Acacia Sapling",
+    "id": "minecraft:acacia_sapling",
+    "x": -32,
+    "y": -800
+  },
+  {
+    "name": "Dark Oak Sapling",
+    "id": "minecraft:dark_oak sapling",
+    "x": -64,
+    "y": -800
+  },
+  {
+    "name": "Bedrock",
+    "id": "minecraft:bedrock",
+    "x": -416,
+    "y": -800
+  },
+  {
     "name": "Flowing Water",
-    "text_type": "flowing_water"
+    "id": "minecraft:flowing_water",
+    "x": -768,
+    "y": -800
   },
-  { "type": 9, "meta": 0, "name": "Still Water", "text_type": "water" },
   {
-    "type": 10,
-    "meta": 0,
+    "name": "Still Water",
+    "id": "minecraft:still_water",
+    "x": -832,
+    "y": -288
+  },
+  {
     "name": "Flowing Lava",
-    "text_type": "flowing_lava"
+    "id": "minecraft:flowing_lava",
+    "x": -64,
+    "y": -64
   },
-  { "type": 11, "meta": 0, "name": "Still Lava", "text_type": "lava" },
-  { "type": 12, "meta": 0, "name": "Sand", "text_type": "sand" },
-  { "type": 12, "meta": 1, "name": "Red Sand", "text_type": "sand" },
-  { "type": 13, "meta": 0, "name": "Gravel", "text_type": "gravel" },
-  { "type": 14, "meta": 0, "name": "Gold Ore", "text_type": "gold_ore" },
-  { "type": 15, "meta": 0, "name": "Iron Ore", "text_type": "iron_ore" },
-  { "type": 16, "meta": 0, "name": "Coal Ore", "text_type": "coal_ore" },
-  { "type": 17, "meta": 0, "name": "Oak Wood", "text_type": "log" },
-  { "type": 17, "meta": 1, "name": "Spruce Wood", "text_type": "log" },
-  { "type": 17, "meta": 2, "name": "Birch Wood", "text_type": "log" },
-  { "type": 17, "meta": 3, "name": "Jungle Wood", "text_type": "log" },
-  { "type": 18, "meta": 0, "name": "Oak Leaves", "text_type": "leaves" },
-  { "type": 18, "meta": 1, "name": "Spruce Leaves", "text_type": "leaves" },
-  { "type": 18, "meta": 2, "name": "Birch Leaves", "text_type": "leaves" },
-  { "type": 18, "meta": 3, "name": "Jungle Leaves", "text_type": "leaves" },
-  { "type": 19, "meta": 0, "name": "Sponge", "text_type": "sponge" },
-  { "type": 19, "meta": 1, "name": "Wet Sponge", "text_type": "sponge" },
-  { "type": 20, "meta": 0, "name": "Glass", "text_type": "glass" },
   {
-    "type": 21,
-    "meta": 0,
+    "name": "Still Lava",
+    "id": "minecraft:still_lava",
+    "x": -128,
+    "y": -96
+  },
+  {
+    "name": "Sand",
+    "id": "minecraft:sand",
+    "x": 0,
+    "y": -160
+  },
+  {
+    "name": "Red Sand",
+    "id": "minecraft:red_sand",
+    "x": -32,
+    "y": -160
+  },
+  {
+    "name": "Gravel",
+    "id": "minecraft:gravel",
+    "x": -224,
+    "y": -96
+  },
+  {
+    "name": "Gold Ore",
+    "id": "minecraft:gold_ore",
+    "x": -256,
+    "y": 0
+  },
+  {
+    "name": "Iron Ore",
+    "id": "minecraft:iron_ore",
+    "x": -96,
+    "y": -256
+  },
+  {
+    "name": "Coal Ore",
+    "id": "minecraft:coal_ore",
+    "x": -320,
+    "y": -96
+  },
+  {
+    "name": "Oak Wood",
+    "id": "minecraft:oak_wood",
+    "x": -32,
+    "y": -352
+  },
+  {
+    "name": "Spruce Wood",
+    "id": "minecraft:spruce_wood",
+    "x": -64,
+    "y": -352
+  },
+  {
+    "name": "Birch Wood",
+    "id": "minecraft:birch_wood",
+    "x": -96,
+    "y": -352
+  },
+  {
+    "name": "Jungle Wood",
+    "id": "minecraft:jungle_wood",
+    "x": -128,
+    "y": -352
+  },
+  {
+    "name": "Oak Leaves",
+    "id": "minecraft:oak_leaves",
+    "x": -416,
+    "y": 0
+  },
+  {
+    "name": "Spruce Leaves",
+    "id": "minecraft:spruce_leaves",
+    "x": -416,
+    "y": -32
+  },
+  {
+    "name": "Birch Leaves",
+    "id": "minecraft:birch_leaves",
+    "x": -416,
+    "y": -64
+  },
+  {
+    "name": "Jungle Leaves",
+    "id": "minecraft:jungle_leaves",
+    "x": -416,
+    "y": -96
+  },
+  {
+    "name": "Sponge",
+    "id": "minecraft:sponge",
+    "x": -32,
+    "y": -416
+  },
+  {
+    "name": "Wet Sponge",
+    "id": "minecraft:wet_sponge",
+    "x": -64,
+    "y": -416
+  },
+  {
+    "name": "Glass",
+    "id": "minecraft:glass",
+    "x": -448,
+    "y": 0
+  },
+  {
     "name": "Lapis Lazuli Ore",
-    "text_type": "lapis_ore"
+    "id": "minecraft:lapis_lazuli ore",
+    "x": -448,
+    "y": -352
   },
   {
-    "type": 22,
-    "meta": 0,
     "name": "Lapis Lazuli Block",
-    "text_type": "lapis_block"
+    "id": "minecraft:lapis_lazuli block",
+    "x": -256,
+    "y": -448
   },
-  { "type": 23, "meta": 0, "name": "Dispenser", "text_type": "dispenser" },
-  { "type": 24, "meta": 0, "name": "Sandstone", "text_type": "sandstone" },
   {
-    "type": 24,
-    "meta": 1,
+    "name": "Dispenser",
+    "id": "minecraft:dispenser",
+    "x": -32,
+    "y": -480
+  },
+  {
+    "name": "Sandstone",
+    "id": "minecraft:sandstone",
+    "x": -384,
+    "y": -480
+  },
+  {
     "name": "Chiseled Sandstone",
-    "text_type": "sandstone"
+    "id": "minecraft:chiseled_sandstone",
+    "x": -416,
+    "y": -480
   },
   {
-    "type": 24,
-    "meta": 2,
     "name": "Smooth Sandstone",
-    "text_type": "sandstone"
+    "id": "minecraft:smooth_sandstone",
+    "x": -448,
+    "y": -480
   },
-  { "type": 25, "meta": 0, "name": "Note Block", "text_type": "noteblock" },
-  { "type": 26, "meta": 0, "name": "Bed", "text_type": "bed" },
-  { "type": 27, "meta": 0, "name": "Powered Rail", "text_type": "golden_rail" },
   {
-    "type": 28,
-    "meta": 0,
+    "name": "Note Block",
+    "id": "minecraft:note_block",
+    "x": -512,
+    "y": -288
+  },
+  {
+    "name": "Bed",
+    "id": "minecraft:bed",
+    "x": -544,
+    "y": -480
+  },
+  {
+    "name": "Powered Rail",
+    "id": "minecraft:powered_rail",
+    "x": -320,
+    "y": -544
+  },
+  {
     "name": "Detector Rail",
-    "text_type": "detector_rail"
+    "id": "minecraft:detector_rail",
+    "x": -576,
+    "y": -96
   },
   {
-    "type": 29,
-    "meta": 0,
     "name": "Sticky Piston",
-    "text_type": "sticky_piston"
+    "id": "minecraft:sticky_piston",
+    "x": -576,
+    "y": -448
   },
-  { "type": 30, "meta": 0, "name": "Cobweb", "text_type": "web" },
-  { "type": 31, "meta": 0, "name": "Dead Shrub", "text_type": "tallgrass" },
-  { "type": 31, "meta": 1, "name": "Grass", "text_type": "tallgrass" },
-  { "type": 31, "meta": 2, "name": "Fern", "text_type": "tallgrass" },
-  { "type": 32, "meta": 0, "name": "Dead Bush", "text_type": "deadbush" },
-  { "type": 33, "meta": 0, "name": "Piston", "text_type": "piston" },
-  { "type": 34, "meta": 0, "name": "Piston Head", "text_type": "piston_head" },
-  { "type": 35, "meta": 0, "name": "White Wool", "text_type": "wool" },
-  { "type": 35, "meta": 1, "name": "Orange Wool", "text_type": "wool" },
-  { "type": 35, "meta": 2, "name": "Magenta Wool", "text_type": "wool" },
-  { "type": 35, "meta": 3, "name": "Light Blue Wool", "text_type": "wool" },
-  { "type": 35, "meta": 4, "name": "Yellow Wool", "text_type": "wool" },
-  { "type": 35, "meta": 5, "name": "Lime Wool", "text_type": "wool" },
-  { "type": 35, "meta": 6, "name": "Pink Wool", "text_type": "wool" },
-  { "type": 35, "meta": 7, "name": "Gray Wool", "text_type": "wool" },
-  { "type": 35, "meta": 8, "name": "Light Gray Wool", "text_type": "wool" },
-  { "type": 35, "meta": 9, "name": "Cyan Wool", "text_type": "wool" },
-  { "type": 35, "meta": 10, "name": "Purple Wool", "text_type": "wool" },
-  { "type": 35, "meta": 11, "name": "Blue Wool", "text_type": "wool" },
-  { "type": 35, "meta": 12, "name": "Brown Wool", "text_type": "wool" },
-  { "type": 35, "meta": 13, "name": "Green Wool", "text_type": "wool" },
-  { "type": 35, "meta": 14, "name": "Red Wool", "text_type": "wool" },
-  { "type": 35, "meta": 15, "name": "Black Wool", "text_type": "wool" },
-  { "type": 37, "meta": 0, "name": "Dandelion", "text_type": "yellow_flower" },
-  { "type": 38, "meta": 0, "name": "Poppy", "text_type": "red_flower" },
-  { "type": 38, "meta": 1, "name": "Blue Orchid", "text_type": "red_flower" },
-  { "type": 38, "meta": 2, "name": "Allium", "text_type": "red_flower" },
-  { "type": 38, "meta": 3, "name": "Azure Bluet", "text_type": "red_flower" },
-  { "type": 38, "meta": 4, "name": "Red Tulip", "text_type": "red_flower" },
-  { "type": 38, "meta": 5, "name": "Orange Tulip", "text_type": "red_flower" },
-  { "type": 38, "meta": 6, "name": "White Tulip", "text_type": "red_flower" },
-  { "type": 38, "meta": 7, "name": "Pink Tulip", "text_type": "red_flower" },
-  { "type": 38, "meta": 8, "name": "Oxeye Daisy", "text_type": "red_flower" },
   {
-    "type": 39,
-    "meta": 0,
+    "name": "Cobweb",
+    "id": "minecraft:cobweb",
+    "x": -320,
+    "y": -576
+  },
+  {
+    "name": "Dead Shrub",
+    "id": "minecraft:dead_shrub",
+    "x": -608,
+    "y": -64
+  },
+  {
+    "name": "Grass",
+    "id": "minecraft:grass",
+    "x": -608,
+    "y": -96
+  },
+  {
+    "name": "Fern",
+    "id": "minecraft:fern",
+    "x": -608,
+    "y": -128
+  },
+  {
+    "name": "Dead Bush",
+    "id": "minecraft:dead_bush",
+    "x": -608,
+    "y": -480
+  },
+  {
+    "name": "Piston",
+    "id": "minecraft:piston",
+    "x": -256,
+    "y": -608
+  },
+  {
+    "name": "Piston Head",
+    "id": "minecraft:piston_head",
+    "x": -608,
+    "y": -608
+  },
+  {
+    "name": "White Wool",
+    "id": "minecraft:white_wool",
+    "x": -640,
+    "y": -416
+  },
+  {
+    "name": "Orange Wool",
+    "id": "minecraft:orange_wool",
+    "x": -640,
+    "y": -448
+  },
+  {
+    "name": "Magenta Wool",
+    "id": "minecraft:magenta_wool",
+    "x": -32,
+    "y": -640
+  },
+  {
+    "name": "Light Blue Wool",
+    "id": "minecraft:light_blue wool",
+    "x": -64,
+    "y": -640
+  },
+  {
+    "name": "Yellow Wool",
+    "id": "minecraft:yellow_wool",
+    "x": -96,
+    "y": -640
+  },
+  {
+    "name": "Lime Wool",
+    "id": "minecraft:lime_wool",
+    "x": -128,
+    "y": -640
+  },
+  {
+    "name": "Pink Wool",
+    "id": "minecraft:pink_wool",
+    "x": -160,
+    "y": -640
+  },
+  {
+    "name": "Gray Wool",
+    "id": "minecraft:gray_wool",
+    "x": -192,
+    "y": -640
+  },
+  {
+    "name": "Light Gray Wool",
+    "id": "minecraft:light_gray wool",
+    "x": -224,
+    "y": -640
+  },
+  {
+    "name": "Cyan Wool",
+    "id": "minecraft:cyan_wool",
+    "x": -256,
+    "y": -640
+  },
+  {
+    "name": "Purple Wool",
+    "id": "minecraft:purple_wool",
+    "x": -640,
+    "y": -480
+  },
+  {
+    "name": "Blue Wool",
+    "id": "minecraft:blue_wool",
+    "x": -640,
+    "y": -512
+  },
+  {
+    "name": "Brown Wool",
+    "id": "minecraft:brown_wool",
+    "x": -640,
+    "y": -544
+  },
+  {
+    "name": "Green Wool",
+    "id": "minecraft:green_wool",
+    "x": -640,
+    "y": -576
+  },
+  {
+    "name": "Red Wool",
+    "id": "minecraft:red_wool",
+    "x": -640,
+    "y": -608
+  },
+  {
+    "name": "Black Wool",
+    "id": "minecraft:black_wool",
+    "x": 0,
+    "y": -640
+  },
+  {
+    "name": "Dandelion",
+    "id": "minecraft:dandelion",
+    "x": -96,
+    "y": -672
+  },
+  {
+    "name": "Poppy",
+    "id": "minecraft:poppy",
+    "x": -448,
+    "y": -672
+  },
+  {
+    "name": "Blue Orchid",
+    "id": "minecraft:blue_orchid",
+    "x": -480,
+    "y": -672
+  },
+  {
+    "name": "Allium",
+    "id": "minecraft:allium",
+    "x": -512,
+    "y": -672
+  },
+  {
+    "name": "Azure Bluet",
+    "id": "minecraft:azure_bluet",
+    "x": -544,
+    "y": -672
+  },
+  {
+    "name": "Red Tulip",
+    "id": "minecraft:red_tulip",
+    "x": -576,
+    "y": -672
+  },
+  {
+    "name": "Orange Tulip",
+    "id": "minecraft:orange_tulip",
+    "x": -608,
+    "y": -672
+  },
+  {
+    "name": "White Tulip",
+    "id": "minecraft:white_tulip",
+    "x": -640,
+    "y": -672
+  },
+  {
+    "name": "Pink Tulip",
+    "id": "minecraft:pink_tulip",
+    "x": -672,
+    "y": -672
+  },
+  {
+    "name": "Oxeye Daisy",
+    "id": "minecraft:oxeye_daisy",
+    "x": -704,
+    "y": 0
+  },
+  {
     "name": "Brown Mushroom",
-    "text_type": "brown_mushroom"
+    "id": "minecraft:brown_mushroom",
+    "x": -736,
+    "y": -256
   },
   {
-    "type": 40,
-    "meta": 0,
     "name": "Red Mushroom",
-    "text_type": "red_mushroom"
+    "id": "minecraft:red_mushroom",
+    "x": -64,
+    "y": -736
   },
-  { "type": 41, "meta": 0, "name": "Gold Block", "text_type": "gold_block" },
-  { "type": 42, "meta": 0, "name": "Iron Block", "text_type": "iron_block" },
   {
-    "type": 43,
-    "meta": 0,
+    "name": "Gold Block",
+    "id": "minecraft:gold_block",
+    "x": -416,
+    "y": -736
+  },
+  {
+    "name": "Iron Block",
+    "id": "minecraft:iron_block",
+    "x": -768,
+    "y": 0
+  },
+  {
     "name": "Double Stone Slab",
-    "text_type": "double_stone_slab"
+    "id": "minecraft:double_stone slab",
+    "x": -768,
+    "y": -352
   },
   {
-    "type": 43,
-    "meta": 1,
     "name": "Double Sandstone Slab",
-    "text_type": "double_stone_slab"
+    "id": "minecraft:double_sandstone slab",
+    "x": -768,
+    "y": -384
   },
   {
-    "type": 43,
-    "meta": 2,
     "name": "Double Wooden Slab",
-    "text_type": "double_stone_slab"
+    "id": "minecraft:double_wooden slab",
+    "x": -768,
+    "y": -416
   },
   {
-    "type": 43,
-    "meta": 3,
     "name": "Double Cobblestone Slab",
-    "text_type": "double_stone_slab"
+    "id": "minecraft:double_cobblestone slab",
+    "x": -768,
+    "y": -448
   },
   {
-    "type": 43,
-    "meta": 4,
     "name": "Double Brick Slab",
-    "text_type": "double_stone_slab"
+    "id": "minecraft:double_brick slab",
+    "x": -768,
+    "y": -480
   },
   {
-    "type": 43,
-    "meta": 5,
     "name": "Double Stone Brick Slab",
-    "text_type": "double_stone_slab"
+    "id": "minecraft:double_stone brick slab",
+    "x": -768,
+    "y": -512
   },
   {
-    "type": 43,
-    "meta": 6,
     "name": "Double Nether Brick Slab",
-    "text_type": "double_stone_slab"
+    "id": "minecraft:double_nether brick slab",
+    "x": -768,
+    "y": -544
   },
   {
-    "type": 43,
-    "meta": 7,
     "name": "Double Quartz Slab",
-    "text_type": "double_stone_slab"
+    "id": "minecraft:double_quartz slab",
+    "x": -768,
+    "y": -576
   },
-  { "type": 44, "meta": 0, "name": "Stone Slab", "text_type": "stone_slab" },
   {
-    "type": 44,
-    "meta": 1,
+    "name": "Stone Slab",
+    "id": "minecraft:stone_slab",
+    "x": -160,
+    "y": -768
+  },
+  {
     "name": "Sandstone Slab",
-    "text_type": "stone_slab"
+    "id": "minecraft:sandstone_slab",
+    "x": -192,
+    "y": -768
   },
-  { "type": 44, "meta": 2, "name": "Wooden Slab", "text_type": "stone_slab" },
   {
-    "type": 44,
-    "meta": 3,
+    "name": "Wooden Slab",
+    "id": "minecraft:wooden_slab",
+    "x": -224,
+    "y": -768
+  },
+  {
     "name": "Cobblestone Slab",
-    "text_type": "stone_slab"
+    "id": "minecraft:cobblestone_slab",
+    "x": -256,
+    "y": -768
   },
-  { "type": 44, "meta": 4, "name": "Brick Slab", "text_type": "stone_slab" },
   {
-    "type": 44,
-    "meta": 5,
+    "name": "Brick Slab",
+    "id": "minecraft:brick_slab",
+    "x": -288,
+    "y": -768
+  },
+  {
     "name": "Stone Brick Slab",
-    "text_type": "stone_slab"
+    "id": "minecraft:stone_brick slab",
+    "x": -320,
+    "y": -768
   },
   {
-    "type": 44,
-    "meta": 6,
     "name": "Nether Brick Slab",
-    "text_type": "stone_slab"
+    "id": "minecraft:nether_brick slab",
+    "x": -352,
+    "y": -768
   },
-  { "type": 44, "meta": 7, "name": "Quartz Slab", "text_type": "stone_slab" },
-  { "type": 45, "meta": 0, "name": "Bricks", "text_type": "brick_block" },
-  { "type": 46, "meta": 0, "name": "TNT", "text_type": "tnt" },
-  { "type": 47, "meta": 0, "name": "Bookshelf", "text_type": "bookshelf" },
   {
-    "type": 48,
-    "meta": 0,
+    "name": "Quartz Slab",
+    "id": "minecraft:quartz_slab",
+    "x": -384,
+    "y": -768
+  },
+  {
+    "name": "Bricks",
+    "id": "minecraft:bricks",
+    "x": -736,
+    "y": -768
+  },
+  {
+    "name": "TNT",
+    "id": "minecraft:tnt",
+    "x": -800,
+    "y": -64
+  },
+  {
+    "name": "Bookshelf",
+    "id": "minecraft:bookshelf",
+    "x": -800,
+    "y": -96
+  },
+  {
     "name": "Moss Stone",
-    "text_type": "mossy_cobblestone"
+    "id": "minecraft:moss_stone",
+    "x": -800,
+    "y": -128
   },
-  { "type": 49, "meta": 0, "name": "Obsidian", "text_type": "obsidian" },
-  { "type": 50, "meta": 0, "name": "Torch", "text_type": "torch" },
-  { "type": 51, "meta": 0, "name": "Fire", "text_type": "fire" },
   {
-    "type": 52,
-    "meta": 0,
+    "name": "Obsidian",
+    "id": "minecraft:obsidian",
+    "x": -800,
+    "y": -160
+  },
+  {
+    "name": "Torch",
+    "id": "minecraft:torch",
+    "x": -800,
+    "y": -384
+  },
+  {
+    "name": "Fire",
+    "id": "minecraft:fire",
+    "x": -800,
+    "y": -416
+  },
+  {
     "name": "Monster Spawner",
-    "text_type": "mob_spawner"
+    "id": "minecraft:monster_spawner",
+    "x": -800,
+    "y": -448
   },
   {
-    "type": 53,
-    "meta": 0,
     "name": "Oak Wood Stairs",
-    "text_type": "oak_stairs"
+    "id": "minecraft:oak_wood stairs",
+    "x": -800,
+    "y": -480
   },
-  { "type": 54, "meta": 0, "name": "Chest", "text_type": "chest" },
   {
-    "type": 55,
-    "meta": 0,
+    "name": "Chest",
+    "id": "minecraft:chest",
+    "x": -800,
+    "y": -512
+  },
+  {
     "name": "Redstone Wire",
-    "text_type": "redstone_wire"
+    "id": "minecraft:redstone_wire",
+    "x": -800,
+    "y": -544
   },
-  { "type": 56, "meta": 0, "name": "Diamond Ore", "text_type": "diamond_ore" },
   {
-    "type": 57,
-    "meta": 0,
+    "name": "Diamond Ore",
+    "id": "minecraft:diamond_ore",
+    "x": -800,
+    "y": -576
+  },
+  {
     "name": "Diamond Block",
-    "text_type": "diamond_block"
+    "id": "minecraft:diamond_block",
+    "x": -800,
+    "y": -608
   },
   {
-    "type": 58,
-    "meta": 0,
     "name": "Crafting Table",
-    "text_type": "crafting_table"
+    "id": "minecraft:crafting_table",
+    "x": -800,
+    "y": -640
   },
-  { "type": 59, "meta": 0, "name": "Wheat Crops", "text_type": "wheat" },
-  { "type": 60, "meta": 0, "name": "Farmland", "text_type": "farmland" },
-  { "type": 61, "meta": 0, "name": "Furnace", "text_type": "furnace" },
   {
-    "type": 62,
-    "meta": 0,
+    "name": "Wheat Crops",
+    "id": "minecraft:wheat_crops",
+    "x": -800,
+    "y": -672
+  },
+  {
+    "name": "Farmland",
+    "id": "minecraft:farmland",
+    "x": -96,
+    "y": -800
+  },
+  {
+    "name": "Furnace",
+    "id": "minecraft:furnace",
+    "x": -128,
+    "y": -800
+  },
+  {
     "name": "Burning Furnace",
-    "text_type": "lit_furnace"
+    "id": "minecraft:burning_furnace",
+    "x": -160,
+    "y": -800
   },
   {
-    "type": 63,
-    "meta": 0,
     "name": "Standing Sign Block",
-    "text_type": "standing_sign"
+    "id": "minecraft:standing_sign block",
+    "x": -192,
+    "y": -800
   },
   {
-    "type": 64,
-    "meta": 0,
     "name": "Oak Door Block",
-    "text_type": "wooden_door"
+    "id": "minecraft:oak_door block",
+    "x": -224,
+    "y": -800
   },
-  { "type": 65, "meta": 0, "name": "Ladder", "text_type": "ladder" },
-  { "type": 66, "meta": 0, "name": "Rail", "text_type": "rail" },
   {
-    "type": 67,
-    "meta": 0,
+    "name": "Ladder",
+    "id": "minecraft:ladder",
+    "x": -256,
+    "y": -800
+  },
+  {
+    "name": "Rail",
+    "id": "minecraft:rail",
+    "x": -288,
+    "y": -800
+  },
+  {
     "name": "Cobblestone Stairs",
-    "text_type": "stone_stairs"
+    "id": "minecraft:cobblestone_stairs",
+    "x": -320,
+    "y": -800
   },
   {
-    "type": 68,
-    "meta": 0,
     "name": "Wall-mounted Sign Block",
-    "text_type": "wall_sign"
+    "id": "minecraft:wall-mounted_sign block",
+    "x": -352,
+    "y": -800
   },
-  { "type": 69, "meta": 0, "name": "Lever", "text_type": "lever" },
   {
-    "type": 70,
-    "meta": 0,
+    "name": "Lever",
+    "id": "minecraft:lever",
+    "x": -384,
+    "y": -800
+  },
+  {
     "name": "Stone Pressure Plate",
-    "text_type": "stone_pressure_plate"
+    "id": "minecraft:stone_pressure plate",
+    "x": -448,
+    "y": -800
   },
   {
-    "type": 71,
-    "meta": 0,
     "name": "Iron Door Block",
-    "text_type": "iron_door"
+    "id": "minecraft:iron_door block",
+    "x": -480,
+    "y": -800
   },
   {
-    "type": 72,
-    "meta": 0,
     "name": "Wooden Pressure Plate",
-    "text_type": "wooden_pressure_plate"
+    "id": "minecraft:wooden_pressure plate",
+    "x": -512,
+    "y": -800
   },
   {
-    "type": 73,
-    "meta": 0,
     "name": "Redstone Ore",
-    "text_type": "redstone_ore"
+    "id": "minecraft:redstone_ore",
+    "x": -544,
+    "y": -800
   },
   {
-    "type": 74,
-    "meta": 0,
     "name": "Glowing Redstone Ore",
-    "text_type": "lit_redstone_ore"
+    "id": "minecraft:glowing_redstone ore",
+    "x": -576,
+    "y": -800
   },
   {
-    "type": 75,
-    "meta": 0,
     "name": "Redstone Torch (off)",
-    "text_type": "unlit_redstone_torch"
+    "id": "minecraft:redstone_torch (off)",
+    "x": -608,
+    "y": -800
   },
   {
-    "type": 76,
-    "meta": 0,
     "name": "Redstone Torch (on)",
-    "text_type": "redstone_torch"
+    "id": "minecraft:redstone_torch (on)",
+    "x": -640,
+    "y": -800
   },
   {
-    "type": 77,
-    "meta": 0,
     "name": "Stone Button",
-    "text_type": "stone_button"
+    "id": "minecraft:stone_button",
+    "x": -672,
+    "y": -800
   },
-  { "type": 78, "meta": 0, "name": "Snow", "text_type": "snow_layer" },
-  { "type": 79, "meta": 0, "name": "Ice", "text_type": "ice" },
-  { "type": 80, "meta": 0, "name": "Snow Block", "text_type": "snow" },
-  { "type": 81, "meta": 0, "name": "Cactus", "text_type": "cactus" },
-  { "type": 82, "meta": 0, "name": "Clay", "text_type": "clay" },
-  { "type": 83, "meta": 0, "name": "Sugar Canes", "text_type": "reeds" },
-  { "type": 84, "meta": 0, "name": "Jukebox", "text_type": "jukebox" },
-  { "type": 85, "meta": 0, "name": "Oak Fence", "text_type": "fence" },
-  { "type": 86, "meta": 0, "name": "Pumpkin", "text_type": "pumpkin" },
-  { "type": 87, "meta": 0, "name": "Netherrack", "text_type": "netherrack" },
-  { "type": 88, "meta": 0, "name": "Soul Sand", "text_type": "soul_sand" },
-  { "type": 89, "meta": 0, "name": "Glowstone", "text_type": "glowstone" },
-  { "type": 90, "meta": 0, "name": "Nether Portal", "text_type": "portal" },
   {
-    "type": 91,
-    "meta": 0,
+    "name": "Snow",
+    "id": "minecraft:snow",
+    "x": -704,
+    "y": -800
+  },
+  {
+    "name": "Ice",
+    "id": "minecraft:ice",
+    "x": -736,
+    "y": -800
+  },
+  {
+    "name": "Snow Block",
+    "id": "minecraft:snow_block",
+    "x": -800,
+    "y": -800
+  },
+  {
+    "name": "Cactus",
+    "id": "minecraft:cactus",
+    "x": -832,
+    "y": 0
+  },
+  {
+    "name": "Clay",
+    "id": "minecraft:clay",
+    "x": -832,
+    "y": -32
+  },
+  {
+    "name": "Sugar Canes",
+    "id": "minecraft:sugar_canes",
+    "x": -832,
+    "y": -64
+  },
+  {
+    "name": "Jukebox",
+    "id": "minecraft:jukebox",
+    "x": -832,
+    "y": -96
+  },
+  {
+    "name": "Oak Fence",
+    "id": "minecraft:oak_fence",
+    "x": -832,
+    "y": -128
+  },
+  {
+    "name": "Pumpkin",
+    "id": "minecraft:pumpkin",
+    "x": -832,
+    "y": -160
+  },
+  {
+    "name": "Netherrack",
+    "id": "minecraft:netherrack",
+    "x": -832,
+    "y": -192
+  },
+  {
+    "name": "Soul Sand",
+    "id": "minecraft:soul_sand",
+    "x": -832,
+    "y": -224
+  },
+  {
+    "name": "Glowstone",
+    "id": "minecraft:glowstone",
+    "x": -832,
+    "y": -256
+  },
+  {
+    "name": "Nether Portal",
+    "id": "minecraft:nether_portal",
+    "x": -832,
+    "y": -320
+  },
+  {
     "name": "Jack o'Lantern",
-    "text_type": "lit_pumpkin"
+    "id": "minecraft:jack_o'lantern",
+    "x": -832,
+    "y": -352
   },
-  { "type": 92, "meta": 0, "name": "Cake Block", "text_type": "cake" },
   {
-    "type": 93,
-    "meta": 0,
+    "name": "Cake Block",
+    "id": "minecraft:cake_block",
+    "x": -832,
+    "y": -384
+  },
+  {
     "name": "Redstone Repeater Block (off)",
-    "text_type": "unpowered_repeater"
+    "id": "minecraft:redstone_repeater block (off)",
+    "x": -832,
+    "y": -416
   },
   {
-    "type": 94,
-    "meta": 0,
     "name": "Redstone Repeater Block (on)",
-    "text_type": "powered_repeater"
+    "id": "minecraft:redstone_repeater block (on)",
+    "x": -832,
+    "y": -448
   },
   {
-    "type": 95,
-    "meta": 0,
     "name": "White Stained Glass",
-    "text_type": "stained_glass"
+    "id": "minecraft:white_stained glass",
+    "x": -832,
+    "y": -480
   },
   {
-    "type": 95,
-    "meta": 1,
     "name": "Orange Stained Glass",
-    "text_type": "stained_glass"
+    "id": "minecraft:orange_stained glass",
+    "x": -832,
+    "y": -512
   },
   {
-    "type": 95,
-    "meta": 2,
     "name": "Magenta Stained Glass",
-    "text_type": "stained_glass"
+    "id": "minecraft:magenta_stained glass",
+    "x": -832,
+    "y": -736
   },
   {
-    "type": 95,
-    "meta": 3,
     "name": "Light Blue Stained Glass",
-    "text_type": "stained_glass"
+    "id": "minecraft:light_blue stained glass",
+    "x": -832,
+    "y": -768
   },
   {
-    "type": 95,
-    "meta": 4,
     "name": "Yellow Stained Glass",
-    "text_type": "stained_glass"
+    "id": "minecraft:yellow_stained glass",
+    "x": -832,
+    "y": -800
   },
   {
-    "type": 95,
-    "meta": 5,
     "name": "Lime Stained Glass",
-    "text_type": "stained_glass"
+    "id": "minecraft:lime_stained glass",
+    "x": 0,
+    "y": -832
   },
   {
-    "type": 95,
-    "meta": 6,
     "name": "Pink Stained Glass",
-    "text_type": "stained_glass"
+    "id": "minecraft:pink_stained glass",
+    "x": -32,
+    "y": -832
   },
   {
-    "type": 95,
-    "meta": 7,
     "name": "Gray Stained Glass",
-    "text_type": "stained_glass"
+    "id": "minecraft:gray_stained glass",
+    "x": -64,
+    "y": -832
   },
   {
-    "type": 95,
-    "meta": 8,
     "name": "Light Gray Stained Glass",
-    "text_type": "stained_glass"
+    "id": "minecraft:light_gray stained glass",
+    "x": -96,
+    "y": -832
   },
   {
-    "type": 95,
-    "meta": 9,
     "name": "Cyan Stained Glass",
-    "text_type": "stained_glass"
+    "id": "minecraft:cyan_stained glass",
+    "x": -128,
+    "y": -832
   },
   {
-    "type": 95,
-    "meta": 10,
     "name": "Purple Stained Glass",
-    "text_type": "stained_glass"
+    "id": "minecraft:purple_stained glass",
+    "x": -832,
+    "y": -544
   },
   {
-    "type": 95,
-    "meta": 11,
     "name": "Blue Stained Glass",
-    "text_type": "stained_glass"
+    "id": "minecraft:blue_stained glass",
+    "x": -832,
+    "y": -576
   },
   {
-    "type": 95,
-    "meta": 12,
     "name": "Brown Stained Glass",
-    "text_type": "stained_glass"
+    "id": "minecraft:brown_stained glass",
+    "x": -832,
+    "y": -608
   },
   {
-    "type": 95,
-    "meta": 13,
     "name": "Green Stained Glass",
-    "text_type": "stained_glass"
+    "id": "minecraft:green_stained glass",
+    "x": -832,
+    "y": -640
   },
   {
-    "type": 95,
-    "meta": 14,
     "name": "Red Stained Glass",
-    "text_type": "stained_glass"
+    "id": "minecraft:red_stained glass",
+    "x": -832,
+    "y": -672
   },
   {
-    "type": 95,
-    "meta": 15,
     "name": "Black Stained Glass",
-    "text_type": "stained_glass"
+    "id": "minecraft:black_stained glass",
+    "x": -832,
+    "y": -704
   },
-  { "type": 96, "meta": 0, "name": "Wooden Trapdoor", "text_type": "trapdoor" },
   {
-    "type": 97,
-    "meta": 0,
+    "name": "Wooden Trapdoor",
+    "id": "minecraft:wooden_trapdoor",
+    "x": -160,
+    "y": -832
+  },
+  {
     "name": "Stone Monster Egg",
-    "text_type": "monster_egg"
+    "id": "minecraft:stone_monster egg",
+    "x": -192,
+    "y": -832
   },
   {
-    "type": 97,
-    "meta": 1,
     "name": "Cobblestone Monster Egg",
-    "text_type": "monster_egg"
+    "id": "minecraft:cobblestone_monster egg",
+    "x": -224,
+    "y": -832
   },
   {
-    "type": 97,
-    "meta": 2,
     "name": "Stone Brick Monster Egg",
-    "text_type": "monster_egg"
+    "id": "minecraft:stone_brick monster egg",
+    "x": -256,
+    "y": -832
   },
   {
-    "type": 97,
-    "meta": 3,
     "name": "Mossy Stone Brick Monster Egg",
-    "text_type": "monster_egg"
+    "id": "minecraft:mossy_stone brick monster egg",
+    "x": -288,
+    "y": -832
   },
   {
-    "type": 97,
-    "meta": 4,
     "name": "Cracked Stone Brick Monster Egg",
-    "text_type": "monster_egg"
+    "id": "minecraft:cracked_stone brick monster egg",
+    "x": -320,
+    "y": -832
   },
   {
-    "type": 97,
-    "meta": 5,
     "name": "Chiseled Stone Brick Monster Egg",
-    "text_type": "monster_egg"
+    "id": "minecraft:chiseled_stone brick monster egg",
+    "x": -352,
+    "y": -832
   },
-  { "type": 98, "meta": 0, "name": "Stone Bricks", "text_type": "stonebrick" },
   {
-    "type": 98,
-    "meta": 1,
+    "name": "Stone Bricks",
+    "id": "minecraft:stone_bricks",
+    "x": -384,
+    "y": -832
+  },
+  {
     "name": "Mossy Stone Bricks",
-    "text_type": "stonebrick"
+    "id": "minecraft:mossy_stone bricks",
+    "x": -416,
+    "y": -832
   },
   {
-    "type": 98,
-    "meta": 2,
     "name": "Cracked Stone Bricks",
-    "text_type": "stonebrick"
+    "id": "minecraft:cracked_stone bricks",
+    "x": -448,
+    "y": -832
   },
   {
-    "type": 98,
-    "meta": 3,
     "name": "Chiseled Stone Bricks",
-    "text_type": "stonebrick"
+    "id": "minecraft:chiseled_stone bricks",
+    "x": -480,
+    "y": -832
   },
   {
-    "type": 99,
-    "meta": 0,
     "name": "Brown Mushroom Block",
-    "text_type": "brown_mushroom_block"
+    "id": "minecraft:brown_mushroom block",
+    "x": -512,
+    "y": -832
   },
   {
-    "type": 100,
-    "meta": 0,
     "name": "Red Mushroom Block",
-    "text_type": "red_mushroom_block"
+    "id": "minecraft:red_mushroom block",
+    "x": -96,
+    "y": 0
   },
-  { "type": 101, "meta": 0, "name": "Iron Bars", "text_type": "iron_bars" },
-  { "type": 102, "meta": 0, "name": "Glass Pane", "text_type": "glass_pane" },
-  { "type": 103, "meta": 0, "name": "Melon Block", "text_type": "melon_block" },
   {
-    "type": 104,
-    "meta": 0,
+    "name": "Iron Bars",
+    "id": "minecraft:iron_bars",
+    "x": -96,
+    "y": -32
+  },
+  {
+    "name": "Glass Pane",
+    "id": "minecraft:glass_pane",
+    "x": -96,
+    "y": -64
+  },
+  {
+    "name": "Melon Block",
+    "id": "minecraft:melon_block",
+    "x": 0,
+    "y": -96
+  },
+  {
     "name": "Pumpkin Stem",
-    "text_type": "pumpkin_stem"
+    "id": "minecraft:pumpkin_stem",
+    "x": -32,
+    "y": -96
   },
-  { "type": 105, "meta": 0, "name": "Melon Stem", "text_type": "melon_stem" },
-  { "type": 106, "meta": 0, "name": "Vines", "text_type": "vine" },
   {
-    "type": 107,
-    "meta": 0,
+    "name": "Melon Stem",
+    "id": "minecraft:melon_stem",
+    "x": -64,
+    "y": -96
+  },
+  {
+    "name": "Vines",
+    "id": "minecraft:vines",
+    "x": -96,
+    "y": -96
+  },
+  {
     "name": "Oak Fence Gate",
-    "text_type": "fence_gate"
+    "id": "minecraft:oak_fence gate",
+    "x": -128,
+    "y": 0
   },
   {
-    "type": 108,
-    "meta": 0,
     "name": "Brick Stairs",
-    "text_type": "brick_stairs"
+    "id": "minecraft:brick_stairs",
+    "x": -128,
+    "y": -32
   },
   {
-    "type": 109,
-    "meta": 0,
     "name": "Stone Brick Stairs",
-    "text_type": "stone_brick_stairs"
+    "id": "minecraft:stone_brick stairs",
+    "x": -128,
+    "y": -64
   },
-  { "type": 110, "meta": 0, "name": "Mycelium", "text_type": "mycelium" },
-  { "type": 111, "meta": 0, "name": "Lily Pad", "text_type": "waterlily" },
   {
-    "type": 112,
-    "meta": 0,
+    "name": "Mycelium",
+    "id": "minecraft:mycelium",
+    "x": 0,
+    "y": -128
+  },
+  {
+    "name": "Lily Pad",
+    "id": "minecraft:lily_pad",
+    "x": -32,
+    "y": -128
+  },
+  {
     "name": "Nether Brick",
-    "text_type": "nether_brick"
+    "id": "minecraft:nether_brick",
+    "x": -64,
+    "y": -128
   },
   {
-    "type": 113,
-    "meta": 0,
     "name": "Nether Brick Fence",
-    "text_type": "nether_brick_fence"
+    "id": "minecraft:nether_brick fence",
+    "x": -96,
+    "y": -128
   },
   {
-    "type": 114,
-    "meta": 0,
     "name": "Nether Brick Stairs",
-    "text_type": "nether_brick_stairs"
+    "id": "minecraft:nether_brick stairs",
+    "x": -128,
+    "y": -128
   },
-  { "type": 115, "meta": 0, "name": "Nether Wart", "text_type": "nether_wart" },
   {
-    "type": 116,
-    "meta": 0,
+    "name": "Nether Wart",
+    "id": "minecraft:nether_wart",
+    "x": -160,
+    "y": 0
+  },
+  {
     "name": "Enchantment Table",
-    "text_type": "enchanting_table"
+    "id": "minecraft:enchantment_table",
+    "x": -160,
+    "y": -32
   },
   {
-    "type": 117,
-    "meta": 0,
     "name": "Brewing Stand",
-    "text_type": "brewing_stand"
+    "id": "minecraft:brewing_stand",
+    "x": -160,
+    "y": -64
   },
-  { "type": 118, "meta": 0, "name": "Cauldron", "text_type": "cauldron" },
-  { "type": 119, "meta": 0, "name": "End Portal", "text_type": "end_portal" },
   {
-    "type": 120,
-    "meta": 0,
+    "name": "Cauldron",
+    "id": "minecraft:cauldron",
+    "x": -160,
+    "y": -96
+  },
+  {
+    "name": "End Portal",
+    "id": "minecraft:end_portal",
+    "x": -160,
+    "y": -128
+  },
+  {
     "name": "End Portal Frame",
-    "text_type": "end_portal_frame"
+    "id": "minecraft:end_portal frame",
+    "x": -64,
+    "y": -160
   },
-  { "type": 121, "meta": 0, "name": "End Stone", "text_type": "end_stone" },
-  { "type": 122, "meta": 0, "name": "Dragon Egg", "text_type": "dragon_egg" },
   {
-    "type": 123,
-    "meta": 0,
+    "name": "End Stone",
+    "id": "minecraft:end_stone",
+    "x": -96,
+    "y": -160
+  },
+  {
+    "name": "Dragon Egg",
+    "id": "minecraft:dragon_egg",
+    "x": -128,
+    "y": -160
+  },
+  {
     "name": "Redstone Lamp (inactive)",
-    "text_type": "redstone_lamp"
+    "id": "minecraft:redstone_lamp (inactive)",
+    "x": -160,
+    "y": -160
   },
   {
-    "type": 124,
-    "meta": 0,
     "name": "Redstone Lamp (active)",
-    "text_type": "lit_redstone_lamp"
+    "id": "minecraft:redstone_lamp (active)",
+    "x": -192,
+    "y": 0
   },
   {
-    "type": 125,
-    "meta": 0,
     "name": "Double Oak Wood Slab",
-    "text_type": "double_wooden_slab"
+    "id": "minecraft:double_oak wood slab",
+    "x": -192,
+    "y": -32
   },
   {
-    "type": 125,
-    "meta": 1,
     "name": "Double Spruce Wood Slab",
-    "text_type": "double_wooden_slab"
+    "id": "minecraft:double_spruce wood slab",
+    "x": -192,
+    "y": -64
   },
   {
-    "type": 125,
-    "meta": 2,
     "name": "Double Birch Wood Slab",
-    "text_type": "double_wooden_slab"
+    "id": "minecraft:double_birch wood slab",
+    "x": -192,
+    "y": -96
   },
   {
-    "type": 125,
-    "meta": 3,
     "name": "Double Jungle Wood Slab",
-    "text_type": "double_wooden_slab"
+    "id": "minecraft:double_jungle wood slab",
+    "x": -192,
+    "y": -128
   },
   {
-    "type": 125,
-    "meta": 4,
     "name": "Double Acacia Wood Slab",
-    "text_type": "double_wooden_slab"
+    "id": "minecraft:double_acacia wood slab",
+    "x": -192,
+    "y": -160
   },
   {
-    "type": 125,
-    "meta": 5,
     "name": "Double Dark Oak Wood Slab",
-    "text_type": "double_wooden_slab"
+    "id": "minecraft:double_dark oak wood slab",
+    "x": 0,
+    "y": -192
   },
   {
-    "type": 126,
-    "meta": 0,
     "name": "Oak Wood Slab",
-    "text_type": "wooden_slab"
+    "id": "minecraft:oak_wood slab",
+    "x": -32,
+    "y": -192
   },
   {
-    "type": 126,
-    "meta": 1,
     "name": "Spruce Wood Slab",
-    "text_type": "wooden_slab"
+    "id": "minecraft:spruce_wood slab",
+    "x": -64,
+    "y": -192
   },
   {
-    "type": 126,
-    "meta": 2,
     "name": "Birch Wood Slab",
-    "text_type": "wooden_slab"
+    "id": "minecraft:birch_wood slab",
+    "x": -96,
+    "y": -192
   },
   {
-    "type": 126,
-    "meta": 3,
     "name": "Jungle Wood Slab",
-    "text_type": "wooden_slab"
+    "id": "minecraft:jungle_wood slab",
+    "x": -128,
+    "y": -192
   },
   {
-    "type": 126,
-    "meta": 4,
     "name": "Acacia Wood Slab",
-    "text_type": "wooden_slab"
+    "id": "minecraft:acacia_wood slab",
+    "x": -160,
+    "y": -192
   },
   {
-    "type": 126,
-    "meta": 5,
     "name": "Dark Oak Wood Slab",
-    "text_type": "wooden_slab"
+    "id": "minecraft:dark_oak wood slab",
+    "x": -192,
+    "y": -192
   },
-  { "type": 127, "meta": 0, "name": "Cocoa", "text_type": "cocoa" },
   {
-    "type": 128,
-    "meta": 0,
+    "name": "Cocoa",
+    "id": "minecraft:cocoa",
+    "x": -224,
+    "y": 0
+  },
+  {
     "name": "Sandstone Stairs",
-    "text_type": "sandstone_stairs"
+    "id": "minecraft:sandstone_stairs",
+    "x": -224,
+    "y": -32
   },
-  { "type": 129, "meta": 0, "name": "Emerald Ore", "text_type": "emerald_ore" },
-  { "type": 130, "meta": 0, "name": "Ender Chest", "text_type": "ender_chest" },
   {
-    "type": 131,
-    "meta": 0,
+    "name": "Emerald Ore",
+    "id": "minecraft:emerald_ore",
+    "x": -224,
+    "y": -64
+  },
+  {
+    "name": "Ender Chest",
+    "id": "minecraft:ender_chest",
+    "x": -224,
+    "y": -128
+  },
+  {
     "name": "Tripwire Hook",
-    "text_type": "tripwire_hook"
+    "id": "minecraft:tripwire_hook",
+    "x": -224,
+    "y": -160
   },
-  { "type": 132, "meta": 0, "name": "Tripwire", "text_type": "tripwire_hook" },
   {
-    "type": 133,
-    "meta": 0,
+    "name": "Tripwire",
+    "id": "minecraft:tripwire",
+    "x": -224,
+    "y": -192
+  },
+  {
     "name": "Emerald Block",
-    "text_type": "emerald_block"
+    "id": "minecraft:emerald_block",
+    "x": 0,
+    "y": -224
   },
   {
-    "type": 134,
-    "meta": 0,
     "name": "Spruce Wood Stairs",
-    "text_type": "spruce_stairs"
+    "id": "minecraft:spruce_wood stairs",
+    "x": -32,
+    "y": -224
   },
   {
-    "type": 135,
-    "meta": 0,
     "name": "Birch Wood Stairs",
-    "text_type": "birch_stairs"
+    "id": "minecraft:birch_wood stairs",
+    "x": -64,
+    "y": -224
   },
   {
-    "type": 136,
-    "meta": 0,
     "name": "Jungle Wood Stairs",
-    "text_type": "jungle_stairs"
+    "id": "minecraft:jungle_wood stairs",
+    "x": -96,
+    "y": -224
   },
   {
-    "type": 137,
-    "meta": 0,
     "name": "Command Block",
-    "text_type": "command_block"
+    "id": "minecraft:command_block",
+    "x": -128,
+    "y": -224
   },
-  { "type": 138, "meta": 0, "name": "Beacon", "text_type": "beacon" },
   {
-    "type": 139,
-    "meta": 0,
+    "name": "Beacon",
+    "id": "minecraft:beacon",
+    "x": -160,
+    "y": -224
+  },
+  {
     "name": "Cobblestone Wall",
-    "text_type": "cobblestone_wall"
+    "id": "minecraft:cobblestone_wall",
+    "x": -192,
+    "y": -224
   },
   {
-    "type": 139,
-    "meta": 1,
     "name": "Mossy Cobblestone Wall",
-    "text_type": "cobblestone_wall"
+    "id": "minecraft:mossy_cobblestone wall",
+    "x": -224,
+    "y": -224
   },
-  { "type": 140, "meta": 0, "name": "Flower Pot", "text_type": "flower_pot" },
-  { "type": 141, "meta": 0, "name": "Carrots", "text_type": "carrots" },
-  { "type": 142, "meta": 0, "name": "Potatoes", "text_type": "potatoes" },
   {
-    "type": 143,
-    "meta": 0,
+    "name": "Flower Pot",
+    "id": "minecraft:flower_pot",
+    "x": -256,
+    "y": -32
+  },
+  {
+    "name": "Carrots",
+    "id": "minecraft:carrots",
+    "x": -256,
+    "y": -64
+  },
+  {
+    "name": "Potatoes",
+    "id": "minecraft:potatoes",
+    "x": -256,
+    "y": -96
+  },
+  {
     "name": "Wooden Button",
-    "text_type": "wooden_button"
+    "id": "minecraft:wooden_button",
+    "x": -256,
+    "y": -128
   },
-  { "type": 144, "meta": 0, "name": "Mob Head", "text_type": "skull" },
-  { "type": 145, "meta": 0, "name": "Anvil", "text_type": "anvil" },
   {
-    "type": 146,
-    "meta": 0,
+    "name": "Mob Head",
+    "id": "minecraft:mob_head",
+    "x": -256,
+    "y": -160
+  },
+  {
+    "name": "Anvil",
+    "id": "minecraft:anvil",
+    "x": -256,
+    "y": -192
+  },
+  {
     "name": "Trapped Chest",
-    "text_type": "trapped_chest"
+    "id": "minecraft:trapped_chest",
+    "x": -256,
+    "y": -224
   },
   {
-    "type": 147,
-    "meta": 0,
     "name": "Weighted Pressure Plate (light)",
-    "text_type": "light_weighted_pressure_plate"
+    "id": "minecraft:weighted_pressure plate (light)",
+    "x": 0,
+    "y": -256
   },
   {
-    "type": 148,
-    "meta": 0,
     "name": "Weighted Pressure Plate (heavy)",
-    "text_type": "heavy_weighted_pressure_plate"
+    "id": "minecraft:weighted_pressure plate (heavy)",
+    "x": -32,
+    "y": -256
   },
   {
-    "type": 149,
-    "meta": 0,
     "name": "Redstone Comparator (inactive)",
-    "text_type": "unpowered_comparator"
+    "id": "minecraft:redstone_comparator (inactive)",
+    "x": -64,
+    "y": -256
   },
   {
-    "type": 150,
-    "meta": 0,
     "name": "Redstone Comparator (active)",
-    "text_type": "powered_comparator"
+    "id": "minecraft:redstone_comparator (active)",
+    "x": -128,
+    "y": -256
   },
   {
-    "type": 151,
-    "meta": 0,
     "name": "Daylight Sensor",
-    "text_type": "daylight_detector"
+    "id": "minecraft:daylight_sensor",
+    "x": -160,
+    "y": -256
   },
   {
-    "type": 152,
-    "meta": 0,
     "name": "Redstone Block",
-    "text_type": "redstone_block"
+    "id": "minecraft:redstone_block",
+    "x": -192,
+    "y": -256
   },
   {
-    "type": 153,
-    "meta": 0,
     "name": "Nether Quartz Ore",
-    "text_type": "quartz_ore"
+    "id": "minecraft:nether_quartz ore",
+    "x": -224,
+    "y": -256
   },
-  { "type": 154, "meta": 0, "name": "Hopper", "text_type": "hopper" },
   {
-    "type": 155,
-    "meta": 0,
+    "name": "Hopper",
+    "id": "minecraft:hopper",
+    "x": -256,
+    "y": -256
+  },
+  {
     "name": "Quartz Block",
-    "text_type": "quartz_block"
+    "id": "minecraft:quartz_block",
+    "x": -288,
+    "y": 0
   },
   {
-    "type": 155,
-    "meta": 1,
     "name": "Chiseled Quartz Block",
-    "text_type": "quartz_block"
+    "id": "minecraft:chiseled_quartz block",
+    "x": -288,
+    "y": -32
   },
   {
-    "type": 155,
-    "meta": 2,
     "name": "Pillar Quartz Block",
-    "text_type": "quartz_block"
+    "id": "minecraft:pillar_quartz block",
+    "x": -288,
+    "y": -64
   },
   {
-    "type": 156,
-    "meta": 0,
     "name": "Quartz Stairs",
-    "text_type": "quartz_stairs"
+    "id": "minecraft:quartz_stairs",
+    "x": -288,
+    "y": -96
   },
   {
-    "type": 157,
-    "meta": 0,
     "name": "Activator Rail",
-    "text_type": "activator_rail"
+    "id": "minecraft:activator_rail",
+    "x": -288,
+    "y": -128
   },
-  { "type": 158, "meta": 0, "name": "Dropper", "text_type": "dropper" },
   {
-    "type": 159,
-    "meta": 0,
+    "name": "Dropper",
+    "id": "minecraft:dropper",
+    "x": -288,
+    "y": -160
+  },
+  {
     "name": "White Hardened Clay",
-    "text_type": "stained_hardened_clay"
+    "id": "minecraft:white_hardened clay",
+    "x": -288,
+    "y": -192
   },
   {
-    "type": 159,
-    "meta": 1,
     "name": "Orange Hardened Clay",
-    "text_type": "stained_hardened_clay"
+    "id": "minecraft:orange_hardened clay",
+    "x": -288,
+    "y": -224
   },
   {
-    "type": 159,
-    "meta": 2,
     "name": "Magenta Hardened Clay",
-    "text_type": "stained_hardened_clay"
+    "id": "minecraft:magenta_hardened clay",
+    "x": -160,
+    "y": -288
   },
   {
-    "type": 159,
-    "meta": 3,
     "name": "Light Blue Hardened Clay",
-    "text_type": "stained_hardened_clay"
+    "id": "minecraft:light_blue hardened clay",
+    "x": -192,
+    "y": -288
   },
   {
-    "type": 159,
-    "meta": 4,
     "name": "Yellow Hardened Clay",
-    "text_type": "stained_hardened_clay"
+    "id": "minecraft:yellow_hardened clay",
+    "x": -224,
+    "y": -288
   },
   {
-    "type": 159,
-    "meta": 5,
     "name": "Lime Hardened Clay",
-    "text_type": "stained_hardened_clay"
+    "id": "minecraft:lime_hardened clay",
+    "x": -256,
+    "y": -288
   },
   {
-    "type": 159,
-    "meta": 6,
     "name": "Pink Hardened Clay",
-    "text_type": "stained_hardened_clay"
+    "id": "minecraft:pink_hardened clay",
+    "x": -288,
+    "y": -288
   },
   {
-    "type": 159,
-    "meta": 7,
     "name": "Gray Hardened Clay",
-    "text_type": "stained_hardened_clay"
+    "id": "minecraft:gray_hardened clay",
+    "x": -320,
+    "y": 0
   },
   {
-    "type": 159,
-    "meta": 8,
     "name": "Light Gray Hardened Clay",
-    "text_type": "stained_hardened_clay"
+    "id": "minecraft:light_gray hardened clay",
+    "x": -320,
+    "y": -32
   },
   {
-    "type": 159,
-    "meta": 9,
     "name": "Cyan Hardened Clay",
-    "text_type": "stained_hardened_clay"
+    "id": "minecraft:cyan_hardened clay",
+    "x": -320,
+    "y": -64
   },
   {
-    "type": 159,
-    "meta": 10,
     "name": "Purple Hardened Clay",
-    "text_type": "stained_hardened_clay"
+    "id": "minecraft:purple_hardened clay",
+    "x": -288,
+    "y": -256
   },
   {
-    "type": 159,
-    "meta": 11,
     "name": "Blue Hardened Clay",
-    "text_type": "stained_hardened_clay"
+    "id": "minecraft:blue_hardened clay",
+    "x": 0,
+    "y": -288
   },
   {
-    "type": 159,
-    "meta": 12,
     "name": "Brown Hardened Clay",
-    "text_type": "stained_hardened_clay"
+    "id": "minecraft:brown_hardened clay",
+    "x": -32,
+    "y": -288
   },
   {
-    "type": 159,
-    "meta": 13,
     "name": "Green Hardened Clay",
-    "text_type": "stained_hardened_clay"
+    "id": "minecraft:green_hardened clay",
+    "x": -64,
+    "y": -288
   },
   {
-    "type": 159,
-    "meta": 14,
     "name": "Red Hardened Clay",
-    "text_type": "stained_hardened_clay"
+    "id": "minecraft:red_hardened clay",
+    "x": -96,
+    "y": -288
   },
   {
-    "type": 159,
-    "meta": 15,
     "name": "Black Hardened Clay",
-    "text_type": "stained_hardened_clay"
+    "id": "minecraft:black_hardened clay",
+    "x": -128,
+    "y": -288
   },
   {
-    "type": 160,
-    "meta": 0,
     "name": "White Stained Glass Pane",
-    "text_type": "stained_glass_pane"
+    "id": "minecraft:white_stained glass pane",
+    "x": -320,
+    "y": -128
   },
   {
-    "type": 160,
-    "meta": 1,
     "name": "Orange Stained Glass Pane",
-    "text_type": "stained_glass_pane"
+    "id": "minecraft:orange_stained glass pane",
+    "x": -320,
+    "y": -160
   },
   {
-    "type": 160,
-    "meta": 2,
     "name": "Magenta Stained Glass Pane",
-    "text_type": "stained_glass_pane"
+    "id": "minecraft:magenta_stained glass pane",
+    "x": -64,
+    "y": -320
   },
   {
-    "type": 160,
-    "meta": 3,
     "name": "Light Blue Stained Glass Pane",
-    "text_type": "stained_glass_pane"
+    "id": "minecraft:light_blue stained glass pane",
+    "x": -96,
+    "y": -320
   },
   {
-    "type": 160,
-    "meta": 4,
     "name": "Yellow Stained Glass Pane",
-    "text_type": "stained_glass_pane"
+    "id": "minecraft:yellow_stained glass pane",
+    "x": -128,
+    "y": -320
   },
   {
-    "type": 160,
-    "meta": 5,
     "name": "Lime Stained Glass Pane",
-    "text_type": "stained_glass_pane"
+    "id": "minecraft:lime_stained glass pane",
+    "x": -160,
+    "y": -320
   },
   {
-    "type": 160,
-    "meta": 6,
     "name": "Pink Stained Glass Pane",
-    "text_type": "stained_glass_pane"
+    "id": "minecraft:pink_stained glass pane",
+    "x": -192,
+    "y": -320
   },
   {
-    "type": 160,
-    "meta": 7,
     "name": "Gray Stained Glass Pane",
-    "text_type": "stained_glass_pane"
+    "id": "minecraft:gray_stained glass pane",
+    "x": -224,
+    "y": -320
   },
   {
-    "type": 160,
-    "meta": 8,
     "name": "Light Gray Stained Glass Pane",
-    "text_type": "stained_glass_pane"
+    "id": "minecraft:light_gray stained glass pane",
+    "x": -256,
+    "y": -320
   },
   {
-    "type": 160,
-    "meta": 9,
     "name": "Cyan Stained Glass Pane",
-    "text_type": "stained_glass_pane"
+    "id": "minecraft:cyan_stained glass pane",
+    "x": -288,
+    "y": -320
   },
   {
-    "type": 160,
-    "meta": 10,
     "name": "Purple Stained Glass Pane",
-    "text_type": "stained_glass_pane"
+    "id": "minecraft:purple_stained glass pane",
+    "x": -320,
+    "y": -192
   },
   {
-    "type": 160,
-    "meta": 11,
     "name": "Blue Stained Glass Pane",
-    "text_type": "stained_glass_pane"
+    "id": "minecraft:blue_stained glass pane",
+    "x": -320,
+    "y": -224
   },
   {
-    "type": 160,
-    "meta": 12,
     "name": "Brown Stained Glass Pane",
-    "text_type": "stained_glass_pane"
+    "id": "minecraft:brown_stained glass pane",
+    "x": -320,
+    "y": -256
   },
   {
-    "type": 160,
-    "meta": 13,
     "name": "Green Stained Glass Pane",
-    "text_type": "stained_glass_pane"
+    "id": "minecraft:green_stained glass pane",
+    "x": -320,
+    "y": -288
   },
   {
-    "type": 160,
-    "meta": 14,
     "name": "Red Stained Glass Pane",
-    "text_type": "stained_glass_pane"
+    "id": "minecraft:red_stained glass pane",
+    "x": 0,
+    "y": -320
   },
   {
-    "type": 160,
-    "meta": 15,
     "name": "Black Stained Glass Pane",
-    "text_type": "stained_glass_pane"
+    "id": "minecraft:black_stained glass pane",
+    "x": -32,
+    "y": -320
   },
-  { "type": 161, "meta": 0, "name": "Acacia Leaves", "text_type": "leaves2" },
-  { "type": 161, "meta": 1, "name": "Dark Oak Leaves", "text_type": "leaves2" },
-  { "type": 162, "meta": 0, "name": "Acacia Wood", "text_type": "log2" },
-  { "type": 162, "meta": 1, "name": "Dark Oak Wood", "text_type": "log2" },
   {
-    "type": 163,
-    "meta": 0,
+    "name": "Acacia Leaves",
+    "id": "minecraft:acacia_leaves",
+    "x": -320,
+    "y": -320
+  },
+  {
+    "name": "Dark Oak Leaves",
+    "id": "minecraft:dark_oak leaves",
+    "x": -352,
+    "y": 0
+  },
+  {
+    "name": "Acacia Wood",
+    "id": "minecraft:acacia_wood",
+    "x": -352,
+    "y": -32
+  },
+  {
+    "name": "Dark Oak Wood",
+    "id": "minecraft:dark_oak wood",
+    "x": -352,
+    "y": -64
+  },
+  {
     "name": "Acacia Wood Stairs",
-    "text_type": "acacia_stairs"
+    "id": "minecraft:acacia_wood stairs",
+    "x": -352,
+    "y": -96
   },
   {
-    "type": 164,
-    "meta": 0,
     "name": "Dark Oak Wood Stairs",
-    "text_type": "dark_oak_stairs"
+    "id": "minecraft:dark_oak wood stairs",
+    "x": -352,
+    "y": -128
   },
-  { "type": 165, "meta": 0, "name": "Slime Block", "text_type": "slime" },
-  { "type": 166, "meta": 0, "name": "Barrier", "text_type": "barrier" },
   {
-    "type": 167,
-    "meta": 0,
+    "name": "Slime Block",
+    "id": "minecraft:slime_block",
+    "x": -352,
+    "y": -160
+  },
+  {
+    "name": "Barrier",
+    "id": "minecraft:barrier",
+    "x": -352,
+    "y": -192
+  },
+  {
     "name": "Iron Trapdoor",
-    "text_type": "iron_trapdoor"
+    "id": "minecraft:iron_trapdoor",
+    "x": -352,
+    "y": -224
   },
-  { "type": 168, "meta": 0, "name": "Prismarine", "text_type": "prismarine" },
   {
-    "type": 168,
-    "meta": 1,
+    "name": "Prismarine",
+    "id": "minecraft:prismarine",
+    "x": -352,
+    "y": -256
+  },
+  {
     "name": "Prismarine Bricks",
-    "text_type": "prismarine"
+    "id": "minecraft:prismarine_bricks",
+    "x": -352,
+    "y": -288
   },
   {
-    "type": 168,
-    "meta": 2,
     "name": "Dark Prismarine",
-    "text_type": "prismarine"
+    "id": "minecraft:dark_prismarine",
+    "x": -352,
+    "y": -320
   },
-  { "type": 169, "meta": 0, "name": "Sea Lantern", "text_type": "sea_lantern" },
-  { "type": 170, "meta": 0, "name": "Hay Bale", "text_type": "hay_block" },
-  { "type": 171, "meta": 0, "name": "White Carpet", "text_type": "carpet" },
-  { "type": 171, "meta": 1, "name": "Orange Carpet", "text_type": "carpet" },
-  { "type": 171, "meta": 2, "name": "Magenta Carpet", "text_type": "carpet" },
   {
-    "type": 171,
-    "meta": 3,
+    "name": "Sea Lantern",
+    "id": "minecraft:sea_lantern",
+    "x": 0,
+    "y": -352
+  },
+  {
+    "name": "Hay Bale",
+    "id": "minecraft:hay_bale",
+    "x": -160,
+    "y": -352
+  },
+  {
+    "name": "White Carpet",
+    "id": "minecraft:white_carpet",
+    "x": -192,
+    "y": -352
+  },
+  {
+    "name": "Orange Carpet",
+    "id": "minecraft:orange_carpet",
+    "x": -224,
+    "y": -352
+  },
+  {
+    "name": "Magenta Carpet",
+    "id": "minecraft:magenta_carpet",
+    "x": -384,
+    "y": -64
+  },
+  {
     "name": "Light Blue Carpet",
-    "text_type": "carpet"
+    "id": "minecraft:light_blue carpet",
+    "x": -384,
+    "y": -96
   },
-  { "type": 171, "meta": 4, "name": "Yellow Carpet", "text_type": "carpet" },
-  { "type": 171, "meta": 5, "name": "Lime Carpet", "text_type": "carpet" },
-  { "type": 171, "meta": 6, "name": "Pink Carpet", "text_type": "carpet" },
-  { "type": 171, "meta": 7, "name": "Gray Carpet", "text_type": "carpet" },
   {
-    "type": 171,
-    "meta": 8,
+    "name": "Yellow Carpet",
+    "id": "minecraft:yellow_carpet",
+    "x": -384,
+    "y": -128
+  },
+  {
+    "name": "Lime Carpet",
+    "id": "minecraft:lime_carpet",
+    "x": -384,
+    "y": -160
+  },
+  {
+    "name": "Pink Carpet",
+    "id": "minecraft:pink_carpet",
+    "x": -384,
+    "y": -192
+  },
+  {
+    "name": "Gray Carpet",
+    "id": "minecraft:gray_carpet",
+    "x": -384,
+    "y": -224
+  },
+  {
     "name": "Light Gray Carpet",
-    "text_type": "carpet"
+    "id": "minecraft:light_gray carpet",
+    "x": -384,
+    "y": -256
   },
-  { "type": 171, "meta": 9, "name": "Cyan Carpet", "text_type": "carpet" },
-  { "type": 171, "meta": 10, "name": "Purple Carpet", "text_type": "carpet" },
-  { "type": 171, "meta": 11, "name": "Blue Carpet", "text_type": "carpet" },
-  { "type": 171, "meta": 12, "name": "Brown Carpet", "text_type": "carpet" },
-  { "type": 171, "meta": 13, "name": "Green Carpet", "text_type": "carpet" },
-  { "type": 171, "meta": 14, "name": "Red Carpet", "text_type": "carpet" },
-  { "type": 171, "meta": 15, "name": "Black Carpet", "text_type": "carpet" },
   {
-    "type": 172,
-    "meta": 0,
+    "name": "Cyan Carpet",
+    "id": "minecraft:cyan_carpet",
+    "x": -384,
+    "y": -288
+  },
+  {
+    "name": "Purple Carpet",
+    "id": "minecraft:purple_carpet",
+    "x": -256,
+    "y": -352
+  },
+  {
+    "name": "Blue Carpet",
+    "id": "minecraft:blue_carpet",
+    "x": -288,
+    "y": -352
+  },
+  {
+    "name": "Brown Carpet",
+    "id": "minecraft:brown_carpet",
+    "x": -320,
+    "y": -352
+  },
+  {
+    "name": "Green Carpet",
+    "id": "minecraft:green_carpet",
+    "x": -352,
+    "y": -352
+  },
+  {
+    "name": "Red Carpet",
+    "id": "minecraft:red_carpet",
+    "x": -384,
+    "y": 0
+  },
+  {
+    "name": "Black Carpet",
+    "id": "minecraft:black_carpet",
+    "x": -384,
+    "y": -32
+  },
+  {
     "name": "Hardened Clay",
-    "text_type": "hardened_clay"
+    "id": "minecraft:hardened_clay",
+    "x": -384,
+    "y": -320
   },
   {
-    "type": 173,
-    "meta": 0,
     "name": "Block of Coal",
-    "text_type": "coal_block"
+    "id": "minecraft:block_of coal",
+    "x": -384,
+    "y": -352
   },
-  { "type": 174, "meta": 0, "name": "Packed Ice", "text_type": "packed_ice" },
-  { "type": 175, "meta": 0, "name": "Sunflower", "text_type": "double_plant" },
-  { "type": 175, "meta": 1, "name": "Lilac", "text_type": "double_plant" },
   {
-    "type": 175,
-    "meta": 2,
+    "name": "Packed Ice",
+    "id": "minecraft:packed_ice",
+    "x": 0,
+    "y": -384
+  },
+  {
+    "name": "Sunflower",
+    "id": "minecraft:sunflower",
+    "x": -32,
+    "y": -384
+  },
+  {
+    "name": "Lilac",
+    "id": "minecraft:lilac",
+    "x": -64,
+    "y": -384
+  },
+  {
     "name": "Double Tallgrass",
-    "text_type": "double_plant"
+    "id": "minecraft:double_tallgrass",
+    "x": -96,
+    "y": -384
   },
-  { "type": 175, "meta": 3, "name": "Large Fern", "text_type": "double_plant" },
-  { "type": 175, "meta": 4, "name": "Rose Bush", "text_type": "double_plant" },
-  { "type": 175, "meta": 5, "name": "Peony", "text_type": "double_plant" },
   {
-    "type": 176,
-    "meta": 0,
+    "name": "Large Fern",
+    "id": "minecraft:large_fern",
+    "x": -128,
+    "y": -384
+  },
+  {
+    "name": "Rose Bush",
+    "id": "minecraft:rose_bush",
+    "x": -160,
+    "y": -384
+  },
+  {
+    "name": "Peony",
+    "id": "minecraft:peony",
+    "x": -192,
+    "y": -384
+  },
+  {
     "name": "Free-standing Banner",
-    "text_type": "standing_banner"
+    "id": "minecraft:free-standing_banner",
+    "x": -224,
+    "y": -384
   },
   {
-    "type": 177,
-    "meta": 0,
     "name": "Wall-mounted Banner",
-    "text_type": "wall_banner"
+    "id": "minecraft:wall-mounted_banner",
+    "x": -256,
+    "y": -384
   },
   {
-    "type": 178,
-    "meta": 0,
     "name": "Inverted Daylight Sensor",
-    "text_type": "daylight_detector_inverted"
+    "id": "minecraft:inverted_daylight sensor",
+    "x": -288,
+    "y": -384
   },
   {
-    "type": 179,
-    "meta": 0,
     "name": "Red Sandstone",
-    "text_type": "red_sandstone"
+    "id": "minecraft:red_sandstone",
+    "x": -320,
+    "y": -384
   },
   {
-    "type": 179,
-    "meta": 1,
     "name": "Chiseled Red Sandstone",
-    "text_type": "red_sandstone"
+    "id": "minecraft:chiseled_red sandstone",
+    "x": -352,
+    "y": -384
   },
   {
-    "type": 179,
-    "meta": 2,
     "name": "Smooth Red Sandstone",
-    "text_type": "red_sandstone"
+    "id": "minecraft:smooth_red sandstone",
+    "x": -384,
+    "y": -384
   },
   {
-    "type": 180,
-    "meta": 0,
     "name": "Red Sandstone Stairs",
-    "text_type": "red_sandstone_stairs"
+    "id": "minecraft:red_sandstone stairs",
+    "x": -416,
+    "y": -128
   },
   {
-    "type": 181,
-    "meta": 0,
     "name": "Double Red Sandstone Slab",
-    "text_type": "double_stone_slab2"
+    "id": "minecraft:double_red sandstone slab",
+    "x": -416,
+    "y": -160
   },
   {
-    "type": 182,
-    "meta": 0,
     "name": "Red Sandstone Slab",
-    "text_type": "stone_slab2"
+    "id": "minecraft:red_sandstone slab",
+    "x": -416,
+    "y": -192
   },
   {
-    "type": 183,
-    "meta": 0,
     "name": "Spruce Fence Gate",
-    "text_type": "spruce_fence_gate"
+    "id": "minecraft:spruce_fence gate",
+    "x": -416,
+    "y": -224
   },
   {
-    "type": 184,
-    "meta": 0,
     "name": "Birch Fence Gate",
-    "text_type": "birch_fence_gate"
+    "id": "minecraft:birch_fence gate",
+    "x": -416,
+    "y": -256
   },
   {
-    "type": 185,
-    "meta": 0,
     "name": "Jungle Fence Gate",
-    "text_type": "jungle_fence_gate"
+    "id": "minecraft:jungle_fence gate",
+    "x": -416,
+    "y": -288
   },
   {
-    "type": 186,
-    "meta": 0,
     "name": "Dark Oak Fence Gate",
-    "text_type": "dark_oak_fence_gate"
+    "id": "minecraft:dark_oak fence gate",
+    "x": -416,
+    "y": -320
   },
   {
-    "type": 187,
-    "meta": 0,
     "name": "Acacia Fence Gate",
-    "text_type": "acacia_fence_gate"
+    "id": "minecraft:acacia_fence gate",
+    "x": -416,
+    "y": -352
   },
   {
-    "type": 188,
-    "meta": 0,
     "name": "Spruce Fence",
-    "text_type": "spruce_fence"
+    "id": "minecraft:spruce_fence",
+    "x": -416,
+    "y": -384
   },
-  { "type": 189, "meta": 0, "name": "Birch Fence", "text_type": "birch_fence" },
   {
-    "type": 190,
-    "meta": 0,
+    "name": "Birch Fence",
+    "id": "minecraft:birch_fence",
+    "x": 0,
+    "y": -416
+  },
+  {
     "name": "Jungle Fence",
-    "text_type": "jungle_fence"
+    "id": "minecraft:jungle_fence",
+    "x": -96,
+    "y": -416
   },
   {
-    "type": 191,
-    "meta": 0,
     "name": "Dark Oak Fence",
-    "text_type": "dark_oak_fence"
+    "id": "minecraft:dark_oak fence",
+    "x": -128,
+    "y": -416
   },
   {
-    "type": 192,
-    "meta": 0,
     "name": "Acacia Fence",
-    "text_type": "acacia_fence"
+    "id": "minecraft:acacia_fence",
+    "x": -160,
+    "y": -416
   },
   {
-    "type": 193,
-    "meta": 0,
     "name": "Spruce Door Block",
-    "text_type": "spruce_door"
+    "id": "minecraft:spruce_door block",
+    "x": -192,
+    "y": -416
   },
   {
-    "type": 194,
-    "meta": 0,
     "name": "Birch Door Block",
-    "text_type": "birch_door"
+    "id": "minecraft:birch_door block",
+    "x": -224,
+    "y": -416
   },
   {
-    "type": 195,
-    "meta": 0,
     "name": "Jungle Door Block",
-    "text_type": "jungle_door"
+    "id": "minecraft:jungle_door block",
+    "x": -256,
+    "y": -416
   },
   {
-    "type": 196,
-    "meta": 0,
     "name": "Acacia Door Block",
-    "text_type": "acacia_door"
+    "id": "minecraft:acacia_door block",
+    "x": -288,
+    "y": -416
   },
   {
-    "type": 197,
-    "meta": 0,
     "name": "Dark Oak Door Block",
-    "text_type": "dark_oak_door"
+    "id": "minecraft:dark_oak door block",
+    "x": -320,
+    "y": -416
   },
-  { "type": 198, "meta": 0, "name": "End Rod", "text_type": "end_rod" },
   {
-    "type": 199,
-    "meta": 0,
+    "name": "End Rod",
+    "id": "minecraft:end_rod",
+    "x": -352,
+    "y": -416
+  },
+  {
     "name": "Chorus Plant",
-    "text_type": "chorus_plant"
+    "id": "minecraft:chorus_plant",
+    "x": -384,
+    "y": -416
   },
   {
-    "type": 200,
-    "meta": 0,
     "name": "Chorus Flower",
-    "text_type": "chorus_flower"
+    "id": "minecraft:chorus_flower",
+    "x": -448,
+    "y": -32
   },
   {
-    "type": 201,
-    "meta": 0,
     "name": "Purpur Block",
-    "text_type": "purpur_block"
+    "id": "minecraft:purpur_block",
+    "x": -448,
+    "y": -64
   },
   {
-    "type": 202,
-    "meta": 0,
     "name": "Purpur Pillar",
-    "text_type": "purpur_pillar"
+    "id": "minecraft:purpur_pillar",
+    "x": -448,
+    "y": -96
   },
   {
-    "type": 203,
-    "meta": 0,
     "name": "Purpur Stairs",
-    "text_type": "purpur_stairs"
+    "id": "minecraft:purpur_stairs",
+    "x": -448,
+    "y": -128
   },
   {
-    "type": 204,
-    "meta": 0,
     "name": "Purpur Double Slab",
-    "text_type": "purpur_double_slab"
+    "id": "minecraft:purpur_double slab",
+    "x": -448,
+    "y": -160
   },
-  { "type": 205, "meta": 0, "name": "Purpur Slab", "text_type": "purpur_slab" },
   {
-    "type": 206,
-    "meta": 0,
+    "name": "Purpur Slab",
+    "id": "minecraft:purpur_slab",
+    "x": -448,
+    "y": -192
+  },
+  {
     "name": "End Stone Bricks",
-    "text_type": "end_bricks"
+    "id": "minecraft:end_stone bricks",
+    "x": -448,
+    "y": -224
   },
   {
-    "type": 207,
-    "meta": 0,
     "name": "Beetroot Block",
-    "text_type": "beetroots"
+    "id": "minecraft:beetroot_block",
+    "x": -448,
+    "y": -256
   },
-  { "type": 208, "meta": 0, "name": "Grass Path", "text_type": "grass_path" },
-  { "type": 209, "meta": 0, "name": "End Gateway", "text_type": "end_gateway" },
   {
-    "type": 210,
-    "meta": 0,
+    "name": "Grass Path",
+    "id": "minecraft:grass_path",
+    "x": -448,
+    "y": -288
+  },
+  {
+    "name": "End Gateway",
+    "id": "minecraft:end_gateway",
+    "x": -448,
+    "y": -320
+  },
+  {
     "name": "Repeating Command Block",
-    "text_type": "repeating_command_block"
+    "id": "minecraft:repeating_command block",
+    "x": -448,
+    "y": -384
   },
   {
-    "type": 211,
-    "meta": 0,
     "name": "Chain Command Block",
-    "text_type": "chain_command_block"
+    "id": "minecraft:chain_command block",
+    "x": -448,
+    "y": -416
   },
-  { "type": 212, "meta": 0, "name": "Frosted Ice", "text_type": "frosted_ice" },
-  { "type": 213, "meta": 0, "name": "Magma Block", "text_type": "magma" },
   {
-    "type": 214,
-    "meta": 0,
+    "name": "Frosted Ice",
+    "id": "minecraft:frosted_ice",
+    "x": 0,
+    "y": -448
+  },
+  {
+    "name": "Magma Block",
+    "id": "minecraft:magma_block",
+    "x": -32,
+    "y": -448
+  },
+  {
     "name": "Nether Wart Block",
-    "text_type": "nether_wart_block"
+    "id": "minecraft:nether_wart block",
+    "x": -64,
+    "y": -448
   },
   {
-    "type": 215,
-    "meta": 0,
     "name": "Red Nether Brick",
-    "text_type": "red_nether_brick"
+    "id": "minecraft:red_nether brick",
+    "x": -96,
+    "y": -448
   },
-  { "type": 216, "meta": 0, "name": "Bone Block", "text_type": "bone_block" },
   {
-    "type": 217,
-    "meta": 0,
+    "name": "Bone Block",
+    "id": "minecraft:bone_block",
+    "x": -128,
+    "y": -448
+  },
+  {
     "name": "Structure Void",
-    "text_type": "structure_void"
+    "id": "minecraft:structure_void",
+    "x": -160,
+    "y": -448
   },
-  { "type": 218, "meta": 0, "name": "Observer", "text_type": "observer" },
   {
-    "type": 219,
-    "meta": 0,
+    "name": "Observer",
+    "id": "minecraft:observer",
+    "x": -192,
+    "y": -448
+  },
+  {
     "name": "White Shulker Box",
-    "text_type": "white_shulker_box"
+    "id": "minecraft:white_shulker box",
+    "x": -224,
+    "y": -448
   },
   {
-    "type": 220,
-    "meta": 0,
     "name": "Orange Shulker Box",
-    "text_type": "orange_shulker_box"
+    "id": "minecraft:orange_shulker box",
+    "x": -288,
+    "y": -448
   },
   {
-    "type": 221,
-    "meta": 0,
     "name": "Magenta Shulker Box",
-    "text_type": "magenta_shulker_box"
+    "id": "minecraft:magenta_shulker box",
+    "x": -320,
+    "y": -448
   },
   {
-    "type": 222,
-    "meta": 0,
     "name": "Light Blue Shulker Box",
-    "text_type": "light_blue_shulker_box"
+    "id": "minecraft:light_blue shulker box",
+    "x": -352,
+    "y": -448
   },
   {
-    "type": 223,
-    "meta": 0,
     "name": "Yellow Shulker Box",
-    "text_type": "yellow_shulker_box"
+    "id": "minecraft:yellow_shulker box",
+    "x": -384,
+    "y": -448
   },
   {
-    "type": 224,
-    "meta": 0,
     "name": "Lime Shulker Box",
-    "text_type": "lime_shulker_box"
+    "id": "minecraft:lime_shulker box",
+    "x": -416,
+    "y": -448
   },
   {
-    "type": 225,
-    "meta": 0,
     "name": "Pink Shulker Box",
-    "text_type": "pink_shulker_box"
+    "id": "minecraft:pink_shulker box",
+    "x": -448,
+    "y": -448
   },
   {
-    "type": 226,
-    "meta": 0,
     "name": "Gray Shulker Box",
-    "text_type": "gray_shulker_box"
+    "id": "minecraft:gray_shulker box",
+    "x": -480,
+    "y": -128
   },
   {
-    "type": 227,
-    "meta": 0,
     "name": "Light Gray Shulker Box",
-    "text_type": "silver_shulker_box"
+    "id": "minecraft:light_gray shulker box",
+    "x": -480,
+    "y": -416
   },
   {
-    "type": 228,
-    "meta": 0,
     "name": "Cyan Shulker Box",
-    "text_type": "cyan_shulker_box"
+    "id": "minecraft:cyan_shulker box",
+    "x": -480,
+    "y": -448
   },
   {
-    "type": 229,
-    "meta": 0,
     "name": "Purple Shulker Box",
-    "text_type": "purple_shulker_box"
+    "id": "minecraft:purple_shulker box",
+    "x": 0,
+    "y": -480
   },
   {
-    "type": 230,
-    "meta": 0,
     "name": "Blue Shulker Box",
-    "text_type": "blue_shulker_box"
+    "id": "minecraft:blue_shulker box",
+    "x": -64,
+    "y": -480
   },
   {
-    "type": 231,
-    "meta": 0,
     "name": "Brown Shulker Box",
-    "text_type": "brown_shulker_box"
+    "id": "minecraft:brown_shulker box",
+    "x": -96,
+    "y": -480
   },
   {
-    "type": 232,
-    "meta": 0,
     "name": "Green Shulker Box",
-    "text_type": "green_shulker_box"
+    "id": "minecraft:green_shulker box",
+    "x": -128,
+    "y": -480
   },
   {
-    "type": 233,
-    "meta": 0,
     "name": "Red Shulker Box",
-    "text_type": "red_shulker_box"
+    "id": "minecraft:red_shulker box",
+    "x": -160,
+    "y": -480
   },
   {
-    "type": 234,
-    "meta": 0,
     "name": "Black Shulker Box",
-    "text_type": "black_shulker_box"
+    "id": "minecraft:black_shulker box",
+    "x": -192,
+    "y": -480
   },
   {
-    "type": 235,
-    "meta": 0,
     "name": "White Glazed Terracotta",
-    "text_type": "white_glazed_terracotta"
+    "id": "minecraft:white_glazed terracotta",
+    "x": -224,
+    "y": -480
   },
   {
-    "type": 236,
-    "meta": 0,
     "name": "Orange Glazed Terracotta",
-    "text_type": "orange_glazed_terracotta"
+    "id": "minecraft:orange_glazed terracotta",
+    "x": -256,
+    "y": -480
   },
   {
-    "type": 237,
-    "meta": 0,
     "name": "Magenta Glazed Terracotta",
-    "text_type": "magenta_glazed_terracotta"
+    "id": "minecraft:magenta_glazed terracotta",
+    "x": -288,
+    "y": -480
   },
   {
-    "type": 238,
-    "meta": 0,
     "name": "Light Blue Glazed Terracotta",
-    "text_type": "light_blue_glazed_terracotta"
+    "id": "minecraft:light_blue glazed terracotta",
+    "x": -320,
+    "y": -480
   },
   {
-    "type": 239,
-    "meta": 0,
     "name": "Yellow Glazed Terracotta",
-    "text_type": "yellow_glazed_terracotta"
+    "id": "minecraft:yellow_glazed terracotta",
+    "x": -352,
+    "y": -480
   },
   {
-    "type": 240,
-    "meta": 0,
     "name": "Lime Glazed Terracotta",
-    "text_type": "lime_glazed_terracotta"
+    "id": "minecraft:lime_glazed terracotta",
+    "x": -480,
+    "y": -480
   },
   {
-    "type": 241,
-    "meta": 0,
     "name": "Pink Glazed Terracotta",
-    "text_type": "pink_glazed_terracotta"
+    "id": "minecraft:pink_glazed terracotta",
+    "x": -512,
+    "y": 0
   },
   {
-    "type": 242,
-    "meta": 0,
     "name": "Gray Glazed Terracotta",
-    "text_type": "gray_glazed_terracotta"
+    "id": "minecraft:gray_glazed terracotta",
+    "x": -512,
+    "y": -32
   },
   {
-    "type": 243,
-    "meta": 0,
     "name": "Light Gray Glazed Terracotta",
-    "text_type": "light_gray_glazed_terracotta"
+    "id": "minecraft:light_gray glazed terracotta",
+    "x": -512,
+    "y": -64
   },
   {
-    "type": 244,
-    "meta": 0,
     "name": "Cyan Glazed Terracotta",
-    "text_type": "cyan_glazed_terracotta"
+    "id": "minecraft:cyan_glazed terracotta",
+    "x": -512,
+    "y": -96
   },
   {
-    "type": 245,
-    "meta": 0,
     "name": "Purple Glazed Terracotta",
-    "text_type": "purple_glazed_terracotta"
+    "id": "minecraft:purple_glazed terracotta",
+    "x": -512,
+    "y": -128
   },
   {
-    "type": 246,
-    "meta": 0,
     "name": "Blue Glazed Terracotta",
-    "text_type": "blue_glazed_terracotta"
+    "id": "minecraft:blue_glazed terracotta",
+    "x": -512,
+    "y": -160
   },
   {
-    "type": 247,
-    "meta": 0,
     "name": "Brown Glazed Terracotta",
-    "text_type": "brown_glazed_terracotta"
+    "id": "minecraft:brown_glazed terracotta",
+    "x": -512,
+    "y": -192
   },
   {
-    "type": 248,
-    "meta": 0,
     "name": "Green Glazed Terracotta",
-    "text_type": "green_glazed_terracotta"
+    "id": "minecraft:green_glazed terracotta",
+    "x": -512,
+    "y": -224
   },
   {
-    "type": 249,
-    "meta": 0,
     "name": "Red Glazed Terracotta",
-    "text_type": "red_glazed_terracotta"
+    "id": "minecraft:red_glazed terracotta",
+    "x": -512,
+    "y": -256
   },
   {
-    "type": 250,
-    "meta": 0,
     "name": "Black Glazed Terracotta",
-    "text_type": "black_glazed_terracotta"
+    "id": "minecraft:black_glazed terracotta",
+    "x": -512,
+    "y": -320
   },
-  { "type": 251, "meta": 0, "name": "White Concrete", "text_type": "concrete" },
   {
-    "type": 251,
-    "meta": 1,
+    "name": "White Concrete",
+    "id": "minecraft:white_concrete",
+    "x": -512,
+    "y": -352
+  },
+  {
     "name": "Orange Concrete",
-    "text_type": "concrete"
+    "id": "minecraft:orange_concrete",
+    "x": -512,
+    "y": -384
   },
   {
-    "type": 251,
-    "meta": 2,
     "name": "Magenta Concrete",
-    "text_type": "concrete"
+    "id": "minecraft:magenta_concrete",
+    "x": -96,
+    "y": -512
   },
   {
-    "type": 251,
-    "meta": 3,
     "name": "Light Blue Concrete",
-    "text_type": "concrete"
+    "id": "minecraft:light_blue concrete",
+    "x": -128,
+    "y": -512
   },
   {
-    "type": 251,
-    "meta": 4,
     "name": "Yellow Concrete",
-    "text_type": "concrete"
+    "id": "minecraft:yellow_concrete",
+    "x": -160,
+    "y": -512
   },
-  { "type": 251, "meta": 5, "name": "Lime Concrete", "text_type": "concrete" },
-  { "type": 251, "meta": 6, "name": "Pink Concrete", "text_type": "concrete" },
-  { "type": 251, "meta": 7, "name": "Gray Concrete", "text_type": "concrete" },
   {
-    "type": 251,
-    "meta": 8,
+    "name": "Lime Concrete",
+    "id": "minecraft:lime_concrete",
+    "x": -192,
+    "y": -512
+  },
+  {
+    "name": "Pink Concrete",
+    "id": "minecraft:pink_concrete",
+    "x": -224,
+    "y": -512
+  },
+  {
+    "name": "Gray Concrete",
+    "id": "minecraft:gray_concrete",
+    "x": -256,
+    "y": -512
+  },
+  {
     "name": "Light Gray Concrete",
-    "text_type": "concrete"
+    "id": "minecraft:light_gray concrete",
+    "x": -288,
+    "y": -512
   },
-  { "type": 251, "meta": 9, "name": "Cyan Concrete", "text_type": "concrete" },
   {
-    "type": 251,
-    "meta": 10,
+    "name": "Cyan Concrete",
+    "id": "minecraft:cyan_concrete",
+    "x": -320,
+    "y": -512
+  },
+  {
     "name": "Purple Concrete",
-    "text_type": "concrete"
+    "id": "minecraft:purple_concrete",
+    "x": -512,
+    "y": -416
   },
-  { "type": 251, "meta": 11, "name": "Blue Concrete", "text_type": "concrete" },
   {
-    "type": 251,
-    "meta": 12,
+    "name": "Blue Concrete",
+    "id": "minecraft:blue_concrete",
+    "x": -512,
+    "y": -448
+  },
+  {
     "name": "Brown Concrete",
-    "text_type": "concrete"
+    "id": "minecraft:brown_concrete",
+    "x": -512,
+    "y": -480
   },
   {
-    "type": 251,
-    "meta": 13,
     "name": "Green Concrete",
-    "text_type": "concrete"
+    "id": "minecraft:green_concrete",
+    "x": 0,
+    "y": -512
   },
-  { "type": 251, "meta": 14, "name": "Red Concrete", "text_type": "concrete" },
   {
-    "type": 251,
-    "meta": 15,
+    "name": "Red Concrete",
+    "id": "minecraft:red_concrete",
+    "x": -32,
+    "y": -512
+  },
+  {
     "name": "Black Concrete",
-    "text_type": "concrete"
+    "id": "minecraft:black_concrete",
+    "x": -64,
+    "y": -512
   },
   {
-    "type": 252,
-    "meta": 0,
     "name": "White Concrete Powder",
-    "text_type": "concrete_powder"
+    "id": "minecraft:white_concrete powder",
+    "x": -352,
+    "y": -512
   },
   {
-    "type": 252,
-    "meta": 1,
     "name": "Orange Concrete Powder",
-    "text_type": "concrete_powder"
+    "id": "minecraft:orange_concrete powder",
+    "x": -384,
+    "y": -512
   },
   {
-    "type": 252,
-    "meta": 2,
     "name": "Magenta Concrete Powder",
-    "text_type": "concrete_powder"
+    "id": "minecraft:magenta_concrete powder",
+    "x": -544,
+    "y": -64
   },
   {
-    "type": 252,
-    "meta": 3,
     "name": "Light Blue Concrete Powder",
-    "text_type": "concrete_powder"
+    "id": "minecraft:light_blue concrete powder",
+    "x": -544,
+    "y": -96
   },
   {
-    "type": 252,
-    "meta": 4,
     "name": "Yellow Concrete Powder",
-    "text_type": "concrete_powder"
+    "id": "minecraft:yellow_concrete powder",
+    "x": -544,
+    "y": -128
   },
   {
-    "type": 252,
-    "meta": 5,
     "name": "Lime Concrete Powder",
-    "text_type": "concrete_powder"
+    "id": "minecraft:lime_concrete powder",
+    "x": -544,
+    "y": -160
   },
   {
-    "type": 252,
-    "meta": 6,
     "name": "Pink Concrete Powder",
-    "text_type": "concrete_powder"
+    "id": "minecraft:pink_concrete powder",
+    "x": -544,
+    "y": -192
   },
   {
-    "type": 252,
-    "meta": 7,
     "name": "Gray Concrete Powder",
-    "text_type": "concrete_powder"
+    "id": "minecraft:gray_concrete powder",
+    "x": -544,
+    "y": -224
   },
   {
-    "type": 252,
-    "meta": 8,
     "name": "Light Gray Concrete Powder",
-    "text_type": "concrete_powder"
+    "id": "minecraft:light_gray concrete powder",
+    "x": -544,
+    "y": -256
   },
   {
-    "type": 252,
-    "meta": 9,
     "name": "Cyan Concrete Powder",
-    "text_type": "concrete_powder"
+    "id": "minecraft:cyan_concrete powder",
+    "x": -544,
+    "y": -288
   },
   {
-    "type": 252,
-    "meta": 10,
     "name": "Purple Concrete Powder",
-    "text_type": "concrete_powder"
+    "id": "minecraft:purple_concrete powder",
+    "x": -416,
+    "y": -512
   },
   {
-    "type": 252,
-    "meta": 11,
     "name": "Blue Concrete Powder",
-    "text_type": "concrete_powder"
+    "id": "minecraft:blue_concrete powder",
+    "x": -448,
+    "y": -512
   },
   {
-    "type": 252,
-    "meta": 12,
     "name": "Brown Concrete Powder",
-    "text_type": "concrete_powder"
+    "id": "minecraft:brown_concrete powder",
+    "x": -480,
+    "y": -512
   },
   {
-    "type": 252,
-    "meta": 13,
     "name": "Green Concrete Powder",
-    "text_type": "concrete_powder"
+    "id": "minecraft:green_concrete powder",
+    "x": -512,
+    "y": -512
   },
   {
-    "type": 252,
-    "meta": 14,
     "name": "Red Concrete Powder",
-    "text_type": "concrete_powder"
+    "id": "minecraft:red_concrete powder",
+    "x": -544,
+    "y": 0
   },
   {
-    "type": 252,
-    "meta": 15,
     "name": "Black Concrete Powder",
-    "text_type": "concrete_powder"
+    "id": "minecraft:black_concrete powder",
+    "x": -544,
+    "y": -32
   },
   {
-    "type": 255,
-    "meta": 0,
     "name": "Structure Block",
-    "text_type": "structure_block"
+    "id": "minecraft:structure_block",
+    "x": -544,
+    "y": -320
   },
-  { "type": 256, "meta": 0, "name": "Iron Shovel", "text_type": "iron_shovel" },
   {
-    "type": 257,
-    "meta": 0,
+    "name": "Iron Shovel",
+    "id": "minecraft:iron_shovel",
+    "x": -544,
+    "y": -352
+  },
+  {
     "name": "Iron Pickaxe",
-    "text_type": "iron_pickaxe"
+    "id": "minecraft:iron_pickaxe",
+    "x": -544,
+    "y": -384
   },
-  { "type": 258, "meta": 0, "name": "Iron Axe", "text_type": "iron_axe" },
   {
-    "type": 259,
-    "meta": 0,
+    "name": "Iron Axe",
+    "id": "minecraft:iron_axe",
+    "x": -544,
+    "y": -416
+  },
+  {
     "name": "Flint and Steel",
-    "text_type": "flint_and_steel"
+    "id": "minecraft:flint_and steel",
+    "x": -544,
+    "y": -448
   },
-  { "type": 260, "meta": 0, "name": "Apple", "text_type": "apple" },
-  { "type": 261, "meta": 0, "name": "Bow", "text_type": "bow" },
-  { "type": 262, "meta": 0, "name": "Arrow", "text_type": "arrow" },
-  { "type": 263, "meta": 0, "name": "Coal", "text_type": "coal" },
-  { "type": 263, "meta": 1, "name": "Charcoal", "text_type": "coal" },
-  { "type": 264, "meta": 0, "name": "Diamond", "text_type": "diamond" },
-  { "type": 265, "meta": 0, "name": "Iron Ingot", "text_type": "iron_ingot" },
-  { "type": 266, "meta": 0, "name": "Gold Ingot", "text_type": "gold_ingot" },
-  { "type": 267, "meta": 0, "name": "Iron Sword", "text_type": "iron_sword" },
   {
-    "type": 268,
-    "meta": 0,
+    "name": "Apple",
+    "id": "minecraft:apple",
+    "x": -544,
+    "y": -512
+  },
+  {
+    "name": "Bow",
+    "id": "minecraft:bow",
+    "x": 0,
+    "y": -544
+  },
+  {
+    "name": "Arrow",
+    "id": "minecraft:arrow",
+    "x": -32,
+    "y": -544
+  },
+  {
+    "name": "Coal",
+    "id": "minecraft:coal",
+    "x": -64,
+    "y": -544
+  },
+  {
+    "name": "Charcoal",
+    "id": "minecraft:charcoal",
+    "x": -96,
+    "y": -544
+  },
+  {
+    "name": "Diamond",
+    "id": "minecraft:diamond",
+    "x": -128,
+    "y": -544
+  },
+  {
+    "name": "Iron Ingot",
+    "id": "minecraft:iron_ingot",
+    "x": -160,
+    "y": -544
+  },
+  {
+    "name": "Gold Ingot",
+    "id": "minecraft:gold_ingot",
+    "x": -192,
+    "y": -544
+  },
+  {
+    "name": "Iron Sword",
+    "id": "minecraft:iron_sword",
+    "x": -224,
+    "y": -544
+  },
+  {
     "name": "Wooden Sword",
-    "text_type": "wooden_sword"
+    "id": "minecraft:wooden_sword",
+    "x": -256,
+    "y": -544
   },
   {
-    "type": 269,
-    "meta": 0,
     "name": "Wooden Shovel",
-    "text_type": "wooden_shovel"
+    "id": "minecraft:wooden_shovel",
+    "x": -288,
+    "y": -544
   },
   {
-    "type": 270,
-    "meta": 0,
     "name": "Wooden Pickaxe",
-    "text_type": "wooden_pickaxe"
+    "id": "minecraft:wooden_pickaxe",
+    "x": -352,
+    "y": -544
   },
-  { "type": 271, "meta": 0, "name": "Wooden Axe", "text_type": "wooden_axe" },
-  { "type": 272, "meta": 0, "name": "Stone Sword", "text_type": "stone_sword" },
   {
-    "type": 273,
-    "meta": 0,
+    "name": "Wooden Axe",
+    "id": "minecraft:wooden_axe",
+    "x": -384,
+    "y": -544
+  },
+  {
+    "name": "Stone Sword",
+    "id": "minecraft:stone_sword",
+    "x": -416,
+    "y": -544
+  },
+  {
     "name": "Stone Shovel",
-    "text_type": "stone_shovel"
+    "id": "minecraft:stone_shovel",
+    "x": -448,
+    "y": -544
   },
   {
-    "type": 274,
-    "meta": 0,
     "name": "Stone Pickaxe",
-    "text_type": "stone_pickaxe"
+    "id": "minecraft:stone_pickaxe",
+    "x": -480,
+    "y": -544
   },
-  { "type": 275, "meta": 0, "name": "Stone Axe", "text_type": "stone_axe" },
   {
-    "type": 276,
-    "meta": 0,
+    "name": "Stone Axe",
+    "id": "minecraft:stone_axe",
+    "x": -512,
+    "y": -544
+  },
+  {
     "name": "Diamond Sword",
-    "text_type": "diamond_sword"
+    "id": "minecraft:diamond_sword",
+    "x": -544,
+    "y": -544
   },
   {
-    "type": 277,
-    "meta": 0,
     "name": "Diamond Shovel",
-    "text_type": "diamond_shovel"
+    "id": "minecraft:diamond_shovel",
+    "x": -576,
+    "y": 0
   },
   {
-    "type": 278,
-    "meta": 0,
     "name": "Diamond Pickaxe",
-    "text_type": "diamond_pickaxe"
+    "id": "minecraft:diamond_pickaxe",
+    "x": -576,
+    "y": -32
   },
-  { "type": 279, "meta": 0, "name": "Diamond Axe", "text_type": "diamond_axe" },
-  { "type": 280, "meta": 0, "name": "Stick", "text_type": "stick" },
-  { "type": 281, "meta": 0, "name": "Bowl", "text_type": "bowl" },
   {
-    "type": 282,
-    "meta": 0,
+    "name": "Diamond Axe",
+    "id": "minecraft:diamond_axe",
+    "x": -576,
+    "y": -64
+  },
+  {
+    "name": "Stick",
+    "id": "minecraft:stick",
+    "x": -576,
+    "y": -128
+  },
+  {
+    "name": "Bowl",
+    "id": "minecraft:bowl",
+    "x": -576,
+    "y": -160
+  },
+  {
     "name": "Mushroom Stew",
-    "text_type": "mushroom_stew"
+    "id": "minecraft:mushroom_stew",
+    "x": -576,
+    "y": -192
   },
   {
-    "type": 283,
-    "meta": 0,
     "name": "Golden Sword",
-    "text_type": "golden_sword"
+    "id": "minecraft:golden_sword",
+    "x": -576,
+    "y": -224
   },
   {
-    "type": 284,
-    "meta": 0,
     "name": "Golden Shovel",
-    "text_type": "golden_shovel"
+    "id": "minecraft:golden_shovel",
+    "x": -576,
+    "y": -256
   },
   {
-    "type": 285,
-    "meta": 0,
     "name": "Golden Pickaxe",
-    "text_type": "golden_pickaxe"
+    "id": "minecraft:golden_pickaxe",
+    "x": -576,
+    "y": -288
   },
-  { "type": 286, "meta": 0, "name": "Golden Axe", "text_type": "golden_axe" },
-  { "type": 287, "meta": 0, "name": "String", "text_type": "string" },
-  { "type": 288, "meta": 0, "name": "Feather", "text_type": "feather" },
-  { "type": 289, "meta": 0, "name": "Gunpowder", "text_type": "gunpowder" },
-  { "type": 290, "meta": 0, "name": "Wooden Hoe", "text_type": "wooden_hoe" },
-  { "type": 291, "meta": 0, "name": "Stone Hoe", "text_type": "stone_hoe" },
-  { "type": 292, "meta": 0, "name": "Iron Hoe", "text_type": "iron_hoe" },
-  { "type": 293, "meta": 0, "name": "Diamond Hoe", "text_type": "diamond_hoe" },
-  { "type": 294, "meta": 0, "name": "Golden Hoe", "text_type": "golden_hoe" },
-  { "type": 295, "meta": 0, "name": "Wheat Seeds", "text_type": "wheat_seeds" },
-  { "type": 296, "meta": 0, "name": "Wheat", "text_type": "wheat" },
-  { "type": 297, "meta": 0, "name": "Bread", "text_type": "bread" },
   {
-    "type": 298,
-    "meta": 0,
+    "name": "Golden Axe",
+    "id": "minecraft:golden_axe",
+    "x": -576,
+    "y": -320
+  },
+  {
+    "name": "String",
+    "id": "minecraft:string",
+    "x": -576,
+    "y": -352
+  },
+  {
+    "name": "Feather",
+    "id": "minecraft:feather",
+    "x": -576,
+    "y": -384
+  },
+  {
+    "name": "Gunpowder",
+    "id": "minecraft:gunpowder",
+    "x": -576,
+    "y": -416
+  },
+  {
+    "name": "Wooden Hoe",
+    "id": "minecraft:wooden_hoe",
+    "x": -576,
+    "y": -480
+  },
+  {
+    "name": "Stone Hoe",
+    "id": "minecraft:stone_hoe",
+    "x": -576,
+    "y": -512
+  },
+  {
+    "name": "Iron Hoe",
+    "id": "minecraft:iron_hoe",
+    "x": -576,
+    "y": -544
+  },
+  {
+    "name": "Diamond Hoe",
+    "id": "minecraft:diamond_hoe",
+    "x": 0,
+    "y": -576
+  },
+  {
+    "name": "Golden Hoe",
+    "id": "minecraft:golden_hoe",
+    "x": -32,
+    "y": -576
+  },
+  {
+    "name": "Wheat Seeds",
+    "id": "minecraft:wheat_seeds",
+    "x": -64,
+    "y": -576
+  },
+  {
+    "name": "Wheat",
+    "id": "minecraft:wheat",
+    "x": -96,
+    "y": -576
+  },
+  {
+    "name": "Bread",
+    "id": "minecraft:bread",
+    "x": -128,
+    "y": -576
+  },
+  {
     "name": "Leather Helmet",
-    "text_type": "leather_helmet"
+    "id": "minecraft:leather_helmet",
+    "x": -160,
+    "y": -576
   },
   {
-    "type": 299,
-    "meta": 0,
     "name": "Leather Tunic",
-    "text_type": "leather_chestplate"
+    "id": "minecraft:leather_tunic",
+    "x": -192,
+    "y": -576
   },
   {
-    "type": 300,
-    "meta": 0,
     "name": "Leather Pants",
-    "text_type": "leather_leggings"
+    "id": "minecraft:leather_pants",
+    "x": -352,
+    "y": -576
   },
   {
-    "type": 301,
-    "meta": 0,
     "name": "Leather Boots",
-    "text_type": "leather_boots"
+    "id": "minecraft:leather_boots",
+    "x": -384,
+    "y": -576
   },
   {
-    "type": 302,
-    "meta": 0,
     "name": "Chainmail Helmet",
-    "text_type": "chainmail_helmet"
+    "id": "minecraft:chainmail_helmet",
+    "x": -416,
+    "y": -576
   },
   {
-    "type": 303,
-    "meta": 0,
     "name": "Chainmail Chestplate",
-    "text_type": "chainmail_chestplate"
+    "id": "minecraft:chainmail_chestplate",
+    "x": -448,
+    "y": -576
   },
   {
-    "type": 304,
-    "meta": 0,
     "name": "Chainmail Leggings",
-    "text_type": "chainmail_leggings"
+    "id": "minecraft:chainmail_leggings",
+    "x": -480,
+    "y": -576
   },
   {
-    "type": 305,
-    "meta": 0,
     "name": "Chainmail Boots",
-    "text_type": "chainmail_boots"
+    "id": "minecraft:chainmail_boots",
+    "x": -512,
+    "y": -576
   },
-  { "type": 306, "meta": 0, "name": "Iron Helmet", "text_type": "iron_helmet" },
   {
-    "type": 307,
-    "meta": 0,
+    "name": "Iron Helmet",
+    "id": "minecraft:iron_helmet",
+    "x": -544,
+    "y": -576
+  },
+  {
     "name": "Iron Chestplate",
-    "text_type": "iron_chestplate"
+    "id": "minecraft:iron_chestplate",
+    "x": -576,
+    "y": -576
   },
   {
-    "type": 308,
-    "meta": 0,
     "name": "Iron Leggings",
-    "text_type": "iron_leggings"
+    "id": "minecraft:iron_leggings",
+    "x": -608,
+    "y": 0
   },
-  { "type": 309, "meta": 0, "name": "Iron Boots", "text_type": "iron_boots" },
   {
-    "type": 310,
-    "meta": 0,
+    "name": "Iron Boots",
+    "id": "minecraft:iron_boots",
+    "x": -608,
+    "y": -32
+  },
+  {
     "name": "Diamond Helmet",
-    "text_type": "diamond_helmet"
+    "id": "minecraft:diamond_helmet",
+    "x": -608,
+    "y": -160
   },
   {
-    "type": 311,
-    "meta": 0,
     "name": "Diamond Chestplate",
-    "text_type": "diamond_chestplate"
+    "id": "minecraft:diamond_chestplate",
+    "x": -608,
+    "y": -192
   },
   {
-    "type": 312,
-    "meta": 0,
     "name": "Diamond Leggings",
-    "text_type": "diamond_leggings"
+    "id": "minecraft:diamond_leggings",
+    "x": -608,
+    "y": -224
   },
   {
-    "type": 313,
-    "meta": 0,
     "name": "Diamond Boots",
-    "text_type": "diamond_boots"
+    "id": "minecraft:diamond_boots",
+    "x": -608,
+    "y": -256
   },
   {
-    "type": 314,
-    "meta": 0,
     "name": "Golden Helmet",
-    "text_type": "golden_helmet"
+    "id": "minecraft:golden_helmet",
+    "x": -608,
+    "y": -288
   },
   {
-    "type": 315,
-    "meta": 0,
     "name": "Golden Chestplate",
-    "text_type": "golden_chestplate"
+    "id": "minecraft:golden_chestplate",
+    "x": -608,
+    "y": -320
   },
   {
-    "type": 316,
-    "meta": 0,
     "name": "Golden Leggings",
-    "text_type": "golden_leggings"
+    "id": "minecraft:golden_leggings",
+    "x": -608,
+    "y": -352
   },
   {
-    "type": 317,
-    "meta": 0,
     "name": "Golden Boots",
-    "text_type": "golden_boots"
+    "id": "minecraft:golden_boots",
+    "x": -608,
+    "y": -384
   },
-  { "type": 318, "meta": 0, "name": "Flint", "text_type": "flint" },
-  { "type": 319, "meta": 0, "name": "Raw Porkchop", "text_type": "porkchop" },
   {
-    "type": 320,
-    "meta": 0,
+    "name": "Flint",
+    "id": "minecraft:flint",
+    "x": -608,
+    "y": -416
+  },
+  {
+    "name": "Raw Porkchop",
+    "id": "minecraft:raw_porkchop",
+    "x": -608,
+    "y": -448
+  },
+  {
     "name": "Cooked Porkchop",
-    "text_type": "cooked_porkchop"
+    "id": "minecraft:cooked_porkchop",
+    "x": -608,
+    "y": -512
   },
-  { "type": 321, "meta": 0, "name": "Painting", "text_type": "painting" },
   {
-    "type": 322,
-    "meta": 0,
+    "name": "Painting",
+    "id": "minecraft:painting",
+    "x": -608,
+    "y": -544
+  },
+  {
     "name": "Golden Apple",
-    "text_type": "golden_apple"
+    "id": "minecraft:golden_apple",
+    "x": -608,
+    "y": -576
   },
   {
-    "type": 322,
-    "meta": 1,
     "name": "Enchanted Golden Apple",
-    "text_type": "golden_apple"
+    "id": "minecraft:enchanted_golden apple",
+    "x": 0,
+    "y": -608
   },
-  { "type": 323, "meta": 0, "name": "Sign", "text_type": "sign" },
-  { "type": 324, "meta": 0, "name": "Oak Door", "text_type": "wooden_door" },
-  { "type": 325, "meta": 0, "name": "Bucket", "text_type": "bucket" },
   {
-    "type": 326,
-    "meta": 0,
+    "name": "Sign",
+    "id": "minecraft:sign",
+    "x": -32,
+    "y": -608
+  },
+  {
+    "name": "Oak Door",
+    "id": "minecraft:oak_door",
+    "x": -64,
+    "y": -608
+  },
+  {
+    "name": "Bucket",
+    "id": "minecraft:bucket",
+    "x": -96,
+    "y": -608
+  },
+  {
     "name": "Water Bucket",
-    "text_type": "water_bucket"
+    "id": "minecraft:water_bucket",
+    "x": -128,
+    "y": -608
   },
-  { "type": 327, "meta": 0, "name": "Lava Bucket", "text_type": "lava_bucket" },
-  { "type": 328, "meta": 0, "name": "Minecart", "text_type": "minecart" },
-  { "type": 329, "meta": 0, "name": "Saddle", "text_type": "saddle" },
-  { "type": 330, "meta": 0, "name": "Iron Door", "text_type": "iron_door" },
-  { "type": 331, "meta": 0, "name": "Redstone", "text_type": "redstone" },
-  { "type": 332, "meta": 0, "name": "Snowball", "text_type": "snowball" },
-  { "type": 333, "meta": 0, "name": "Oak Boat", "text_type": "boat" },
-  { "type": 334, "meta": 0, "name": "Leather", "text_type": "leather" },
-  { "type": 335, "meta": 0, "name": "Milk Bucket", "text_type": "milk_bucket" },
-  { "type": 336, "meta": 0, "name": "Brick", "text_type": "brick" },
-  { "type": 337, "meta": 0, "name": "Clay", "text_type": "clay_ball" },
-  { "type": 338, "meta": 0, "name": "Sugar Canes", "text_type": "reeds" },
-  { "type": 339, "meta": 0, "name": "Paper", "text_type": "paper" },
-  { "type": 340, "meta": 0, "name": "Book", "text_type": "book" },
-  { "type": 341, "meta": 0, "name": "Slimeball", "text_type": "slime_ball" },
   {
-    "type": 342,
-    "meta": 0,
+    "name": "Lava Bucket",
+    "id": "minecraft:lava_bucket",
+    "x": -160,
+    "y": -608
+  },
+  {
+    "name": "Minecart",
+    "id": "minecraft:minecart",
+    "x": -192,
+    "y": -608
+  },
+  {
+    "name": "Saddle",
+    "id": "minecraft:saddle",
+    "x": -224,
+    "y": -608
+  },
+  {
+    "name": "Iron Door",
+    "id": "minecraft:iron_door",
+    "x": -288,
+    "y": -608
+  },
+  {
+    "name": "Redstone",
+    "id": "minecraft:redstone",
+    "x": -320,
+    "y": -608
+  },
+  {
+    "name": "Snowball",
+    "id": "minecraft:snowball",
+    "x": -352,
+    "y": -608
+  },
+  {
+    "name": "Oak Boat",
+    "id": "minecraft:oak_boat",
+    "x": -384,
+    "y": -608
+  },
+  {
+    "name": "Leather",
+    "id": "minecraft:leather",
+    "x": -416,
+    "y": -608
+  },
+  {
+    "name": "Milk Bucket",
+    "id": "minecraft:milk_bucket",
+    "x": -448,
+    "y": -608
+  },
+  {
+    "name": "Brick",
+    "id": "minecraft:brick",
+    "x": -480,
+    "y": -608
+  },
+  {
+    "name": "Clay",
+    "id": "minecraft:clay",
+    "x": -512,
+    "y": -608
+  },
+  {
+    "name": "Sugar Canes",
+    "id": "minecraft:sugar_canes",
+    "x": -544,
+    "y": -608
+  },
+  {
+    "name": "Paper",
+    "id": "minecraft:paper",
+    "x": -576,
+    "y": -608
+  },
+  {
+    "name": "Book",
+    "id": "minecraft:book",
+    "x": -640,
+    "y": 0
+  },
+  {
+    "name": "Slimeball",
+    "id": "minecraft:slimeball",
+    "x": -640,
+    "y": -32
+  },
+  {
     "name": "Minecart with Chest",
-    "text_type": "chest_minecart"
+    "id": "minecraft:minecart_with chest",
+    "x": -640,
+    "y": -64
   },
   {
-    "type": 343,
-    "meta": 0,
     "name": "Minecart with Furnace",
-    "text_type": "furnace_minecart"
+    "id": "minecraft:minecart_with furnace",
+    "x": -640,
+    "y": -96
   },
-  { "type": 344, "meta": 0, "name": "Egg", "text_type": "egg" },
-  { "type": 345, "meta": 0, "name": "Compass", "text_type": "compass" },
-  { "type": 346, "meta": 0, "name": "Fishing Rod", "text_type": "fishing_rod" },
-  { "type": 347, "meta": 0, "name": "Clock", "text_type": "clock" },
   {
-    "type": 348,
-    "meta": 0,
+    "name": "Egg",
+    "id": "minecraft:egg",
+    "x": -640,
+    "y": -128
+  },
+  {
+    "name": "Compass",
+    "id": "minecraft:compass",
+    "x": -640,
+    "y": -160
+  },
+  {
+    "name": "Fishing Rod",
+    "id": "minecraft:fishing_rod",
+    "x": -640,
+    "y": -192
+  },
+  {
+    "name": "Clock",
+    "id": "minecraft:clock",
+    "x": -640,
+    "y": -224
+  },
+  {
     "name": "Glowstone Dust",
-    "text_type": "glowstone_dust"
+    "id": "minecraft:glowstone_dust",
+    "x": -640,
+    "y": -256
   },
-  { "type": 349, "meta": 0, "name": "Raw Fish", "text_type": "fish" },
-  { "type": 349, "meta": 1, "name": "Raw Salmon", "text_type": "fish" },
-  { "type": 349, "meta": 2, "name": "Clownfish", "text_type": "fish" },
-  { "type": 349, "meta": 3, "name": "Pufferfish", "text_type": "fish" },
-  { "type": 350, "meta": 0, "name": "Cooked Fish", "text_type": "cooked_fish" },
   {
-    "type": 350,
-    "meta": 1,
+    "name": "Raw Fish",
+    "id": "minecraft:raw_fish",
+    "x": -640,
+    "y": -288
+  },
+  {
+    "name": "Raw Salmon",
+    "id": "minecraft:raw_salmon",
+    "x": -640,
+    "y": -320
+  },
+  {
+    "name": "Clownfish",
+    "id": "minecraft:clownfish",
+    "x": -640,
+    "y": -352
+  },
+  {
+    "name": "Pufferfish",
+    "id": "minecraft:pufferfish",
+    "x": -640,
+    "y": -384
+  },
+  {
+    "name": "Cooked Fish",
+    "id": "minecraft:cooked_fish",
+    "x": -288,
+    "y": -640
+  },
+  {
     "name": "Cooked Salmon",
-    "text_type": "cooked_fish"
+    "id": "minecraft:cooked_salmon",
+    "x": -320,
+    "y": -640
   },
-  { "type": 351, "meta": 0, "name": "Ink Sack", "text_type": "dye" },
-  { "type": 351, "meta": 1, "name": "Rose Red", "text_type": "dye" },
-  { "type": 351, "meta": 2, "name": "Cactus Green", "text_type": "dye" },
-  { "type": 351, "meta": 3, "name": "Coco Beans", "text_type": "dye" },
-  { "type": 351, "meta": 4, "name": "Lapis Lazuli", "text_type": "dye" },
-  { "type": 351, "meta": 5, "name": "Purple Dye", "text_type": "dye" },
-  { "type": 351, "meta": 6, "name": "Cyan Dye", "text_type": "dye" },
-  { "type": 351, "meta": 7, "name": "Light Gray Dye", "text_type": "dye" },
-  { "type": 351, "meta": 8, "name": "Gray Dye", "text_type": "dye" },
-  { "type": 351, "meta": 9, "name": "Pink Dye", "text_type": "dye" },
-  { "type": 351, "meta": 10, "name": "Lime Dye", "text_type": "dye" },
-  { "type": 351, "meta": 11, "name": "Dandelion Yellow", "text_type": "dye" },
-  { "type": 351, "meta": 12, "name": "Light Blue Dye", "text_type": "dye" },
-  { "type": 351, "meta": 13, "name": "Magenta Dye", "text_type": "dye" },
-  { "type": 351, "meta": 14, "name": "Orange Dye", "text_type": "dye" },
-  { "type": 351, "meta": 15, "name": "Bone Meal", "text_type": "dye" },
-  { "type": 352, "meta": 0, "name": "Bone", "text_type": "bone" },
-  { "type": 353, "meta": 0, "name": "Sugar", "text_type": "sugar" },
-  { "type": 354, "meta": 0, "name": "Cake", "text_type": "cake" },
-  { "type": 355, "meta": 0, "name": "Bed", "text_type": "bed" },
   {
-    "type": 356,
-    "meta": 0,
+    "name": "Ink Sack",
+    "id": "minecraft:ink_sack",
+    "x": -352,
+    "y": -640
+  },
+  {
+    "name": "Rose Red",
+    "id": "minecraft:rose_red",
+    "x": -384,
+    "y": -640
+  },
+  {
+    "name": "Cactus Green",
+    "id": "minecraft:cactus_green",
+    "x": -608,
+    "y": -640
+  },
+  {
+    "name": "Coco Beans",
+    "id": "minecraft:coco_beans",
+    "x": -640,
+    "y": -640
+  },
+  {
+    "name": "Lapis Lazuli",
+    "id": "minecraft:lapis_lazuli",
+    "x": -672,
+    "y": 0
+  },
+  {
+    "name": "Purple Dye",
+    "id": "minecraft:purple_dye",
+    "x": -672,
+    "y": -32
+  },
+  {
+    "name": "Cyan Dye",
+    "id": "minecraft:cyan_dye",
+    "x": -672,
+    "y": -64
+  },
+  {
+    "name": "Light Gray Dye",
+    "id": "minecraft:light_gray dye",
+    "x": -672,
+    "y": -96
+  },
+  {
+    "name": "Gray Dye",
+    "id": "minecraft:gray_dye",
+    "x": -672,
+    "y": -128
+  },
+  {
+    "name": "Pink Dye",
+    "id": "minecraft:pink_dye",
+    "x": -672,
+    "y": -160
+  },
+  {
+    "name": "Lime Dye",
+    "id": "minecraft:lime_dye",
+    "x": -416,
+    "y": -640
+  },
+  {
+    "name": "Dandelion Yellow",
+    "id": "minecraft:dandelion_yellow",
+    "x": -448,
+    "y": -640
+  },
+  {
+    "name": "Light Blue Dye",
+    "id": "minecraft:light_blue dye",
+    "x": -480,
+    "y": -640
+  },
+  {
+    "name": "Magenta Dye",
+    "id": "minecraft:magenta_dye",
+    "x": -512,
+    "y": -640
+  },
+  {
+    "name": "Orange Dye",
+    "id": "minecraft:orange_dye",
+    "x": -544,
+    "y": -640
+  },
+  {
+    "name": "Bone Meal",
+    "id": "minecraft:bone_meal",
+    "x": -576,
+    "y": -640
+  },
+  {
+    "name": "Bone",
+    "id": "minecraft:bone",
+    "x": -672,
+    "y": -192
+  },
+  {
+    "name": "Sugar",
+    "id": "minecraft:sugar",
+    "x": -672,
+    "y": -224
+  },
+  {
+    "name": "Cake",
+    "id": "minecraft:cake",
+    "x": -672,
+    "y": -256
+  },
+  {
+    "name": "Bed",
+    "id": "minecraft:bed",
+    "x": -672,
+    "y": -288
+  },
+  {
     "name": "Redstone Repeater",
-    "text_type": "repeater"
+    "id": "minecraft:redstone_repeater",
+    "x": -672,
+    "y": -320
   },
-  { "type": 357, "meta": 0, "name": "Cookie", "text_type": "cookie" },
-  { "type": 358, "meta": 0, "name": "Map", "text_type": "filled_map" },
-  { "type": 359, "meta": 0, "name": "Shears", "text_type": "shears" },
-  { "type": 360, "meta": 0, "name": "Melon", "text_type": "melon" },
   {
-    "type": 361,
-    "meta": 0,
+    "name": "Cookie",
+    "id": "minecraft:cookie",
+    "x": -672,
+    "y": -352
+  },
+  {
+    "name": "Map",
+    "id": "minecraft:map",
+    "x": -672,
+    "y": -384
+  },
+  {
+    "name": "Shears",
+    "id": "minecraft:shears",
+    "x": -672,
+    "y": -416
+  },
+  {
+    "name": "Melon",
+    "id": "minecraft:melon",
+    "x": -672,
+    "y": -448
+  },
+  {
     "name": "Pumpkin Seeds",
-    "text_type": "pumpkin_seeds"
+    "id": "minecraft:pumpkin_seeds",
+    "x": -672,
+    "y": -480
   },
-  { "type": 362, "meta": 0, "name": "Melon Seeds", "text_type": "melon_seeds" },
-  { "type": 363, "meta": 0, "name": "Raw Beef", "text_type": "beef" },
-  { "type": 364, "meta": 0, "name": "Steak", "text_type": "cooked_beef" },
-  { "type": 365, "meta": 0, "name": "Raw Chicken", "text_type": "chicken" },
   {
-    "type": 366,
-    "meta": 0,
+    "name": "Melon Seeds",
+    "id": "minecraft:melon_seeds",
+    "x": -672,
+    "y": -512
+  },
+  {
+    "name": "Raw Beef",
+    "id": "minecraft:raw_beef",
+    "x": -672,
+    "y": -544
+  },
+  {
+    "name": "Steak",
+    "id": "minecraft:steak",
+    "x": -672,
+    "y": -576
+  },
+  {
+    "name": "Raw Chicken",
+    "id": "minecraft:raw_chicken",
+    "x": -672,
+    "y": -608
+  },
+  {
     "name": "Cooked Chicken",
-    "text_type": "cooked_chicken"
+    "id": "minecraft:cooked_chicken",
+    "x": -672,
+    "y": -640
   },
   {
-    "type": 367,
-    "meta": 0,
     "name": "Rotten Flesh",
-    "text_type": "rotten_flesh"
+    "id": "minecraft:rotten_flesh",
+    "x": 0,
+    "y": -672
   },
-  { "type": 368, "meta": 0, "name": "Ender Pearl", "text_type": "ender_pearl" },
-  { "type": 369, "meta": 0, "name": "Blaze Rod", "text_type": "blaze_rod" },
-  { "type": 370, "meta": 0, "name": "Ghast Tear", "text_type": "ghast_tear" },
-  { "type": 371, "meta": 0, "name": "Gold Nugget", "text_type": "gold_nugget" },
-  { "type": 372, "meta": 0, "name": "Nether Wart", "text_type": "nether_wart" },
-  { "type": 373, "meta": 0, "name": "Potion", "text_type": "potion" },
   {
-    "type": 374,
-    "meta": 0,
+    "name": "Ender Pearl",
+    "id": "minecraft:ender_pearl",
+    "x": -32,
+    "y": -672
+  },
+  {
+    "name": "Blaze Rod",
+    "id": "minecraft:blaze_rod",
+    "x": -64,
+    "y": -672
+  },
+  {
+    "name": "Ghast Tear",
+    "id": "minecraft:ghast_tear",
+    "x": -128,
+    "y": -672
+  },
+  {
+    "name": "Gold Nugget",
+    "id": "minecraft:gold_nugget",
+    "x": -160,
+    "y": -672
+  },
+  {
+    "name": "Nether Wart",
+    "id": "minecraft:nether_wart",
+    "x": -192,
+    "y": -672
+  },
+  {
+    "name": "Potion",
+    "id": "minecraft:potion",
+    "x": -224,
+    "y": -672
+  },
+  {
     "name": "Glass Bottle",
-    "text_type": "glass_bottle"
+    "id": "minecraft:glass_bottle",
+    "x": -256,
+    "y": -672
   },
-  { "type": 375, "meta": 0, "name": "Spider Eye", "text_type": "spider_eye" },
   {
-    "type": 376,
-    "meta": 0,
+    "name": "Spider Eye",
+    "id": "minecraft:spider_eye",
+    "x": -288,
+    "y": -672
+  },
+  {
     "name": "Fermented Spider Eye",
-    "text_type": "fermented_spider_eye"
+    "id": "minecraft:fermented_spider eye",
+    "x": -320,
+    "y": -672
   },
   {
-    "type": 377,
-    "meta": 0,
     "name": "Blaze Powder",
-    "text_type": "blaze_powder"
+    "id": "minecraft:blaze_powder",
+    "x": -352,
+    "y": -672
   },
-  { "type": 378, "meta": 0, "name": "Magma Cream", "text_type": "magma_cream" },
   {
-    "type": 379,
-    "meta": 0,
+    "name": "Magma Cream",
+    "id": "minecraft:magma_cream",
+    "x": -384,
+    "y": -672
+  },
+  {
     "name": "Brewing Stand",
-    "text_type": "brewing_stand"
+    "id": "minecraft:brewing_stand",
+    "x": -416,
+    "y": -672
   },
-  { "type": 380, "meta": 0, "name": "Cauldron", "text_type": "cauldron" },
-  { "type": 381, "meta": 0, "name": "Eye of Ender", "text_type": "ender_eye" },
   {
-    "type": 382,
-    "meta": 0,
+    "name": "Cauldron",
+    "id": "minecraft:cauldron",
+    "x": -704,
+    "y": -32
+  },
+  {
+    "name": "Eye of Ender",
+    "id": "minecraft:eye_of ender",
+    "x": -704,
+    "y": -64
+  },
+  {
     "name": "Glistering Melon",
-    "text_type": "speckled_melon"
+    "id": "minecraft:glistering_melon",
+    "x": -704,
+    "y": -96
   },
   {
-    "type": 383,
-    "meta": 4,
     "name": "Spawn Elder Guardian",
-    "text_type": "spawn_egg"
+    "id": "minecraft:spawn_elder guardian",
+    "x": -704,
+    "y": -608
   },
   {
-    "type": 383,
-    "meta": 5,
     "name": "Spawn Wither Skeleton",
-    "text_type": "spawn_egg"
+    "id": "minecraft:spawn_wither skeleton",
+    "x": -704,
+    "y": -640
   },
-  { "type": 383, "meta": 6, "name": "Spawn Stray", "text_type": "spawn_egg" },
-  { "type": 383, "meta": 23, "name": "Spawn Husk", "text_type": "spawn_egg" },
   {
-    "type": 383,
-    "meta": 27,
+    "name": "Spawn Stray",
+    "id": "minecraft:spawn_stray",
+    "x": -256,
+    "y": -704
+  },
+  {
+    "name": "Spawn Husk",
+    "id": "minecraft:spawn_husk",
+    "x": -704,
+    "y": -320
+  },
+  {
     "name": "Spawn Zombie Villager",
-    "text_type": "spawn_egg"
+    "id": "minecraft:spawn_zombie villager",
+    "x": -704,
+    "y": -352
   },
   {
-    "type": 383,
-    "meta": 28,
     "name": "Spawn Skeleton Horse",
-    "text_type": "spawn_egg"
+    "id": "minecraft:spawn_skeleton horse",
+    "x": -704,
+    "y": -384
   },
   {
-    "type": 383,
-    "meta": 29,
     "name": "Spawn Zombie Horse",
-    "text_type": "spawn_egg"
+    "id": "minecraft:spawn_zombie horse",
+    "x": -704,
+    "y": -416
   },
-  { "type": 383, "meta": 31, "name": "Spawn Donkey", "text_type": "spawn_egg" },
-  { "type": 383, "meta": 32, "name": "Spawn Mule", "text_type": "spawn_egg" },
-  { "type": 383, "meta": 34, "name": "Spawn Evoker", "text_type": "spawn_egg" },
-  { "type": 383, "meta": 35, "name": "Spawn Vex", "text_type": "spawn_egg" },
   {
-    "type": 383,
-    "meta": 36,
+    "name": "Spawn Donkey",
+    "id": "minecraft:spawn_donkey",
+    "x": -704,
+    "y": -448
+  },
+  {
+    "name": "Spawn Mule",
+    "id": "minecraft:spawn_mule",
+    "x": -704,
+    "y": -480
+  },
+  {
+    "name": "Spawn Evoker",
+    "id": "minecraft:spawn_evoker",
+    "x": -704,
+    "y": -512
+  },
+  {
+    "name": "Spawn Vex",
+    "id": "minecraft:spawn_vex",
+    "x": -704,
+    "y": -544
+  },
+  {
     "name": "Spawn Vindicator",
-    "text_type": "spawn_egg"
+    "id": "minecraft:spawn_vindicator",
+    "x": -704,
+    "y": -576
   },
   {
-    "type": 383,
-    "meta": 50,
     "name": "Spawn Creeper",
-    "text_type": "spawn_egg"
+    "id": "minecraft:spawn_creeper",
+    "x": -704,
+    "y": -672
   },
   {
-    "type": 383,
-    "meta": 51,
     "name": "Spawn Skeleton",
-    "text_type": "spawn_egg"
+    "id": "minecraft:spawn_skeleton",
+    "x": 0,
+    "y": -704
   },
-  { "type": 383, "meta": 52, "name": "Spawn Spider", "text_type": "spawn_egg" },
-  { "type": 383, "meta": 54, "name": "Spawn Zombie", "text_type": "spawn_egg" },
-  { "type": 383, "meta": 55, "name": "Spawn Slime", "text_type": "spawn_egg" },
-  { "type": 383, "meta": 56, "name": "Spawn Ghast", "text_type": "spawn_egg" },
   {
-    "type": 383,
-    "meta": 57,
+    "name": "Spawn Spider",
+    "id": "minecraft:spawn_spider",
+    "x": -32,
+    "y": -704
+  },
+  {
+    "name": "Spawn Zombie",
+    "id": "minecraft:spawn_zombie",
+    "x": -64,
+    "y": -704
+  },
+  {
+    "name": "Spawn Slime",
+    "id": "minecraft:spawn_slime",
+    "x": -96,
+    "y": -704
+  },
+  {
+    "name": "Spawn Ghast",
+    "id": "minecraft:spawn_ghast",
+    "x": -128,
+    "y": -704
+  },
+  {
     "name": "Spawn Zombie Pigman",
-    "text_type": "spawn_egg"
+    "id": "minecraft:spawn_zombie pigman",
+    "x": -160,
+    "y": -704
   },
   {
-    "type": 383,
-    "meta": 58,
     "name": "Spawn Enderman",
-    "text_type": "spawn_egg"
+    "id": "minecraft:spawn_enderman",
+    "x": -192,
+    "y": -704
   },
   {
-    "type": 383,
-    "meta": 59,
     "name": "Spawn Cave Spider",
-    "text_type": "spawn_egg"
+    "id": "minecraft:spawn_cave spider",
+    "x": -224,
+    "y": -704
   },
   {
-    "type": 383,
-    "meta": 60,
     "name": "Spawn Silverfish",
-    "text_type": "spawn_egg"
+    "id": "minecraft:spawn_silverfish",
+    "x": -288,
+    "y": -704
   },
-  { "type": 383, "meta": 61, "name": "Spawn Blaze", "text_type": "spawn_egg" },
   {
-    "type": 383,
-    "meta": 62,
+    "name": "Spawn Blaze",
+    "id": "minecraft:spawn_blaze",
+    "x": -320,
+    "y": -704
+  },
+  {
     "name": "Spawn Magma Cube",
-    "text_type": "spawn_egg"
+    "id": "minecraft:spawn_magma cube",
+    "x": -352,
+    "y": -704
   },
-  { "type": 383, "meta": 65, "name": "Spawn Bat", "text_type": "spawn_egg" },
-  { "type": 383, "meta": 66, "name": "Spawn Witch", "text_type": "spawn_egg" },
   {
-    "type": 383,
-    "meta": 67,
+    "name": "Spawn Bat",
+    "id": "minecraft:spawn_bat",
+    "x": -384,
+    "y": -704
+  },
+  {
+    "name": "Spawn Witch",
+    "id": "minecraft:spawn_witch",
+    "x": -416,
+    "y": -704
+  },
+  {
     "name": "Spawn Endermite",
-    "text_type": "spawn_egg"
+    "id": "minecraft:spawn_endermite",
+    "x": -448,
+    "y": -704
   },
   {
-    "type": 383,
-    "meta": 68,
     "name": "Spawn Guardian",
-    "text_type": "spawn_egg"
+    "id": "minecraft:spawn_guardian",
+    "x": -480,
+    "y": -704
   },
   {
-    "type": 383,
-    "meta": 69,
     "name": "Spawn Shulker",
-    "text_type": "spawn_egg"
+    "id": "minecraft:spawn_shulker",
+    "x": -512,
+    "y": -704
   },
-  { "type": 383, "meta": 90, "name": "Spawn Pig", "text_type": "spawn_egg" },
-  { "type": 383, "meta": 91, "name": "Spawn Sheep", "text_type": "spawn_egg" },
-  { "type": 383, "meta": 92, "name": "Spawn Cow", "text_type": "spawn_egg" },
   {
-    "type": 383,
-    "meta": 93,
+    "name": "Spawn Pig",
+    "id": "minecraft:spawn_pig",
+    "x": -544,
+    "y": -704
+  },
+  {
+    "name": "Spawn Sheep",
+    "id": "minecraft:spawn_sheep",
+    "x": -576,
+    "y": -704
+  },
+  {
+    "name": "Spawn Cow",
+    "id": "minecraft:spawn_cow",
+    "x": -608,
+    "y": -704
+  },
+  {
     "name": "Spawn Chicken",
-    "text_type": "spawn_egg"
+    "id": "minecraft:spawn_chicken",
+    "x": -640,
+    "y": -704
   },
-  { "type": 383, "meta": 94, "name": "Spawn Squid", "text_type": "spawn_egg" },
-  { "type": 383, "meta": 95, "name": "Spawn Wolf", "text_type": "spawn_egg" },
   {
-    "type": 383,
-    "meta": 96,
+    "name": "Spawn Squid",
+    "id": "minecraft:spawn_squid",
+    "x": -672,
+    "y": -704
+  },
+  {
+    "name": "Spawn Wolf",
+    "id": "minecraft:spawn_wolf",
+    "x": -704,
+    "y": -704
+  },
+  {
     "name": "Spawn Mooshroom",
-    "text_type": "spawn_egg"
+    "id": "minecraft:spawn_mooshroom",
+    "x": -736,
+    "y": 0
   },
-  { "type": 383, "meta": 98, "name": "Spawn Ocelot", "text_type": "spawn_egg" },
-  { "type": 383, "meta": 100, "name": "Spawn Horse", "text_type": "spawn_egg" },
   {
-    "type": 383,
-    "meta": 101,
+    "name": "Spawn Ocelot",
+    "id": "minecraft:spawn_ocelot",
+    "x": -736,
+    "y": -32
+  },
+  {
+    "name": "Spawn Horse",
+    "id": "minecraft:spawn_horse",
+    "x": -704,
+    "y": -128
+  },
+  {
     "name": "Spawn Rabbit",
-    "text_type": "spawn_egg"
+    "id": "minecraft:spawn_rabbit",
+    "x": -704,
+    "y": -160
   },
   {
-    "type": 383,
-    "meta": 102,
     "name": "Spawn Polar Bear",
-    "text_type": "spawn_egg"
+    "id": "minecraft:spawn_polar bear",
+    "x": -704,
+    "y": -192
   },
-  { "type": 383, "meta": 103, "name": "Spawn Llama", "text_type": "spawn_egg" },
   {
-    "type": 383,
-    "meta": 105,
+    "name": "Spawn Llama",
+    "id": "minecraft:spawn_llama",
+    "x": -704,
+    "y": -224
+  },
+  {
     "name": "Spawn Parrot",
-    "text_type": "spawn_egg"
+    "id": "minecraft:spawn_parrot",
+    "x": -704,
+    "y": -256
   },
   {
-    "type": 383,
-    "meta": 120,
     "name": "Spawn Villager",
-    "text_type": "spawn_egg"
+    "id": "minecraft:spawn_villager",
+    "x": -704,
+    "y": -288
   },
   {
-    "type": 384,
-    "meta": 0,
     "name": "Bottle o' Enchanting",
-    "text_type": "experience_bottle"
+    "id": "minecraft:bottle_o' enchanting",
+    "x": -736,
+    "y": -64
   },
-  { "type": 385, "meta": 0, "name": "Fire Charge", "text_type": "fire_charge" },
   {
-    "type": 386,
-    "meta": 0,
+    "name": "Fire Charge",
+    "id": "minecraft:fire_charge",
+    "x": -736,
+    "y": -96
+  },
+  {
     "name": "Book and Quill",
-    "text_type": "writable_book"
+    "id": "minecraft:book_and quill",
+    "x": -736,
+    "y": -128
   },
   {
-    "type": 387,
-    "meta": 0,
     "name": "Written Book",
-    "text_type": "written_book"
+    "id": "minecraft:written_book",
+    "x": -736,
+    "y": -160
   },
-  { "type": 388, "meta": 0, "name": "Emerald", "text_type": "emerald" },
-  { "type": 389, "meta": 0, "name": "Item Frame", "text_type": "item_frame" },
-  { "type": 390, "meta": 0, "name": "Flower Pot", "text_type": "flower_pot" },
-  { "type": 391, "meta": 0, "name": "Carrot", "text_type": "carrot" },
-  { "type": 392, "meta": 0, "name": "Potato", "text_type": "potato" },
   {
-    "type": 393,
-    "meta": 0,
+    "name": "Emerald",
+    "id": "minecraft:emerald",
+    "x": -736,
+    "y": -192
+  },
+  {
+    "name": "Item Frame",
+    "id": "minecraft:item_frame",
+    "x": -736,
+    "y": -224
+  },
+  {
+    "name": "Flower Pot",
+    "id": "minecraft:flower_pot",
+    "x": -736,
+    "y": -288
+  },
+  {
+    "name": "Carrot",
+    "id": "minecraft:carrot",
+    "x": -736,
+    "y": -320
+  },
+  {
+    "name": "Potato",
+    "id": "minecraft:potato",
+    "x": -736,
+    "y": -352
+  },
+  {
     "name": "Baked Potato",
-    "text_type": "baked_potato"
+    "id": "minecraft:baked_potato",
+    "x": -736,
+    "y": -384
   },
   {
-    "type": 394,
-    "meta": 0,
     "name": "Poisonous Potato",
-    "text_type": "poisonous_potato"
+    "id": "minecraft:poisonous_potato",
+    "x": -736,
+    "y": -416
   },
-  { "type": 395, "meta": 0, "name": "Empty Map", "text_type": "map" },
   {
-    "type": 396,
-    "meta": 0,
+    "name": "Empty Map",
+    "id": "minecraft:empty_map",
+    "x": -736,
+    "y": -448
+  },
+  {
     "name": "Golden Carrot",
-    "text_type": "golden_carrot"
+    "id": "minecraft:golden_carrot",
+    "x": -736,
+    "y": -480
   },
   {
-    "type": 397,
-    "meta": 0,
     "name": "Mob Head (Skeleton)",
-    "text_type": "skull"
+    "id": "minecraft:mob_head (skeleton)",
+    "x": -736,
+    "y": -512
   },
   {
-    "type": 397,
-    "meta": 1,
     "name": "Mob Head (Wither Skeleton)",
-    "text_type": "skull"
+    "id": "minecraft:mob_head (wither skeleton)",
+    "x": -736,
+    "y": -544
   },
-  { "type": 397, "meta": 2, "name": "Mob Head (Zombie)", "text_type": "skull" },
-  { "type": 397, "meta": 3, "name": "Mob Head (Human)", "text_type": "skull" },
   {
-    "type": 397,
-    "meta": 4,
+    "name": "Mob Head (Zombie)",
+    "id": "minecraft:mob_head (zombie)",
+    "x": -736,
+    "y": -576
+  },
+  {
+    "name": "Mob Head (Human)",
+    "id": "minecraft:mob_head (human)",
+    "x": -736,
+    "y": -608
+  },
+  {
     "name": "Mob Head (Creeper)",
-    "text_type": "skull"
+    "id": "minecraft:mob_head (creeper)",
+    "x": -736,
+    "y": -640
   },
-  { "type": 397, "meta": 5, "name": "Mob Head (Dragon)", "text_type": "skull" },
   {
-    "type": 398,
-    "meta": 0,
+    "name": "Mob Head (Dragon)",
+    "id": "minecraft:mob_head (dragon)",
+    "x": -736,
+    "y": -672
+  },
+  {
     "name": "Carrot on a Stick",
-    "text_type": "carrot_on_a_stick"
+    "id": "minecraft:carrot_on a stick",
+    "x": -736,
+    "y": -704
   },
-  { "type": 399, "meta": 0, "name": "Nether Star", "text_type": "nether_star" },
-  { "type": 400, "meta": 0, "name": "Pumpkin Pie", "text_type": "pumpkin_pie" },
   {
-    "type": 401,
-    "meta": 0,
+    "name": "Nether Star",
+    "id": "minecraft:nether_star",
+    "x": 0,
+    "y": -736
+  },
+  {
+    "name": "Pumpkin Pie",
+    "id": "minecraft:pumpkin_pie",
+    "x": -96,
+    "y": -736
+  },
+  {
     "name": "Firework Rocket",
-    "text_type": "fireworks"
+    "id": "minecraft:firework_rocket",
+    "x": -128,
+    "y": -736
   },
   {
-    "type": 402,
-    "meta": 0,
     "name": "Firework Star",
-    "text_type": "firework_charge"
+    "id": "minecraft:firework_star",
+    "x": -160,
+    "y": -736
   },
   {
-    "type": 403,
-    "meta": 0,
     "name": "Enchanted Book",
-    "text_type": "enchanted_book"
+    "id": "minecraft:enchanted_book",
+    "x": -192,
+    "y": -736
   },
   {
-    "type": 404,
-    "meta": 0,
     "name": "Redstone Comparator",
-    "text_type": "comparator"
+    "id": "minecraft:redstone_comparator",
+    "x": -224,
+    "y": -736
   },
   {
-    "type": 405,
-    "meta": 0,
     "name": "Nether Brick",
-    "text_type": "netherbrick"
+    "id": "minecraft:nether_brick",
+    "x": -256,
+    "y": -736
   },
-  { "type": 406, "meta": 0, "name": "Nether Quartz", "text_type": "quartz" },
   {
-    "type": 407,
-    "meta": 0,
+    "name": "Nether Quartz",
+    "id": "minecraft:nether_quartz",
+    "x": -288,
+    "y": -736
+  },
+  {
     "name": "Minecart with TNT",
-    "text_type": "tnt_minecart"
+    "id": "minecraft:minecart_with tnt",
+    "x": -320,
+    "y": -736
   },
   {
-    "type": 408,
-    "meta": 0,
     "name": "Minecart with Hopper",
-    "text_type": "hopper_minecart"
+    "id": "minecraft:minecart_with hopper",
+    "x": -352,
+    "y": -736
   },
   {
-    "type": 409,
-    "meta": 0,
     "name": "Prismarine Shard",
-    "text_type": "prismarine_shard"
+    "id": "minecraft:prismarine_shard",
+    "x": -384,
+    "y": -736
   },
   {
-    "type": 410,
-    "meta": 0,
     "name": "Prismarine Crystals",
-    "text_type": "prismarine_crystals"
+    "id": "minecraft:prismarine_crystals",
+    "x": -448,
+    "y": -736
   },
-  { "type": 411, "meta": 0, "name": "Raw Rabbit", "text_type": "rabbit" },
   {
-    "type": 412,
-    "meta": 0,
+    "name": "Raw Rabbit",
+    "id": "minecraft:raw_rabbit",
+    "x": -480,
+    "y": -736
+  },
+  {
     "name": "Cooked Rabbit",
-    "text_type": "cooked_rabbit"
+    "id": "minecraft:cooked_rabbit",
+    "x": -512,
+    "y": -736
   },
-  { "type": 413, "meta": 0, "name": "Rabbit Stew", "text_type": "rabbit_stew" },
   {
-    "type": 414,
-    "meta": 0,
+    "name": "Rabbit Stew",
+    "id": "minecraft:rabbit_stew",
+    "x": -544,
+    "y": -736
+  },
+  {
     "name": "Rabbit's Foot",
-    "text_type": "rabbit_foot"
+    "id": "minecraft:rabbit's_foot",
+    "x": -576,
+    "y": -736
   },
-  { "type": 415, "meta": 0, "name": "Rabbit Hide", "text_type": "rabbit_hide" },
-  { "type": 416, "meta": 0, "name": "Armor Stand", "text_type": "armor_stand" },
   {
-    "type": 417,
-    "meta": 0,
+    "name": "Rabbit Hide",
+    "id": "minecraft:rabbit_hide",
+    "x": -608,
+    "y": -736
+  },
+  {
+    "name": "Armor Stand",
+    "id": "minecraft:armor_stand",
+    "x": -640,
+    "y": -736
+  },
+  {
     "name": "Iron Horse Armor",
-    "text_type": "iron_horse_armor"
+    "id": "minecraft:iron_horse armor",
+    "x": -672,
+    "y": -736
   },
   {
-    "type": 418,
-    "meta": 0,
     "name": "Golden Horse Armor",
-    "text_type": "golden_horse_armor"
+    "id": "minecraft:golden_horse armor",
+    "x": -704,
+    "y": -736
   },
   {
-    "type": 419,
-    "meta": 0,
     "name": "Diamond Horse Armor",
-    "text_type": "diamond_horse_armor"
+    "id": "minecraft:diamond_horse armor",
+    "x": -736,
+    "y": -736
   },
-  { "type": 420, "meta": 0, "name": "Lead", "text_type": "lead" },
-  { "type": 421, "meta": 0, "name": "Name Tag", "text_type": "name_tag" },
   {
-    "type": 422,
-    "meta": 0,
+    "name": "Lead",
+    "id": "minecraft:lead",
+    "x": -768,
+    "y": -32
+  },
+  {
+    "name": "Name Tag",
+    "id": "minecraft:name_tag",
+    "x": -768,
+    "y": -64
+  },
+  {
     "name": "Minecart with Command Block",
-    "text_type": "command_block_minecart"
+    "id": "minecraft:minecart_with command block",
+    "x": -768,
+    "y": -96
   },
-  { "type": 423, "meta": 0, "name": "Raw Mutton", "text_type": "mutton" },
   {
-    "type": 424,
-    "meta": 0,
+    "name": "Raw Mutton",
+    "id": "minecraft:raw_mutton",
+    "x": -768,
+    "y": -128
+  },
+  {
     "name": "Cooked Mutton",
-    "text_type": "cooked_mutton"
+    "id": "minecraft:cooked_mutton",
+    "x": -768,
+    "y": -160
   },
-  { "type": 425, "meta": 0, "name": "Banner", "text_type": "banner" },
-  { "type": 426, "meta": 0, "name": "End Crystal", "text_type": "end_crystal" },
-  { "type": 427, "meta": 0, "name": "Spruce Door", "text_type": "spruce_door" },
-  { "type": 428, "meta": 0, "name": "Birch Door", "text_type": "birch_door" },
-  { "type": 429, "meta": 0, "name": "Jungle Door", "text_type": "jungle_door" },
-  { "type": 430, "meta": 0, "name": "Acacia Door", "text_type": "acacia_door" },
   {
-    "type": 431,
-    "meta": 0,
+    "name": "Banner",
+    "id": "minecraft:banner",
+    "x": -768,
+    "y": -192
+  },
+  {
+    "name": "End Crystal",
+    "id": "minecraft:end_crystal",
+    "x": -768,
+    "y": -224
+  },
+  {
+    "name": "Spruce Door",
+    "id": "minecraft:spruce_door",
+    "x": -768,
+    "y": -256
+  },
+  {
+    "name": "Birch Door",
+    "id": "minecraft:birch_door",
+    "x": -768,
+    "y": -288
+  },
+  {
+    "name": "Jungle Door",
+    "id": "minecraft:jungle_door",
+    "x": -768,
+    "y": -320
+  },
+  {
+    "name": "Acacia Door",
+    "id": "minecraft:acacia_door",
+    "x": -768,
+    "y": -608
+  },
+  {
     "name": "Dark Oak Door",
-    "text_type": "dark_oak_door"
+    "id": "minecraft:dark_oak door",
+    "x": -768,
+    "y": -640
   },
   {
-    "type": 432,
-    "meta": 0,
     "name": "Chorus Fruit",
-    "text_type": "chorus_fruit"
+    "id": "minecraft:chorus_fruit",
+    "x": -768,
+    "y": -672
   },
   {
-    "type": 433,
-    "meta": 0,
     "name": "Popped Chorus Fruit",
-    "text_type": "popped_chorus_fruit"
+    "id": "minecraft:popped_chorus fruit",
+    "x": -768,
+    "y": -704
   },
-  { "type": 434, "meta": 0, "name": "Beetroot", "text_type": "beetroot" },
   {
-    "type": 435,
-    "meta": 0,
+    "name": "Beetroot",
+    "id": "minecraft:beetroot",
+    "x": -768,
+    "y": -736
+  },
+  {
     "name": "Beetroot Seeds",
-    "text_type": "beetroot_seeds"
+    "id": "minecraft:beetroot_seeds",
+    "x": 0,
+    "y": -768
   },
   {
-    "type": 436,
-    "meta": 0,
     "name": "Beetroot Soup",
-    "text_type": "beetroot_soup"
+    "id": "minecraft:beetroot_soup",
+    "x": -32,
+    "y": -768
   },
   {
-    "type": 437,
-    "meta": 0,
     "name": "Dragon's Breath",
-    "text_type": "dragon_breath"
+    "id": "minecraft:dragon's_breath",
+    "x": -64,
+    "y": -768
   },
   {
-    "type": 438,
-    "meta": 0,
     "name": "Splash Potion",
-    "text_type": "splash_potion"
+    "id": "minecraft:splash_potion",
+    "x": -96,
+    "y": -768
   },
   {
-    "type": 439,
-    "meta": 0,
     "name": "Spectral Arrow",
-    "text_type": "spectral_arrow"
+    "id": "minecraft:spectral_arrow",
+    "x": -128,
+    "y": -768
   },
   {
-    "type": 440,
-    "meta": 0,
     "name": "Tipped Arrow",
-    "text_type": "tipped_arrow"
+    "id": "minecraft:tipped_arrow",
+    "x": -416,
+    "y": -768
   },
   {
-    "type": 441,
-    "meta": 0,
     "name": "Lingering Potion",
-    "text_type": "lingering_potion"
+    "id": "minecraft:lingering_potion",
+    "x": -448,
+    "y": -768
   },
-  { "type": 442, "meta": 0, "name": "Shield", "text_type": "shield" },
-  { "type": 443, "meta": 0, "name": "Elytra", "text_type": "elytra" },
-  { "type": 444, "meta": 0, "name": "Spruce Boat", "text_type": "spruce_boat" },
-  { "type": 445, "meta": 0, "name": "Birch Boat", "text_type": "birch_boat" },
-  { "type": 446, "meta": 0, "name": "Jungle Boat", "text_type": "jungle_boat" },
-  { "type": 447, "meta": 0, "name": "Acacia Boat", "text_type": "acacia_boat" },
   {
-    "type": 448,
-    "meta": 0,
+    "name": "Shield",
+    "id": "minecraft:shield",
+    "x": -480,
+    "y": -768
+  },
+  {
+    "name": "Elytra",
+    "id": "minecraft:elytra",
+    "x": -512,
+    "y": -768
+  },
+  {
+    "name": "Spruce Boat",
+    "id": "minecraft:spruce_boat",
+    "x": -544,
+    "y": -768
+  },
+  {
+    "name": "Birch Boat",
+    "id": "minecraft:birch_boat",
+    "x": -576,
+    "y": -768
+  },
+  {
+    "name": "Jungle Boat",
+    "id": "minecraft:jungle_boat",
+    "x": -608,
+    "y": -768
+  },
+  {
+    "name": "Acacia Boat",
+    "id": "minecraft:acacia_boat",
+    "x": -640,
+    "y": -768
+  },
+  {
     "name": "Dark Oak Boat",
-    "text_type": "dark_oak_boat"
+    "id": "minecraft:dark_oak boat",
+    "x": -672,
+    "y": -768
   },
   {
-    "type": 449,
-    "meta": 0,
     "name": "Totem of Undying",
-    "text_type": "totem_of_undying"
+    "id": "minecraft:totem_of undying",
+    "x": -704,
+    "y": -768
   },
   {
-    "type": 450,
-    "meta": 0,
     "name": "Shulker Shell",
-    "text_type": "shulker_shell"
+    "id": "minecraft:shulker_shell",
+    "x": -768,
+    "y": -768
   },
-  { "type": 452, "meta": 0, "name": "Iron Nugget", "text_type": "iron_nugget" },
   {
-    "type": 453,
-    "meta": 0,
+    "name": "Iron Nugget",
+    "id": "minecraft:iron_nugget",
+    "x": -800,
+    "y": 0
+  },
+  {
     "name": "Knowledge Book",
-    "text_type": "knowledge_book"
+    "id": "minecraft:knowledge_book",
+    "x": -800,
+    "y": -32
   },
-  { "type": 2256, "meta": 0, "name": "13 Disc", "text_type": "record_13" },
-  { "type": 2257, "meta": 0, "name": "Cat Disc", "text_type": "record_cat" },
   {
-    "type": 2258,
-    "meta": 0,
+    "name": "13 Disc",
+    "id": "minecraft:13_disc",
+    "x": -480,
+    "y": 0
+  },
+  {
+    "name": "Cat Disc",
+    "id": "minecraft:cat_disc",
+    "x": -480,
+    "y": -32
+  },
+  {
     "name": "Blocks Disc",
-    "text_type": "record_blocks"
+    "id": "minecraft:blocks_disc",
+    "x": -480,
+    "y": -64
   },
   {
-    "type": 2259,
-    "meta": 0,
     "name": "Chirp Disc",
-    "text_type": "record_chirp"
+    "id": "minecraft:chirp_disc",
+    "x": -480,
+    "y": -96
   },
-  { "type": 2260, "meta": 0, "name": "Far Disc", "text_type": "record_far" },
-  { "type": 2261, "meta": 0, "name": "Mall Disc", "text_type": "record_mall" },
   {
-    "type": 2262,
-    "meta": 0,
+    "name": "Far Disc",
+    "id": "minecraft:far_disc",
+    "x": -480,
+    "y": -160
+  },
+  {
+    "name": "Mall Disc",
+    "id": "minecraft:mall_disc",
+    "x": -480,
+    "y": -192
+  },
+  {
     "name": "Mellohi Disc",
-    "text_type": "record_mellohi"
+    "id": "minecraft:mellohi_disc",
+    "x": -480,
+    "y": -224
   },
-  { "type": 2263, "meta": 0, "name": "Stal Disc", "text_type": "record_stal" },
   {
-    "type": 2264,
-    "meta": 0,
-    "name": "Strad Disc",
-    "text_type": "record_strad"
+    "name": "Stal Disc",
+    "id": "minecraft:stal_disc",
+    "x": -480,
+    "y": -256
   },
-  { "type": 2265, "meta": 0, "name": "Ward Disc", "text_type": "record_ward" },
-  { "type": 2266, "meta": 0, "name": "11 Disc", "text_type": "record_11" },
-  { "type": 2267, "meta": 0, "name": "Wait Disc", "text_type": "record_wait" }
+  {
+    "name": "Strad Disc",
+    "id": "minecraft:strad_disc",
+    "x": -480,
+    "y": -288
+  },
+  {
+    "name": "Ward Disc",
+    "id": "minecraft:ward_disc",
+    "x": -480,
+    "y": -320
+  },
+  {
+    "name": "11 Disc",
+    "id": "minecraft:11_disc",
+    "x": -480,
+    "y": -352
+  },
+  {
+    "name": "Wait Disc",
+    "id": "minecraft:wait_disc",
+    "x": -480,
+    "y": -384
+  }
 ]

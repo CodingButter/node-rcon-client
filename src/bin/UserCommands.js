@@ -1,6 +1,20 @@
 import React, { useState } from "react";
 import { AppStore } from "./AppStore";
 import { Input, MenuItem, MenuList, Typography } from "@material-ui/core";
+import ItemList from "../GlobalComponents/ItemList"
+const giveItem = ({username})=>{
+  AppStore.updateFocusedPlayer(username);
+  const toggleShowItems = () => {
+    AppStore.updateShowItems(!AppStore.showItems)
+  };
+  return (
+    
+    <div>
+      <MenuItem onClick={toggleShowItems}>Give Item</MenuItem>
+      <ItemList/>
+    </div>
+  );
+}
 
 const teleport = ({ username }) => {
   const handleTeleportTo = () => {
@@ -97,6 +111,6 @@ const banPlayer = ({ username }) => {
   );
 };
 
-const items = [teleport, kickPlayer, banPlayer];
+const items = [giveItem,teleport, kickPlayer, banPlayer];
 
 export default items;

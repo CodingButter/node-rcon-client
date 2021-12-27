@@ -9,6 +9,7 @@ import MenuList from "@material-ui/core/MenuList";
 import { makeStyles } from "@material-ui/core/styles";
 import UserCommands from "bin/UserCommands";
 import { AppStore } from "bin/AppStore";
+import { List } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -53,6 +54,10 @@ export default function MenuListComposition({ username, children }) {
     prevOpen.current = open;
   }, [open]);
 
+  const stopImmediatePropagation = (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+      };
   return (
     <div className={classes.root}>
       <a
@@ -82,10 +87,11 @@ export default function MenuListComposition({ username, children }) {
           >
             <Paper>
               <ClickAwayListener onClickAway={handleClose}>
-                <MenuList
+                <List
                   autoFocusItem={open}
                   id="menu-list-grow"
-                  onKeyDown={handleListKeyDown}
+                  onKeyDown={handleListKeyDown
+                  }
                 >
                   <MenuItem username={username} onClick={handleClose}>
                     Profile
@@ -93,7 +99,7 @@ export default function MenuListComposition({ username, children }) {
                   {UserCommands.map((ItemComponent, index) => (
                     <ItemComponent key={index} username={username} />
                   ))}
-                </MenuList>
+                </List>
               </ClickAwayListener>
             </Paper>
           </Grow>

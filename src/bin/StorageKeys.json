@@ -16,6 +16,7 @@
     "pluginConnected": "connection-remember-plugin-connection-key",
     "serverRunning": "connection-server-running-key",
     "showConsole": "conneciton-show-console-key",
-    "scrollConsole": "console-scroll-key"
+    "scrollConsole": "console-scroll-key",
+    "focusedPlayer": "focused-player-storage-key"
   }
 }
