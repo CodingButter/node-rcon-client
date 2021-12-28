@@ -5,11 +5,12 @@ import "../bin/ListItems.css"
 import { AppStore } from "bin/AppStore";
 import { Prompt } from "react-router-dom/cjs/react-router-dom.min";
 import stringSimilarity  from "string-similarity"
+
 export default function ItemList({username}) {
   const [search,updateSearch] = useState("");
  const HandleGiveItem = (item)=>{
   const quantity =  prompt("Quantity")
-  AppStore.sendCommand(`give ${AppStore.focusedPlayer} ${item} ${quantity}`);
+  AppStore.sendCommand(`give ${username} ${item} ${quantity}`);
   AppStore.updateFocusedPlayer(null);
  }
 

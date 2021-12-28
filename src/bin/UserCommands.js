@@ -3,7 +3,6 @@ import { AppStore } from "./AppStore";
 import { Input, MenuItem, MenuList, Typography } from "@material-ui/core";
 import ItemList from "../GlobalComponents/ItemList"
 const giveItem = ({username})=>{
-  AppStore.updateFocusedPlayer(username);
   const toggleShowItems = () => {
     AppStore.updateShowItems(!AppStore.showItems)
   };
@@ -11,7 +10,7 @@ const giveItem = ({username})=>{
     
     <div>
       <MenuItem onClick={toggleShowItems}>Give Item</MenuItem>
-      <ItemList/>
+      <ItemList username={username}/>
     </div>
   );
 }

@@ -36,7 +36,7 @@ export default function App() {
   useAddToStore("pluginTunnel", "setPluginTunnel", "");
   useAddToStore("showConsole", "updateShowConsole", false);
   useAddToStore("scrollConsole", "updateScrollConsole", true);
-  useAddToStore("focusedPlayer", "updateFocusedPlayer",false,true);
+  useAddToStore("focusedPlayer", "updateFocusedPlayer",false,false);
   useAddToStore("showItems","updateShowItems",false,false)
   //Create Global Appstore Functions
 
